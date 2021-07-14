@@ -1,0 +1,26 @@
+
+@font-face {
+    font-family:'Viga Regular'; src: url('../Fonts/Viga-Regular.ttf') format('truetype');
+    font-family:'Designer'; src: url('../Fonts/DESIGNER.otf') format('truetype');
+    font-family:'Nasalization'; src: url('../Fonts/nasalization-rg.otf') format('truetype');
+
+}
+.designer{
+    font-family: 'Designer'; 
+}
+
+.nasalization{
+    font-family: 'Nasalization';
+}
+
+.marca{
+    display: flex;
+    font-size: 400%; 
+    align-items: center;
+    height: 100%;
+}
+
+body{
+    background-color: #6B8D8D;
+}
+
