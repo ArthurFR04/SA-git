@@ -1,10 +1,14 @@
 
 @font-face {
-    font-family:'Viga Regular'; src: url('../fonts/Viga-Regular.ttf') format('truetype');
-    font-family:'Designer'; src: url('../fonts/DESIGNER.otf') format('truetype');
-    font-family:'Nasalization'; src: url('../fonts/nasalization-rg.otf') format('truetype');
-
+    font-family:'Designer'; src: url('../../DESIGNER.otf') format('OpenType');
 }
+@font-face {
+    font-family:'Nasalization'; src: url('../fonts/nasalization-rg.otf') format('truetype');
+}
+@font-face {
+    font-family:'Viga Regular'; src: url('../fonts/Viga-Regular.ttf') format('TrueType');
+}
+
 .designer{
     font-family: 'Designer'; 
 }
