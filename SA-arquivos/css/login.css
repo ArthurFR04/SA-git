@@ -26,7 +26,7 @@ body {
     display: block;
     justify-content: center;
     width: 30vw;
-    height: 40vw;
+    height: 35vw;
     margin: auto;
     margin-top: 3%;
     background: #166E6F;
@@ -111,7 +111,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 27%;
-    padding-top: 25px; 
+    padding-top: 30px; 
 }
 
 .container-mid a {
