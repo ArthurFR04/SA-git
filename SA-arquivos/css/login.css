@@ -111,7 +111,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 27%;
-    padding-top: 30px; 
+    padding-top: 30px;
 }
 
 .container-mid a {
@@ -151,10 +151,58 @@ body {
     }
 }
 
+@media screen and (max-width:400px) {
+    .container-mid label {
+        font-size: 2vh;
+    }
+    .container-mid .nomeinput {
+        padding-top: 4px;
+    }
+    .container-mid .nomelink {
+        padding-top: 40px;
+    }
+    .container-mid .nomelink a {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:376px) {
+    .container-mid label {
+        font-size: 2vh;
+    }
+    .container-mid .nomeinput {
+        padding-top: 10px;
+    }
+    .container-mid .nomelink {
+        padding-top: 80px;
+    }
+    .container-mid .nomelink a {
+        font-size: 20px;
+    }
+    .container-bottom button {
+        font-size: 2,5vh;
+    }
+}
+
+@media screen and (max-width:322px) {
+    .container-mid label {
+        font-size: 2vh;
+    }
+    .container-mid .nomeinput {
+        padding-top: 4px;
+    }
+    .container-mid .nomelink {
+        padding-top: 40px;
+    }
+    .container-mid .nomelink a {
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width:600px) {
     .container {
         width: 85%;
-        height: 80vh;
+        height: 65vh;
         margin-top: 50%;
         margin-bottom: 5%;
     }
@@ -165,7 +213,7 @@ body {
         height: 4vh;
     }
     .container-bottom {
-        height: 13%;
+        height: 15%;
     }
 }
 
