@@ -17,6 +17,10 @@
     font-family: 'Nasalization';
 }
 
+.espaçamento-nav{
+    margin-left: 8px;
+}
+
 .marca{
     display: flex;
     font-size: 400%; 
@@ -28,3 +32,9 @@ body{
     background-color: #6B8D8D;
 }
 
+@media screen and (max-width:992px){
+
+    .espaçamento-nav{
+        margin-left: 0;
+    }
+}
