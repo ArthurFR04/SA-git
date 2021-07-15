@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Viga Regular';
+    src: url('../Fonts/Viga-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../Fonts/nasalization-rg.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Designer';
+    src: url('../Fonts/DESIGNER.otf') format('truetype');
+}
+
+body {
+    margin: 0;
+    background-image: url(../img/3706.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #132839;
+    
+}
+
+h1{
+    font-family: 'Designer';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin-top: 25%; 
+}
