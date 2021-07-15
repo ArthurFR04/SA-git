@@ -182,6 +182,9 @@ body {
     .navbar {
         height: 8vh;
     }
+    ::placeholder{
+        font-size: 3vh;
+    }
 }
 
 @media screen and (width:768px) {
@@ -195,6 +198,9 @@ body {
     }
     .container-mid label {
         font-size: 2vh;
+    }
+    ::placeholder{
+        font-size: 3vh;
     }
 }
 
