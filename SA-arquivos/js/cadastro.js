@@ -24,6 +24,15 @@ function cadastrar() {
 
             cadastros.push(nomeDoObj)
             localStorage.setItem('Pessoas', JSON.stringify(cadastros)); // O JSON.parse transforma a string em JSON novamente, o inverso do JSON.strigify
+
+            alert('Cadastro efetuado. \n\nVocê será redirecionado para a página de login.')
+                
+            document.getElementById('inpNomeC').value = ''                                                 // Editável
+            document.getElementById('inpEmailC').value = ''                                                // Editável
+            document.getElementById('inpSenhaC').value = ''                                                // Editável
+            document.getElementById('inpSenha2C').value = ''                                               // Editável
+                
+            window.location.href="tela_login.html"                                                         // Editável
         }
 
         else if (localStorage.getItem('Pessoas') != null){
