@@ -12,12 +12,12 @@ function cadastrar() {
     
     if (senhaC === senha2C) {
 
-        let confirmacao = ''                           //usei para verificar o array, o for percorre e muda o valor se for true
+        let confirmacao = ''                      //usei para verificar o array, o for percorre e muda o valor se for true
 
         nomeDoObj = {                                             // cria um ojeto
-            apelido: nomeC ,                                                                                       // Editável
-            email: emailC ,                                                                                       // Editável
-            senha: senhaC ,                                                                                        // Editável
+            apelido:nomeC,                                                                                   // Editável
+            email:emailC,                                                                                    // Editável
+            senha:senhaC,                                                                                    // Editável
         }
         
         if (localStorage.getItem('Pessoas') === null) {  // Adicionando um array com um objeto no localstorage
@@ -32,12 +32,12 @@ function cadastrar() {
 
             for(let i=0; i<cadastros2.length; i++) {
 
-                if (cadastros2[i].apelido == nomeC) {                                                              // Editável
-                    confirmacao = 'apelido já em uso'
+                if (cadastros2[i].apelido == nomeC || cadastros2[i].email == emailC) {                                                          // Editável
+                    confirmacao = 'cancelar'
                 }
             }
                 
-            if (confirmacao == 'apelido já em uso') {
+            if (confirmacao === 'cancelar') {
                 console.log('deu igual');
                 alert('Esse nome de usuário já está sendo usado.')
                 return false;
@@ -46,16 +46,16 @@ function cadastrar() {
             else {
                 console.log('deu diferente');
                 
-                let cadastros3 = JSON.parse(localStorage.getItem('Pessoas'))
-                
-                cadastros3.push(nomeDoObj)
-                localStorage.setItem('Pessoas', JSON.stringify(cadastros3))
+                cadastros2.push(nomeDoObj)
+                localStorage.setItem('Pessoas', JSON.stringify(cadastros2))
                 
                 alert('Cadastro efetuado. \n\nVocê será redirecionado para a página de login.')
                 
-                confirmacao = ''
                 document.getElementById('inpNomeC').value = ''                                                 // Editável
+                document.getElementById('inpEmailC').value = ''                                                // Editável
                 document.getElementById('inpSenhaC').value = ''                                                // Editável
+                document.getElementById('inpSenha2C').value = ''                                               // Editável
+                
                 window.location.href="tela_login.html"                                                         // Editável
                 return false;
             }
