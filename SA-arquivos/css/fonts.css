@@ -14,3 +14,11 @@
     font-family: 'Designer';
     src: url('../fonts/DESIGNER.otf') format('truetype');
 }
+
+.designer{
+    font-family: 'Designer'; 
+}
+
+.nasalization{
+    font-family: 'Nasalization';
+}

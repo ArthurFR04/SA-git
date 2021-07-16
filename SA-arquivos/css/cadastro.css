@@ -8,6 +8,13 @@ body {
     background-color: #132839;
 }
 
+.icone-home {
+    height: 70px; 
+    width: 70px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
 .container {
     display: block;
     justify-content: center;
@@ -46,7 +53,6 @@ body {
     align-items: center;
     justify-content: center;
     height: 100%;
-    font-family: 'Designer';
     font-style: normal;
     font-weight: normal;
     font-size: 6vh;
@@ -64,7 +70,6 @@ body {
     padding: 3px 45px;
     background-color: #C4C4C4;
     color: white;
-    font-family: 'nasalization';
     font-size: 3vh;
 }
 
@@ -86,7 +91,6 @@ body {
 
 .container-mid label {
     margin-left: 5%;
-    font-family: 'nasalization';
     color: white;
     margin-top: 5%;
 }
@@ -100,7 +104,6 @@ body {
 
 .container-mid a {
     text-decoration: none;
-    font-family: 'nasalization';
     color: white;
     font-size: 3vh;
     cursor: pointer;

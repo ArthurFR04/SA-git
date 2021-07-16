@@ -18,7 +18,6 @@ body {
 }
 
 h1{
-    font-family: 'Designer';
     color: #E2781C;
     margin: 0;
     font-size: 100px;
@@ -32,10 +31,10 @@ border: 0;
 font-size: 20px;
 
 cursor: pointer;
-font-family: 'Nasalization';
 background-color: #D4FFFA;
 color: #132839;
 }
+
 @media screen and (max-width:1024px) {
    .container{
        justify-content: flex-start;
