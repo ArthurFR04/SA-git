@@ -116,6 +116,33 @@ body {
     padding-left: 5px;
     
 }
+@media screen and (max-width:1800px) {
+    .container {
+        
+        height: 100%;
+        
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 6vh;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    .container-bottom button {
+        font-size: 3vh;
+    }
+    .container-mid a{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .container-bottom button{
+        margin: 10px;
+    }
+}
 
 @media screen and (max-width:1024px) {
     .container {
@@ -174,6 +201,13 @@ body {
     ::placeholder{
         font-size: 3vh;
     }
+    .icone-home{
+        width: 150px;
+        height: 150px;
+    }
+    .container{
+        margin-top: 45%;
+    }
 }
 
 @media screen and (width:768px) {
@@ -190,6 +224,13 @@ body {
     }
     ::placeholder{
         font-size: 3vh;
+    }
+    .icone-home{
+        width: 100px;
+        height: 100px;
+    }
+    .container{
+        margin-top: 45%;
     }
 }
 
