@@ -1,0 +1,23 @@
+
+
+.espaçamento-nav{
+    margin-left: 8px;
+}
+
+.marca{
+    display: flex;
+    font-size: 400%; 
+    align-items: center;
+    height: 100%;
+}
+
+body{
+    background-color: #6B8D8D;
+}
+
+@media screen and (max-width:992px){
+
+    .espaçamento-nav{
+        margin-left: 0;
+    }
+}
