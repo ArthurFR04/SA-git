@@ -1,5 +1,3 @@
-
-
 body {
     margin: 0;
     background-image: url(../img/paisagem.jpg);
@@ -9,8 +7,8 @@ body {
 }
 
 .icone-home {
-    height: 70px; 
-    width: 70px;
+    height: 60px; 
+    width: 60px;
     margin-top: 1%;
     margin-left: 1%;
 }
@@ -19,7 +17,7 @@ body {
     display: block;
     justify-content: center;
     width: 30vw;
-    height: 35vw;
+    height: 100%;
     margin: auto;
     margin-top: 3%;
     background: #166E6F;
@@ -43,7 +41,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15%;
+    height: 20%;
     background: rgba(24, 52, 66, 0.29);
     border-radius: 0px 0px 30px 30px;
 }
@@ -55,7 +53,7 @@ body {
     height: 100%;
     font-style: normal;
     font-weight: normal;
-    font-size: 9vh;
+    font-size: 7vh;
     /* identical to box height */
     color: #FFFFFF;
 }
@@ -100,8 +98,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 27%;
-    padding-top: 30px;
+    height: 7%;
+    padding-top: 10px;
 }
 
 .container-mid a {
@@ -119,11 +117,9 @@ body {
     padding-left: 5px;
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:1440px) {
     .container {
-        width: 85%;
-        height: 80vh;
-        margin-top: 50%;
+        height: 100%;
         margin-bottom: 5%;
     }
     .container-top {
@@ -138,17 +134,105 @@ body {
     .container-bottom button {
         font-size: 3vh;
     }
+    .container-mid a{
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .container-bottom button{
+        margin: 10px;
+    }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (width:1024px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 56%;
+        margin-bottom: 7%;
+    }
+    .container-top {
+        height: 15%;
+    }
+    .container-top p {
+        font-size: 7vh;
+    }
+    .container-mid .nomelink {
+        padding-top: 150px;
+    }
+    .container-mid .nomelink a {
+        font-size: 38px;
+    }
+    .container-mid input {
+        height: 5vh;
+        border-radius: 20px;
+    }
+    .container-mid label {
+        padding-top: 30px;
+        font-size: 34px;
+    }
+    .container-mid ::placeholder {
+        font-size: 30px;
+    }
+    .container-bottom {
+        height: 15%;
+    }
+    .container-bottom button {
+        width: 25vh;
+        border-radius: 18px;
+        font-size: 3vh;
+    }
+}
+
+@media screen and (width:768px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 55%;
+        margin-bottom: 7%;
+    }
+    .container-top {
+        height: 15%;
+    }
+    .container-bottom {
+        height: 15%;
+    }
+    .container-bottom button {
+        width: 25vh;
+        border-radius: 18px;
+    }
+    .container-mid input {
+        height: 5vh;
+        border-radius: 20px;
+    }
+    .container-mid ::placeholder {
+        font-size: 25px;
+    }
+    .container-mid label {
+        font-size: 3vh;
+    }
+    .container-mid .nomelink {
+        padding-top: 120px;
+    }
+}
+
+@media screen and (max-width:540px) {
     .container {
         width: 85%;
         height: 65vh;
-        margin-top: 50%;
+        margin-top: 51%;
         margin-bottom: 5%;
     }
     .container-top {
         height: 10vh;
+    }
+    .container-mid label {
+        font-size: 16px;
+    }
+    .container-mid .nomelink a {
+        font-size: 18px;
+    }
+    .container-mid .nomelink {
+        padding-top: 60px;
     }
     .container-mid input {
         height: 4vh;
@@ -156,113 +240,124 @@ body {
     .container-bottom {
         height: 15%;
     }
-}
-
-@media screen and (max-width:400px) {
-    .container-mid label {
-        font-size: 2vh;
-    }
-    .container-mid .nomeinput {
-        padding-top: 4px;
-    }
-    .container-mid .nomelink {
-        padding-top: 40px;
-    }
-    .container-mid .nomelink a {
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width:376px) {
-    .container-mid label {
-        font-size: 2vh;
-    }
-    .container-mid .nomeinput {
-        padding-top: 10px;
-    }
-    .container-mid .nomelink {
-        padding-top: 80px;
-    }
-    .container-mid .nomelink a {
-        font-size: 20px;
-    }
     .container-bottom button {
-        font-size: 2,5vh;
+        font-size: 18px;
     }
 }
 
-@media screen and (max-width:322px) {
+@media screen and (max-width:414px) {
+    .container-top p {
+        font-size: 6vh;
+    }
     .container-mid label {
-        font-size: 2vh;
-    }
-    .container-mid .nomeinput {
-        padding-top: 4px;
-    }
-    .container-mid .nomelink {
-        padding-top: 40px;
-    }
-    .container-mid .nomelink a {
         font-size: 16px;
     }
-}
-
-@media screen and (width:1024px) {
-    .container-bottom {
-        height: 15%;
-    }
-    .container-top {
-        height: 15%;
+    .container-mid .nomeinput {
+        padding-top: 25px;
     }
     .container-mid .nomelink {
-        padding-top: 100px;
+        padding-top: 70px;
+    }
+    .container-mid .nomelink a {
+        font-size: 18px;
     }
     .container-bottom button {
-        width: 25vh;
-        border-radius: 18px;
+        font-size: 18px;
     }
-    .container-mid input {
-        height: 5vh;
-        border-radius: 20px;
+    .container-mid ::placeholder {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:411px) {
+    .container-top p {
+        font-size: 6vh;
+    }
+    .container-mid label {
+        font-size: 16px;
+    }
+    .container-mid .nomeinput {
+        padding-top: 25px;
+    }
+    .container-mid .nomelink {
+        padding-top: 60px;
+    }
+    .container-mid .nomelink a {
+        font-size: 18px;
+    }
+    .container-bottom button {
+        font-size: 18px;
+    }
+    .container-mid ::placeholder {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:375px) {
+    .container-top p {
+        font-size: 6vh;
+    }
+    .container-mid ::placeholder {
+        font-size: 15px;
+    }
+    .container-mid label {
+        font-size: 16px;
+    }
+    .container-mid .nomeinput {
+        padding-top: 25px;
+    }
+    .container-mid .nomelink a {
+        font-size: 18px;
+    }
+    .container-bottom button {
+        width: 160px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    .container-mid label {
+        font-size: 2vh;
+    }
+    .container-mid .nomeinput {
+        padding-top: 16px;
+    }
+    .container-mid .nomelink {
+        padding-top: 40px;
+    }
+    .container-mid .nomelink a {
+        font-size: 14px;
+    }
+    .container-bottom button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .container {
+        margin-top: 53%;
+        margin-bottom: 7%;
+    }
+    .container-mid ::placeholder {
+        font-size: 12px;
     }
     .container-mid label {
         font-size: 2vh;
     }
-    .navbar {
-        height: 8vh;
-    }
-}
-
-@media screen and (width:768px) {
-    .container-top {
-        height: 15%;
-    }
-    .container-bottom {
-        height: 15%;
-    }
-    .container-bottom button {
-        width: 25vh;
-        border-radius: 18px;
-    }
-    .container-mid input {
-        height: 5vh;
-        border-radius: 20px;
-    }
-    .container-mid label {
-        font-size: 2vh;
+    .container-mid .nomeinput {
+        padding-top: 16px;
     }
     .container-mid .nomelink {
-        padding-top: 80px;
+        padding-top: 60px;
+    }
+    .container-mid .nomelink a {
+        font-size: 14px;
+    }
+    .container-bottom button {
+        font-size: 14px;
     }
 }
 
 .bg-dark {
     background-color: #183442!important;
-}
-
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-
-.navbar-light .navbar-brand {
-    color: white;
 }
