@@ -21,6 +21,7 @@ h1{
     color: #E2781C;
     margin: 0;
     font-size: 100px;
+    text-shadow: 6px 1px #444;
 }
 button{
 border-radius:20px;
