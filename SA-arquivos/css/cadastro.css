@@ -147,7 +147,6 @@ body {
 @media screen and (max-width:1024px) {
     .container {
         width: 85%;
-        height: 80vh;
         margin-top: 50%;
         margin-bottom: 5%;
     }
@@ -175,12 +174,90 @@ body {
     .container-top {
         height: 10vh;
     }
+    .container-top p {
+        font-size: 10vw;
+    }
     .container-mid input {
         height: 4vh;
     }
     .container-bottom {
         height: 13%;
     }
+}
+@media screen and (max-width:326px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 10vw;
+    }
+    .container-mid input {
+        height: 4vh;
+        
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    .container-mid a{
+        font-size: 7vw;
+    }
+    
+}
+@media screen and (max-width:240px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 10vw;
+    }
+    .container-mid input {
+        height: 4vh;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    .container-bottom button{
+        font-size: 10vw;
+        display: flex;
+        width: 90%;
+    }
+}
+@media screen and (max-width:185px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 10vw;
+    }
+    .container-mid input {
+        height: 4vh;
+        
+    }
+    .container-mid label{
+        font-size: 8vw;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    
 }
 
 @media screen and (width:1024px) {
