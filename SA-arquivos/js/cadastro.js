@@ -4,7 +4,7 @@
 cadastros = []
 
 function cadastrar() {
-    
+    let vapo = 3
     let nomeC = document.getElementById('inpNomeC').value   // atribui o valor dos inputs à variáveis          // Editável
     let emailC = document.getElementById('inpEmailC').value // atribui o valor dos inputs à variáveis          // Editável
     let senhaC = document.getElementById('inpSenhaC').value // atribui o valor dos inputs à variáveis          // Editável
