@@ -19,13 +19,14 @@ body {
     display: block;
     justify-content: center;
     width: 30vw;
-    height: 45vw;
+    height: 40vw;
     margin: auto;
     margin-top: 3%;
     background: #166E6F;
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .container-top {
@@ -37,6 +38,7 @@ body {
 
 .container-mid {
     height: 75%;
+    
 }
 
 .container-bottom {
@@ -76,6 +78,7 @@ body {
 .container-mid .nomeinput {
     display: flex;
     flex-direction: column;
+    height: 25%;
 }
 
 .container-mid input {
@@ -89,6 +92,9 @@ body {
     border: 0;
     
 }
+.container-mid form{
+    height: 80%;
+   }
 
 .container-mid label {
     margin-left: 5%;
@@ -100,7 +106,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 27%;
+    height: 20%;
 }
 
 .container-mid a {
@@ -108,6 +114,21 @@ body {
     color: white;
     font-size: 3vh;
     cursor: pointer;
+}
+.container-mid li{
+    
+        margin-left:5%;
+        border: 0;
+        padding: 0;
+        
+        text-decoration: none;
+        list-style-type: none;
+        color: red;
+        font-size: 12px;
+        font-family: arial;
+        font-weight: bold;
+    
+    
 }
 ::placeholder{
     opacity: 0.5;
@@ -184,6 +205,9 @@ body {
     .container-bottom {
         height: 13%;
     }
+    .container-mid li{
+        font-size: 10px;
+    }
 }
 @media screen and (max-width:360px) {
     .container {
@@ -233,6 +257,9 @@ body {
         font-size: 10vw;
         display: flex;
         width: 90%;
+    }
+    .container-mid li{
+        font-size: 5vw;
     }
 }
 @media screen and (max-width:185px) {
@@ -286,6 +313,9 @@ body {
     .container{
         margin-top: 45%;
     }
+    .container-mid li{
+        font-size: 20px;
+    }
 }
 
 @media screen and (width:768px) {
@@ -310,17 +340,8 @@ body {
     .container{
         margin-top: 45%;
     }
+    .container-mid li{
+        font-size: 14px;
+    }
 }
 
-li{
-    margin-left: 30px;
-    border: 0;
-    padding: 0;
-    
-    text-decoration: none;
-    list-style-type: none;
-    color: red;
-    font-size: 12px;
-    font-family: arial;
-    font-weight: bold;
-}

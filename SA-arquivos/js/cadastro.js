@@ -17,7 +17,8 @@ function cadastrar() {
     let form = document.querySelector('.validator');
     let inputs = form.querySelectorAll('input')
     let li = document.querySelectorAll('li');
-
+    
+    let send = true;
     clear();
     for (let i = 0; i < inputs.length; i++) {
         let input = inputs[i];
@@ -28,10 +29,14 @@ function cadastrar() {
             input.style.border = 'solid 2px'
             input.style.borderColor = 'red'
             li[i].innerHTML = 'Preencha todos os campos!'
-
-
+            
+            send = false;
         }
-
+       
+        
+    }
+    if(send !== true){
+        return false
     }
     function clear() {
         for (let i = 0; i < inputs.length; i++) {
@@ -42,26 +47,7 @@ function cadastrar() {
 
         }
     }
-    
 
-
-    // if(nomeC == ''|| emailC == '' || senhaC == '' || senha2C == '' ){
-    //     if(nomeC == '' || nomeC == null){
-    //         nomeC = document.getElementById('inpNomeC').style.border = 'solid 2px'
-    //         inputs[0].style.borderColor = 'red'
-    //         textErro1.innerHTML = 'Este campo deve ser preenchido!'
-    //     }
-    //     if(emailC == '' || emailC == null){
-    //         emailC = document.getElementById('inpEmailC').style.border = 'solid 2px'
-    //         emailC = document.getElementById('inpEmailC').style.borderColor = 'red'
-    //         textErro2.innerHTML = 'Este campo deve ser preenchido!'
-    //     }
-
-
-    //     return false
-
-
-    // }
 
 
 
