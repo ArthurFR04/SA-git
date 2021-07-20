@@ -1,0 +1,33 @@
+/* configuração das navbars */
+
+.marca{
+    display: flex;
+    font-size: 65px; 
+    align-items: center;
+    height: 110px;
+}
+
+.navbar{
+    height: 40px;
+    z-index: 2;
+}
+
+.espaçamento-nav{
+    margin-left: 8px;
+}
+
+.navnavpapi{
+    position: sticky;
+    top: 0;
+}
+
+@media screen and (max-width:992px){
+
+    .espaçamento-nav{
+        margin-left: 0;
+    }
+
+    .navbar{
+        height: 100%;
+    }
+}
