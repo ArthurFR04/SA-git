@@ -16,12 +16,24 @@ body {
  align-items: center;
  flex-direction: column;
 }
+.containerLanding{
+justify-content: center;
+position: absolute;
+width: 95%;
+height: 527px;
+left: 29px;
+top: 95%;
+margin-top: 15%;
+
+background: #183442;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
 h1{
-    color: #E2781C;
+    color: #166e6f;
     margin: 0;
     font-size: 100px;
-    text-shadow: 6px 1px #444;
+    text-shadow: 6px 1px#132839	;
 }
 button{
 border-radius:20px;
@@ -43,6 +55,10 @@ color: #132839;
    }
    button{
        margin-top: 10px;
+   }
+   .containerLanding{
+    top: 40%;
+    margin-top: 0;
    }
 }
 @media screen and (max-width:600px) {
