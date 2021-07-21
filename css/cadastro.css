@@ -78,7 +78,7 @@ body {
 .container-mid .nomeinput {
     display: flex;
     flex-direction: column;
-    height: 90px;
+    height: 100px;
 }
 
 .container-mid input {
@@ -93,7 +93,7 @@ body {
     
 }
 .container-mid form{
-    height: 80%;
+    height: 75%;
    }
 
 .container-mid label {
@@ -106,7 +106,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 20%;
+    height: 25%;
 }
 
 .container-mid a {
