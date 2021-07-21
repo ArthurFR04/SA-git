@@ -5,7 +5,8 @@ body{
     background-color: #6B8D8D;
 }
 
-
-
+.carousel-inner{
+    height: 73.5vh;
+}
 
 
