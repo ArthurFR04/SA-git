@@ -33,6 +33,13 @@ function cadastrar() {
             send = false;
         }
 
+        if(inputs[2].value !== inputs[3].value){
+            inputs[3].style.border = 'solid 2px'
+            inputs[3].style.borderColor = 'red'
+            li[3].innerHTML = 'As senhas devem ser iguais!'
+
+            send = false;
+        }
 
     }
     let cadastros2 = JSON.parse(localStorage.getItem('Pessoas'))
@@ -78,7 +85,7 @@ function cadastrar() {
         for (let i = 0; i < inputs.length; i++) {
             inputs[i].style = '';
             li[i].innerHTML = '';
-
+            
 
 
         }
@@ -141,7 +148,5 @@ function cadastrar() {
             }
         }
     }
-    else {
-        alert('As senhas devem ser iguais   (mudar texto depois)')
-    }
+    
 }
