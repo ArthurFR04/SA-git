@@ -1,11 +1,16 @@
-
-
 body {
     margin: 0;
     background-image: url(../img/paisagem.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     background-color: #132839;
+}
+
+.icone-home {
+    height: 70px;
+    width: 70px;
+    margin-top: 1%;
+    margin-left: 1%;
 }
 
 .container {
@@ -19,6 +24,7 @@ body {
     box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
     border-radius: 30px;
     padding: 0;
+    margin-bottom: 20px;
 }
 
 .container-top {
@@ -69,6 +75,7 @@ body {
 .container-mid .nomeinput {
     display: flex;
     flex-direction: column;
+    height: 25%;
 }
 
 .container-mid input {
@@ -82,6 +89,10 @@ body {
     border: 0;
 }
 
+.container-mid form {
+    height: 45vh;
+}
+
 .container-mid label {
     margin-left: 5%;
     color: white;
@@ -92,7 +103,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 27%;
+    height: 25%;
 }
 
 .container-mid a {
@@ -101,19 +112,39 @@ body {
     font-size: 3vh;
     cursor: pointer;
 }
-::placeholder{
+
+.container-mid li {
+    margin-left: 5%;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.container-mid p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+::placeholder {
     opacity: 0.5;
     font-family: arial;
     font-style: italic;
     font-size: 16px;
     padding-left: 5px;
-    
 }
+
 @media screen and (max-width:1800px) {
     .container {
-        
         height: 100%;
-        
         margin-bottom: 5%;
     }
     .container-top {
@@ -128,11 +159,11 @@ body {
     .container-bottom button {
         font-size: 3vh;
     }
-    .container-mid a{
+    .container-mid a {
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    .container-bottom button{
+    .container-bottom button {
         margin: 10px;
     }
 }
@@ -176,8 +207,21 @@ body {
     .container-bottom {
         height: 13%;
     }
+    .container-mid li {
+        font-size: 10px;
+    }
+    .container-mid a {
+        padding-top: 50px;
+        padding-bottom: 0;
+    }
+    .container-mid p {
+        font-size: 4vw;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
 }
-@media screen and (max-width:326px) {
+
+@media screen and (max-width:360px) {
     .container {
         width: 85%;
         height: 80vh;
@@ -192,16 +236,15 @@ body {
     }
     .container-mid input {
         height: 4vh;
-        
     }
     .container-bottom {
         height: 13%;
     }
-    .container-mid a{
+    .container-mid a {
         font-size: 7vw;
     }
-    
 }
+
 @media screen and (max-width:240px) {
     .container {
         width: 85%;
@@ -221,12 +264,16 @@ body {
     .container-bottom {
         height: 13%;
     }
-    .container-bottom button{
+    .container-bottom button {
         font-size: 10vw;
         display: flex;
         width: 90%;
     }
+    .container-mid li {
+        font-size: 5vw;
+    }
 }
+
 @media screen and (max-width:185px) {
     .container {
         width: 85%;
@@ -242,15 +289,13 @@ body {
     }
     .container-mid input {
         height: 4vh;
-        
     }
-    .container-mid label{
+    .container-mid label {
         font-size: 8vw;
     }
     .container-bottom {
         height: 13%;
     }
-    
 }
 
 @media screen and (width:1024px) {
@@ -268,15 +313,23 @@ body {
     .navbar {
         height: 8vh;
     }
-    ::placeholder{
+    ::placeholder {
         font-size: 3vh;
     }
-    .icone-home{
+    .icone-home {
         width: 150px;
         height: 150px;
     }
-    .container{
+    .container {
         margin-top: 45%;
+    }
+    .container-mid li {
+        font-size: 20px;
+    }
+    .container-mid p {
+        font-size: 30px;
+        margin-top: 35px;
+        margin-bottom: 35px;
     }
 }
 
@@ -292,26 +345,28 @@ body {
     .container-mid label {
         font-size: 2vh;
     }
-    ::placeholder{
+    ::placeholder {
         font-size: 3vh;
     }
-    .icone-home{
+    .icone-home {
         width: 100px;
         height: 100px;
     }
-    .container{
+    .container {
         margin-top: 45%;
+    }
+    .container-mid li {
+        font-size: 14px;
+    }
+    .container-mid p {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 }
 
-.bg-dark {
-    background-color: #183442!important;
-}
-
-.navbar-expand-lg .navbar-collapse {
-    justify-content: flex-end;
-}
-
-.navbar-light .navbar-brand {
-    color: white;
+@media screen and (width:540px) {
+    .container-mid p {
+        font-size: 3vw;
+    }
 }
