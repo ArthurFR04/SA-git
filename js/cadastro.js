@@ -94,12 +94,12 @@ function cadastrar() {
 
         }
     }
-    function redirecinandoPage() {
+    function redirecionandoPage() {
         window.location.href = "tela_login.html"      //FUNÇÃO REDIRECIONAR PÁGINA
     }
     function cadastroEfetuado() {
 
-        p[1].innerHTML = `Cadastro efetuado!<br> Você será redirecionado para a página de login`         //FUNÇÃO CADASTRO EFETUADO
+        p[1].innerHTML = `Cadastro efetuado!<br>Redirecionado...`         //FUNÇÃO CADASTRO EFETUADO
         a[1].innerHTML = '';
 
     }
@@ -130,7 +130,7 @@ function cadastrar() {
             document.getElementById('inpSenha2C').value = ''                                               // Editável
 
             // Editável
-            setInterval(redirecinandoPage, 3500)                                              //redireciona a página
+             setInterval(redirecionandoPage, 3500)                                            //redireciona a página
         }
 
         else if (localStorage.getItem('Pessoas') != null) {
@@ -148,7 +148,7 @@ function cadastrar() {
             document.getElementById('inpSenhaC').value = ''                                                // Editável
             document.getElementById('inpSenha2C').value = ''                                               // Editável
 
-            setInterval(redirecinandoPage, 3500)         //redireciona a página                                          
+            setInterval(redirecionandoPage, 3500)         //redireciona a página                                          
             return false;
 
         }
