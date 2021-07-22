@@ -14,10 +14,13 @@ function cadastrar() {
     let senhaC = document.getElementById('inpSenhaC').value // atribui o valor dos inputs à variáveis          // Editável
     let senha2C = document.getElementById('inpSenha2C').value // atribui o valor dos inputs à variáveis          // Editável
 
-    let form = document.querySelector('.validator');
-    let inputs = form.querySelectorAll('input')
-    let li = document.querySelectorAll('li');
+    let form = document.querySelector('.validator');//seleciona a tag form
+    let inputs = form.querySelectorAll('input')//seleciona todos os inputs do form
+    let li = document.querySelectorAll('li');// seleciona todas as tags li
+    let p = document.querySelectorAll('p');//seleciona todas as tags p
+    let a = document.querySelectorAll('a');//seleciona todas as tags a
 
+    //VALIDAÇOES DOS ERROS
     let send = true;
     clear();
     for (let i = 0; i < inputs.length; i++) {
@@ -33,7 +36,7 @@ function cadastrar() {
             send = false;
         }
 
-        if(inputs[2].value !== inputs[3].value){
+        if (inputs[2].value !== inputs[3].value) {
             inputs[3].style.border = 'solid 2px'
             inputs[3].style.borderColor = 'red'
             li[3].innerHTML = 'As senhas devem ser iguais!'
@@ -81,14 +84,24 @@ function cadastrar() {
     if (send !== true) {
         return false
     }
+    //FUNCÕES
     function clear() {
-        for (let i = 0; i < inputs.length; i++) {
+        for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR INPUTS
             inputs[i].style = '';
             li[i].innerHTML = '';
-            
+
 
 
         }
+    }
+    function redirecinandoPage() {
+        window.location.href = "tela_login.html"      //FUNÇÃO REDIRECIONAR PÁGINA
+    }
+    function cadastroEfetuado() {
+
+        p[1].innerHTML = `Cadastro efetuado!<br> Você será redirecionado para a página de login`         //FUNÇÃO CADASTRO EFETUADO
+        a[1].innerHTML = '';
+
     }
 
 
@@ -96,7 +109,7 @@ function cadastrar() {
 
     if (senhaC === senha2C) {
 
-        let confirmacao = ''                      //usei para verificar o array, o for percorre e muda o valor se for true
+        //usei para verificar o array, o for percorre e muda o valor se for true
 
         nomeDoObj = {                                             // cria um ojeto
             apelido: nomeC,                                                                                   // Editável
@@ -109,44 +122,36 @@ function cadastrar() {
             cadastros.push(nomeDoObj)
             localStorage.setItem('Pessoas', JSON.stringify(cadastros)); // O JSON.parse transforma a string em JSON novamente, o inverso do JSON.strigify
 
-            alert('Cadastro efetuado. \n\nVocê será redirecionado para a página de login.')
+            cadastroEfetuado()
 
             document.getElementById('inpNomeC').value = ''                                                 // Editável
             document.getElementById('inpEmailC').value = ''                                                // Editável
             document.getElementById('inpSenhaC').value = ''                                                // Editável
             document.getElementById('inpSenha2C').value = ''                                               // Editável
 
-            window.location.href = "tela_login.html"                                                         // Editável
+            // Editável
+            setInterval(redirecinandoPage, 3500)                                              //redireciona a página
         }
 
-        else if (localStorage.getItem('Pessoas') != null ) {
-
-            let cadastros2 = JSON.parse(localStorage.getItem('Pessoas'))
+        else if (localStorage.getItem('Pessoas') != null) {
 
 
+            console.log('deu diferente');
 
-            if (confirmacao === 'cancelar') {
+            cadastros2.push(nomeDoObj)
+            localStorage.setItem('Pessoas', JSON.stringify(cadastros2))
 
-                return false;
-            }
+            cadastroEfetuado()
 
-            else {
-                console.log('deu diferente');
+            document.getElementById('inpNomeC').value = ''                                                 // Editável
+            document.getElementById('inpEmailC').value = ''                                                // Editável
+            document.getElementById('inpSenhaC').value = ''                                                // Editável
+            document.getElementById('inpSenha2C').value = ''                                               // Editável
 
-                cadastros2.push(nomeDoObj)
-                localStorage.setItem('Pessoas', JSON.stringify(cadastros2))
+            setInterval(redirecinandoPage, 3500)         //redireciona a página                                          
+            return false;
 
-                alert('Cadastro efetuado. \n\nVocê será redirecionado para a página de login.')
-
-                document.getElementById('inpNomeC').value = ''                                                 // Editável
-                document.getElementById('inpEmailC').value = ''                                                // Editável
-                document.getElementById('inpSenhaC').value = ''                                                // Editável
-                document.getElementById('inpSenha2C').value = ''                                               // Editável
-
-                window.location.href = "tela_login.html"                                                         // Editável
-                return false;
-            }
         }
     }
-    
+
 }
