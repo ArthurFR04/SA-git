@@ -43,7 +43,8 @@ console.log(j);
             document.getElementById('inpNomeL').value = ''                                                 // Editável
             document.getElementById('inpSenhaL').value = ''                                                // Editável
 
-            window.location.href="../html/home_logado.html"                                                    // Editável
+            entrar_login()
+            window.location.href="../html/home_logado.html"                                                 // Editável
         }
         else {
             alert('Seu login está incorreto, por favor tente novamente.')
