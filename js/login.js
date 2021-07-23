@@ -44,7 +44,7 @@ console.log(j);
             document.getElementById('inpSenhaL').value = ''                                                // Editável
 
             entrar_login()
-            window.location.href="../html/home_logado.html"                                                 // Editável
+            window.location.href="../html/index.html"                                                 // Editável
         }
         else {
             alert('Seu login está incorreto, por favor tente novamente.')
