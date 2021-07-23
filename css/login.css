@@ -1,10 +1,4 @@
-body {
-    margin: 0;
-    background-image: url(../img/paisagem.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #132839;
-}
+
 
 .container {
     display: block;

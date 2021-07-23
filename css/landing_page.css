@@ -1,14 +1,5 @@
 
 
-body {
-    margin: 0;
-    background-image: url(../img/paisagem.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-color: #132839;
-    
-}
-
 .container{
  width: 100%;
  height: 100vh;
@@ -17,6 +8,7 @@ body {
  align-items: center;
  flex-direction: column;
 }
+
 .containerLanding{
 justify-content: center;
 position: relative;
