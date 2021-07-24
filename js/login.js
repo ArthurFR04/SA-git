@@ -38,7 +38,7 @@ function logar() {
             document.getElementById('inpSenhaL').value = ''                                               // Editável
 
             dados = {
-                status: 1,    //uso 
+                status: 1,    //uso pra definir se o login foi ou não efetuado 1(sim)  0(não)
                 id: login,    //pega o apelido do localstorage para ser usado lá no index
             }
             localStorage.setItem('Login', JSON.stringify(dados));
