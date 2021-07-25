@@ -13,13 +13,13 @@ function cadastrar() {
     let send = true;
 
     clear();
-    
+
     for (let i = 0; i < inputs.length; i++) {
         let input = inputs[i];
 
         if (input.value == '') {
             input.style.border = 'red solid 2px'
-         
+
             li[i].innerHTML = 'Preencha todos os campos!'
 
             send = false;
@@ -38,31 +38,30 @@ function cadastrar() {
     console.log(cadastros2);
 
     if (cadastros2 !== null) {
-        for (let i = 0; i<cadastros2.length; i++) {
+        for (let i = 0; i < cadastros2.length; i++) {
 
             if (cadastros2[i].apelido == inputs[0].value) {                                                   // Editável
 
-                inputs[0].style.border = 'red solid 2px'
-        
-                if (nomeC == '') {
-                    li[0].innerHTML = 'Preencha todos os campos!'
-                } else {
-                    li[0].innerHTML = 'Esse usuário ja foi cadastrado!'
-                }
 
+
+
+
+                li[0].innerHTML = 'Esse usuário ja foi cadastrado!'
+
+                inputs[0].style.border = 'red solid 2px'
                 send = false;
             }
 
             if (cadastros2[i].email == inputs[1].value) {                                                     // Editável
 
+
+
+
+
+
+                li[1].innerHTML = 'Esse e-mail ja foi cadastrado!'
+
                 inputs[1].style.border = 'red solid 2px'
-
-                if (emailC == '') {
-                    li[1].innerHTML = 'Preencha todos os campos!'
-                } else {
-                    li[1].innerHTML = 'Esse usuário ja foi cadastrado!'
-                }
-
                 send = false;
             }
         }
@@ -98,16 +97,16 @@ function cadastrar() {
     cadastros = []
 
     nomeDoObj = {                                             // cria um ojeto
-        apelido:inputs[0].value,                                                                              // Editável
-        email:inputs[1].value,                                                                                // Editável
-        senha:inputs[3].value,                                                                                // Editável
+        apelido: inputs[0].value,                                                                              // Editável
+        email: inputs[1].value,                                                                                // Editável
+        senha: inputs[3].value,                                                                                // Editável
     }
-    
+
     if (cadastros2 === null) {  // Adicionando um array com um objeto no localstorage
 
         cadastros.push(nomeDoObj)
         localStorage.setItem('Pessoas', JSON.stringify(cadastros)); // O JSON.parse transforma a string em JSON novamente, o inverso do JSON.strigify
-            
+
         cadastroEfetuado()
         clear()
     }
@@ -120,7 +119,7 @@ function cadastrar() {
         cadastroEfetuado()
         clear()
     }
-    
+
 }
 
 

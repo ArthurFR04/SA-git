@@ -3,39 +3,123 @@
 
 function logar() {
 
-    let nomeL = document.getElementById('inpNomeL').value   // atribui o valor dos inputs à variáveis          // Editável
-    let senhaL = document.getElementById('inpSenhaL').value // atribui o valor dos inputs à variáveis          // Editável
-
-    let cadastradas = JSON.parse(localStorage.getItem('Pessoas'))   //pega o array do localstorage
+    let inputs = document.querySelectorAll('input')
+    let li = document.querySelectorAll('li')
+    let send = true;
+    let p = document.querySelectorAll('p')
+    let a = document.querySelectorAll('a')
+    let cadastradas = JSON.parse(localStorage.getItem('Pessoas'))         //pega o array do localstorage
 
     if (cadastradas != null) {
+        clear()
+
+        for (let i = 0; i < inputs.length; i++) {
+            if (inputs[i].value == '') {
+                inputs[i].style.border = 'red solid 2px';
+                li[i].innerHTML = 'Preencha todos os campos!'
+
+                send = false;
+            }
+        }
+
+
+        for (let i = 0; i < cadastradas.length; i++) {
+            if (cadastradas[i].apelido == inputs[0].value || cadastradas[i].apelido !== inputs[0].value) {
+                send = true;
+
+            }
+            if (send !== true) {
+
+                send = false;
+            }
+
+
+
+            if (cadastradas[i].apelido == inputs[0].value || cadastradas[i].email == inputs[0].value) {
+                if (cadastradas[i].senha !== inputs[1].value) {
+
+                    if (inputs[1].value == '') {
+                        inputs[1].style.border = 'red solid 2px';
+                        li[1].innerHTML = 'Preencha todos os campos!'
+                        send = false;
+
+                    } else {
+                        inputs[1].style.border = 'red solid 2px';
+                        li[1].innerHTML = 'Senha incorreta!'
+                        send = false;
+                    }
+
+                }
+
+            }
+        }
+        if (send !== true) {
+            return false
+        }
+    }
+    //FUNÇOES
+    function clear() {
+        for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS ERROS DOS INPUTS
+            inputs[i].style = '';
+            li[i].innerHTML = '';
+        }
+    }
+
+    function redirecionarPage() {
+        window.location.href = "index.html"      //FUNÇÃO REDIRECIONAR PÁGINA
+    }
+
+    function loginEfetuado() {
+
+        setInterval(redirecionarPage, 3500)
+        p[1].innerHTML = `Login efetuado!<br>Redirecionado...`         //FUNÇÃO CADASTRO EFETUADO
+        a[1].innerHTML = '';
+
+        for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS VALORES DOS INPUTS
+            inputs[i].value = '';
+        }
+    }
+    //LOGIN
+
+    if (cadastradas != null) {
+
+
+
         let confirmacao = ''   //usei para verificar o array, o for percorre e muda o valor se for true
         let login = ''   //é usado lá embaixo (para o objeto "dados")
         let j = 'incorreto'
 
-        for(let i=0; i<cadastradas.length; i++) {
-            if (cadastradas[i].apelido == nomeL || cadastradas[i].email == nomeL) {                       // Editável
-                
+
+        for (let i = 0; i < cadastradas.length; i++) {
+            if (cadastradas[i].apelido == inputs[0].value || cadastradas[i].email == inputs[0].value) {                       // Editável
+
                 login = cadastradas[i].apelido
                 j = i  //quando o if encontra a posição do nome no array ele atribui esse valor ao J que é usado pelo if da senha também
             }
         }
 
         if (j === 'incorreto') {
-            alert('O seu nome ou email, está incorreto.')
+            if (inputs[0].value == '') {
+                inputs[0].style.border = 'red solid 2px';
+                li[0].innerHTML = 'Preencha todos os campos!'
+            } else {
+                inputs[0].style.border = 'red solid 2px';
+                li[0].innerHTML = 'O seu usuário ou email, está incorreto.'
+            }
+
+
             return false
         }
 
-        else if (cadastradas[j].senha == senhaL) {                       // Editável
+        if (cadastradas[j].senha == inputs[1].value) {                       // Editável
             confirmacao = true
         }
-        
+
 
         if (confirmacao == true) {
-            alert('Login efetuado com sucesso.')
 
-            document.getElementById('inpNomeL').value = ''                                                // Editável
-            document.getElementById('inpSenhaL').value = ''                                               // Editável
+
+
 
             dados = {
                 status: 1,    //uso pra definir se o login foi ou não efetuado 1(sim)  0(não)
@@ -44,14 +128,11 @@ function logar() {
             localStorage.setItem('Login', JSON.stringify(dados));
 
 
-            window.location.href="index.html"                                                 // Editável
+            loginEfetuado()                                            // Editável
         }
-        else {
-            alert('Seu login está incorreto, por favor tente novamente.')
-            return false;
-        }
+
     }
-    
+
 
     else if (cadastradas === null) {             // caso não haja nada no localstorage
         alert('Por favor efetua um cadastro, não foi possivel identificar nenhuma pessoa cadastrada em nosso site.')
