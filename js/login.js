@@ -24,15 +24,6 @@ function logar() {
 
 
         for (let i = 0; i < cadastradas.length; i++) {
-            if (cadastradas[i].apelido == inputs[0].value || cadastradas[i].apelido !== inputs[0].value) {
-                send = true;
-
-            }
-            if (send !== true) {
-
-                send = false;
-            }
-
 
 
             if (cadastradas[i].apelido == inputs[0].value || cadastradas[i].email == inputs[0].value) {
