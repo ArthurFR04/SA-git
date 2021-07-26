@@ -6,13 +6,17 @@ let dados = JSON.parse(localStorage.getItem('Login'));
 //quando o usuário desejar fazer logout essa função será acionada
 
 function sair_login() { 
+    let sureOut = confirm('tem certeza ?') // essa variável muda conforme a vontade do usuário (true ou false)   //edit
 
-    remLogin = {            //remLogin = remover login
-        status: 0,    //uso pra definir se o login foi ou não efetuado 1(sim)  0(não)
-        id: '',       //nome nulo, só receberá o nome do usuário após o login
+    if (sureOut == true) {
+   
+        remLogin = {            //remLogin = remover login
+            status: 0,    //uso pra definir se o login foi ou não efetuado 1(sim)  0(não)
+            id: '',       //nome nulo, só receberá o nome do usuário após o login
+        }
+        localStorage.setItem('Login', JSON.stringify(remLogin));
+        window.location.reload()
     }
-    localStorage.setItem('Login', JSON.stringify(remLogin));
-    window.location.reload()
 }
 
 
@@ -34,13 +38,13 @@ function verificar_login_index() {
     
         document.getElementById('div_login').innerHTML=`
 
-            <div class="navbar-brand dropdown">
-                <a class="navbar-brand dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <div class="btn-group">
+                <button type="button" class="btn-log btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     ${id}
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
                     <li><a class="dropdown-item" href="#">Editar perfil</a></li>
-                        <hr>
+                    <li> <hr> </li>
                     <li><a class="dropdown-item" href="javascript:sair_login();">Sair</a></li>
                 </ul>
             </div>
@@ -59,5 +63,23 @@ function verificar_login_carrinho() {
         alert(`Para acessar o carrinho você deve primeiro efetuar o login em sua conta. \n\nVocê será redirecionado para a página de login. `)
 
         window.location.href="tela_login.html"
+    }
+
+    else {     // se o login for efetuado aparecerá o nome do usuário como um dropdown, com funcionalidades sobre o perfil
+        let id = dados.id
+    
+        document.getElementById('div_login').innerHTML=`
+
+            <div class="btn-group">
+                <button type="button" class="btn-log btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    ${id}
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Editar perfil</a></li>
+                    <li> <hr> </li>
+                    <li><a class="dropdown-item" href="javascript:sair_login();">Sair</a></li>
+                </ul>
+            </div>
+        `
     }
 }

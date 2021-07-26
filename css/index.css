@@ -3,16 +3,6 @@ body{
     background-color: #6B8D8D;
 }
 
-/* configuração do meu dropdown meio doido que não fica sempre ali, ele só serve quando o usuario se loga */
-/* ul.dropdown-menu {
-    margin-right: 50px;
-    background-color: aquamarine;
-} */
-/* .dropdown-menu.show{
-    margin-right: 500px;
-    z-index: 5;
-} */
-
 .carousel-inner{
     height: 73.5vh;
 }

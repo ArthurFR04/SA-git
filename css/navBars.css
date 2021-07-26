@@ -1,4 +1,12 @@
+
 /* configuração das navbars */
+
+/*navbar ciano*/
+
+.nav-cian{
+    background-color: #183442; 
+    height: 35%;
+}
 
 .marca{
     display: flex;
@@ -7,10 +15,15 @@
     height: 110px;
 }
 
-.navbar{
-    height: 40px;
-    z-index: 2;
+.btn-log{
+    background-color: #183442;
+    border: #183442;
+
+    font-size: 25px;
 }
+
+
+/*navbar laranja*/
 
 .espaçamento-nav{
     margin-left: 8px;
@@ -19,6 +32,8 @@
 .navnavpapi{
     position: sticky;
     top: 0;
+    height: 40px;
+    z-index: 2;
 }
 
 @media screen and (max-width:992px){
@@ -27,7 +42,7 @@
         margin-left: 0;
     }
 
-    .navbar{
+    .navnavpapi{
         height: 100%;
     }
 }
