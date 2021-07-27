@@ -1,5 +1,3 @@
-
-
 .icone-home {
     height: 70px;
     width: 70px;
@@ -206,13 +204,12 @@
     .container-mid li {
         font-size: 10px;
     }
-   
     .container-mid p {
         font-size: 5vw;
         margin-top: 25px;
         margin-bottom: 25px;
     }
-    .container-mid form{
+    .container-mid form {
         height: 45vh;
     }
 }
@@ -309,7 +306,7 @@
     .navbar {
         height: 8vh;
     }
-    ::placeholder {
+     ::placeholder {
         font-size: 3vh;
     }
     .icone-home {
@@ -341,7 +338,7 @@
     .container-mid label {
         font-size: 2vh;
     }
-    ::placeholder {
+     ::placeholder {
         font-size: 3vh;
     }
     .icone-home {

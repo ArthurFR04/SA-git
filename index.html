@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,20 +13,22 @@
     <link rel="stylesheet" href="./css/index.css">
 
 </head>
+
 <body onload="verificar_login_index()">
-    <!--As navbars-->
-    <nav class="nav-cian navbar imp-nav navbar-dark">
-        <div class="container-fluid" style="height: 100%;">
+    <header>
+        <nav class="nav-cian navbar imp-nav navbar-dark">
+            <div class="container-fluid" style="height: 100%;">
 
-            <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>                     <!--Editávell-->
-            <div id="div_login" class="navbar-brand nasalization">  </div>
+                <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>
+                <div id="div_login" class="navbar-brand nasalization"> </div>
 
-        </div>
-    </nav>
-    
-    <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C";>
+            </div>
+        </nav>
+    </header>
+    <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C" ;>
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -40,14 +43,15 @@
                         <a class="nav-link espaçamento-nav" href="#">Canecas</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Temas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Harry Potter</a></li>
-                        <li><a class="dropdown-item" href="#">Star Wars</a></li>
-                        <li><a class="dropdown-item" href="#">Marvel</a></li>
-                        <li><a class="dropdown-item" href="#">DC</a></li>
+                            <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+                            <li><a class="dropdown-item" href="#">Star Wars</a></li>
+                            <li><a class="dropdown-item" href="#">Marvel</a></li>
+                            <li><a class="dropdown-item" href="#">DC</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -60,38 +64,107 @@
         </div>
     </nav>
 
-    <!--Carrossel-->
-    <div class="slides">
-        <center>
-        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="./img/logo pequeninha.png" class="d-block w-100 h-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/icone-home.png" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <img src="./img/BG-image.jpg" class="d-block w-100" alt="...">
-                    </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </div>
-        </center>
-    </div>
 
-    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    papi ta on (de casa)
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img src="./img/BG-image.jpg" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="./img/BG-image.jpg" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="active" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="./img/BG-image.jpg" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        class="active" aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+        </div>
+</div>
+
+      <div class="banner">
+
+      </div>
+      <div class="banner3">
+          <div class="banner-1">
+
+          </div>
+
+          <div class="banner-2">
+              
+        </div>
+    </div>   
+    <footer></footer>
 
 
     <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
     <script src="./js/conferencia.js"></script>
 </body>
+
 </html>
