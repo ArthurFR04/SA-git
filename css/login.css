@@ -227,6 +227,12 @@ body {
         width: 90%;
         display: flex;
     }
+    .container-mid li{
+        font-size: 5vw;
+    }
+    .container-mid label{
+        font-size: 7vw;
+    }
 }
 
 
