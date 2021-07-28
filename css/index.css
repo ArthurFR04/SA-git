@@ -1,7 +1,23 @@
 body {
     background-color: #6B8D8D;
 }
+section{
+    height: 100%;
+}
 
+/*carousel brabo*/
+
+.carousel {
+    display: flex!important;
+    justify-content: center!important;
+}
+
+.carousel-inner {
+    width: 85%!important;
+    margin-top: 25px!important;
+}
+
+<<<<<<< HEAD
 
 /*carousel brabo*/
 
@@ -31,6 +47,115 @@ body {
     width: 12px;
     height: 12px;
     border-radius: 50%;
+=======
+.carousel-item img {
+    height: 35vw;
+}
+
+.carousel-control-next-icon {
+    margin-left: 70%;
+}
+
+.carousel-control-prev-icon {
+    margin-right: 70%;
+}
+.carousel-indicators{
+    z-index: 0
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    opacity: 1;
+}
+
+/*BANNER*/
+
+.banner {
+    display: block;
+    justify-content: center;
+    width: 95%;
+    height: 25vw;
+    margin: auto;
+    margin-top: 30px;
+    background:white;
+    padding: 0;
+   
+}
+.fotos{
+    display: flex;
+    justify-content: center
+}
+.foto-1 {
+    display: block;
+    justify-content: center;
+    width: 46.8%;
+    height: 25vw;
+    
+    margin-top: 30px;
+    background:white;
+    padding: 0;
+    margin-right: 10px;
+   
+}
+.foto-2 {
+    display: block;
+    justify-content: center;
+    width: 46.8%;
+    height: 25vw;
+  
+    margin-top: 30px;
+    background:white;
+    padding: 0;
+    margin-left: 10px;
+   
+}
+
+footer{
+    margin-top: 5%;
+    padding: 16px;
+    background-color: #E2781C
+}
+@media screen and (max-width:600px){
+    .carousel-inner{
+        width: 100%!important;
+    }
+    .banner{
+        height: 35vw;
+        width: 90%;
+    }
+    .fotos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto-1{
+        width: 90%!important;
+        height: 45vw;
+        margin-right: 0;
+        
+        
+    }
+    .foto-2{
+        width: 90%!important;
+        height: 45vw;
+        margin-left: 0;
+        
+    }
+    .carousel-indicators{
+        margin-bottom: 1%!important;
+    }
+}
+
+@media screen and (max-width:1024px) {
+   
+    .carousel-item img{
+        height: 100%!important;
+    }
+>>>>>>> attHome
 }
 
 .carousel-indicators .active {

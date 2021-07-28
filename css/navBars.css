@@ -1,48 +1,64 @@
-
 /* configuração das navbars */
+
 
 /*navbar ciano*/
 
-.nav-cian{
-    background-color: #183442; 
+.nav-cian {
+    background-color: #183442;
     height: 35%;
 }
 
-.marca{
+.marca {
     display: flex;
-    font-size: 65px; 
+    font-size: 65px;
     align-items: center;
     height: 110px;
 }
 
-.btn-log{
+.btn-log {
     background-color: #183442;
     border: #183442;
-
     font-size: 25px;
 }
 
 
 /*navbar laranja*/
 
-.espaçamento-nav{
+.espaçamento-nav {
     margin-left: 8px;
 }
 
-.navnavpapi{
+.navnavpapi {
     position: sticky;
     top: 0;
     height: 40px;
     z-index: 2;
 }
 
-@media screen and (max-width:992px){
 
-    .espaçamento-nav{
+@media screen and (max-width:992px) {
+    .espaçamento-nav {
         margin-left: 0;
     }
-
-    .navnavpapi{
+    .navnavpapi {
         height: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .marca {
+        font-size: 15vw;
+    }
+    header .container-fluid {
+        justify-content: center!important;
+        flex-direction: column!important;
+    }
+}
+
+@media screen and (max-width:240px) {
+    .navbar-brand {
+        font-size: 8vw;
+    }
+    .marca {
+        font-size: 18vw;
     }
 }

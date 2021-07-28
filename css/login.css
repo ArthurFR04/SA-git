@@ -81,7 +81,8 @@ body {
     border-radius: 8px;
     border: 0;
 }
-.container-mid form{
+
+.container-mid form {
     height: 30vh;
 }
 
@@ -96,7 +97,6 @@ body {
     justify-content: center;
     align-items: center;
     height: 15vh;
-    
 }
 
 .container-mid a {
@@ -113,6 +113,7 @@ body {
     font-size: 16px;
     padding-left: 5px;
 }
+
 .container-mid li {
     display: flex;
     justify-content: flex-end;
@@ -126,6 +127,7 @@ body {
     font-family: arial;
     font-weight: bold;
 }
+
 .container-mid p {
     font-size: 18px;
     color: white;
@@ -134,6 +136,7 @@ body {
     margin-top: 25px;
     margin-bottom: 25px;
 }
+
 @media screen and (max-width:1800px) {
     .container {
         height: 100%;
@@ -179,10 +182,11 @@ body {
         font-size: 3vh;
     }
 }
-@media screen and (max-width:1106px){
-   .container-mid a{
-     font-size: 2.5vh;
-   } 
+
+@media screen and (max-width:1106px) {
+    .container-mid a {
+        font-size: 2.5vh;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -206,35 +210,32 @@ body {
     .container-mid li {
         font-size: 10px;
     }
-   
     .container-mid p {
         font-size: 5vw;
         margin-top: 25px;
         margin-bottom: 25px;
     }
-  
-    
-    
 }
-@media screen and (max-width:430px){
-    .container-mid a{
+
+@media screen and (max-width:430px) {
+    .container-mid a {
         font-size: 5vw;
     }
 }
-@media screen and (max-width:240px){
-    .container-bottom button{
+
+@media screen and (max-width:240px) {
+    .container-bottom button {
         font-size: 5vw;
         width: 90%;
         display: flex;
     }
-    .container-mid li{
+    .container-mid li {
         font-size: 5vw;
     }
-    .container-mid label{
+    .container-mid label {
         font-size: 7vw;
     }
 }
-
 
 @media screen and (width:1024px) {
     .container-bottom button {
@@ -251,7 +252,7 @@ body {
     .navbar {
         height: 8vh;
     }
-    ::placeholder {
+     ::placeholder {
         font-size: 3vh;
     }
     .icone-home {
@@ -283,7 +284,7 @@ body {
     .container-mid label {
         font-size: 2vh;
     }
-    ::placeholder {
+     ::placeholder {
         font-size: 3vh;
     }
     .icone-home {
@@ -301,7 +302,6 @@ body {
         margin-top: 25px;
         margin-bottom: 25px;
     }
-    
 }
 
 @media screen and (width:540px) {
