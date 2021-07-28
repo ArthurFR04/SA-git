@@ -1,7 +1,9 @@
 body {
     background-color: #6B8D8D;
 }
-
+section{
+    height: 100%;
+}
 
 /*carousel brabo*/
 
@@ -25,6 +27,9 @@ body {
 
 .carousel-control-prev-icon {
     margin-right: 70%;
+}
+.carousel-indicators{
+    z-index: 0!important;
 }
 
 .carousel-indicators [data-bs-target] {
@@ -50,68 +55,75 @@ body {
     padding: 0;
    
 }
-.banner3{
+.fotos{
     display: flex;
+    justify-content: center
 }
-.banner-1 {
+.foto-1 {
     display: block;
     justify-content: center;
     width: 46.8%;
     height: 25vw;
-    margin: auto;
+    
     margin-top: 30px;
     background:white;
     padding: 0;
     margin-right: 10px;
    
 }
-.banner-2 {
+.foto-2 {
     display: block;
     justify-content: center;
     width: 46.8%;
     height: 25vw;
-    margin: auto;
+  
     margin-top: 30px;
     background:white;
     padding: 0;
     margin-left: 10px;
    
 }
+
 footer{
-    margin-top: 5vh;
-    height: 40px;
+    margin-top: 5%;
+    padding: 16px;
     background-color: #E2781C
 }
-
-@media screen and (max-width:992px) {
-    .espaçamento-nav {
-        margin-left: 0;
+@media screen and (max-width:600px){
+    .carousel-inner{
+        width: 100%!important;
     }
-    .navnavpapi {
-        height: 100%;
+    .banner{
+        height: 35vw;
+        width: 90%;
+    }
+    .fotos{
+        flex-direction: column;
+        align-items: center;
+    }
+    .foto-1{
+        width: 90%!important;
+        height: 45vw;
+        margin-right: 0;
+        
+        
+    }
+    .foto-2{
+        width: 90%!important;
+        height: 45vw;
+        margin-left: 0;
+        
+    }
+    .carousel-indicators{
+        margin-bottom: 1%!important;
     }
 }
+
 @media screen and (max-width:1024px) {
    
     .carousel-item img{
         height: 100%!important;
     }
 }
-@media screen and (max-width:600px) {
-    .marca {
-        font-size: 15vw;
-    }
-    header .container-fluid {
-        justify-content: center!important;
-        flex-direction: column!important;
-    }
-}
 
-@media screen and (max-width:240px) {
-    .navbar-brand {
-        font-size: 8vw;
-    }
-    .marca {
-        font-size: 18vw;
-    }
-}
+

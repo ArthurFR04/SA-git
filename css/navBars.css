@@ -34,3 +34,31 @@
     height: 40px;
     z-index: 2;
 }
+
+
+@media screen and (max-width:992px) {
+    .espaçamento-nav {
+        margin-left: 0;
+    }
+    .navnavpapi {
+        height: 100%;
+    }
+}
+@media screen and (max-width:600px) {
+    .marca {
+        font-size: 15vw;
+    }
+    header .container-fluid {
+        justify-content: center!important;
+        flex-direction: column!important;
+    }
+}
+
+@media screen and (max-width:240px) {
+    .navbar-brand {
+        font-size: 8vw;
+    }
+    .marca {
+        font-size: 18vw;
+    }
+}
