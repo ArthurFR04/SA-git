@@ -24,8 +24,8 @@ function sair_login() {
 //quando entrar ou atualizar a página index essa função será efetuada
 
 function verificar_login_index() {  
-    
-    if (dados.status == 0 || dados === null) {  //se o login não foi efetuado apareceram as opções de cadastro e login
+    console.log(dados);
+    if ( dados === null || dados.status == 0) {  //se o login não foi efetuado apareceram as opções de cadastro e login
 
         document.getElementById('div_login').innerHTML=`
             <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
