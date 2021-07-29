@@ -1,0 +1,70 @@
+.container {
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 70vh;
+    background: rgba(0, 0, 0, 0.787);
+}
+
+.container-top {
+    height: 15%;
+    width: 90%;
+    border-bottom: solid 2px white;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+
+.container-top li {
+    margin-top: 50px;
+    font-size: 3vw;
+    list-style-type: none;
+    text-decoration: none;
+    color: snow;
+    padding-left: 20px;
+}
+
+.container-mid {
+    height: 70%;
+}
+
+.container-bottom {
+    height: 15%;
+    width: 90%;
+    border-top: solid 2px white;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.containerProdutos {
+    background-color: aliceblue;
+    width: 100%;
+    max-width: 75vw;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 2px solid black; 
+    margin: 0 auto;
+}
+
+.headerProduto {
+    width: 45%;
+}
+
+.precoProduto {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.quantidadeProduto {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.totalProduto {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}

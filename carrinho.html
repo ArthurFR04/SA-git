@@ -7,11 +7,11 @@
 
     <title>Home</title>
     <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
-
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/navBars.css">
     <link rel="stylesheet" href="./css/index.css">
-
+    <link rel="stylesheet" href="./css/carrinho.css">
+    
 </head>
 <body onload="verificar_login_carrinho()">
     <!--As navbars-->
@@ -61,8 +61,35 @@
         </div>
     </nav>
 
-    <h1 style="color: red; font-size: 150px;">CARRINHO PAPI</h1>
+    <div class="container">
 
+        <div class="container-top vigaRegular">
+
+            <li>Carrinho de compras</li>
+        
+        </div>
+
+        <div class="container-mid">
+
+            <div class="containerProdutos">
+                <h5 class="headerProduto vigaRegular">Produto:</h5>
+                <h5 class="precoProduto vigaRegular">Preço:</h5>
+                <h5 class="quantidadeProduto vigaRegular">Quantidade:</h5>
+                <h5 class="totalProduto vigaRegular">Total:</h5>
+            </div>
+            
+            <div class="containerProdutos">
+
+            </div>
+
+        </div>
+
+        <div class="container-bottom">
+        
+        </div>
+
+    </div>
+    
     <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
     <script src="./js/conferencia.js"></script>
 </body>
