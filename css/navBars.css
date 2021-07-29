@@ -1,11 +1,15 @@
 /* configuração das navbars */
 
+.pp {
+    align-items: center;
+}
 
 /*navbar ciano*/
 
 .nav-cian {
     background-color: #183442;
-    height: 35%;
+    height: 125px;
+    align-items: center;
 }
 
 .marca {
@@ -21,6 +25,11 @@
     font-size: 25px;
 }
 
+.raposinha {
+    /* position: absolute;
+    margin-top: 50px; */
+    z-index: 3;
+}
 
 /*navbar laranja*/
 

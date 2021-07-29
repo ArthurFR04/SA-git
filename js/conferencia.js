@@ -28,9 +28,10 @@ function verificar_login_index() {
     if (dados.status == 0 || dados === null) {  //se o login não foi efetuado apareceram as opções de cadastro e login
 
         document.getElementById('div_login').innerHTML=`
-        <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
+            <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
 
-        <a class="navbar-brand" href="tela_login.html">Login</a>`
+            <a class="navbar-brand" href="tela_login.html">Login</a>
+        `
     }
 
     else {      // se o login for efetuado aparecerá o nome do usuário como um dropdown com funcionalidades sobre o perfil
