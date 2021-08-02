@@ -60,7 +60,7 @@ function setItens(produto) {
             }
         }
         
-        itensDentroCarrinho[produto.codigo].carrinho += 1;
+        itensDentroCarrinho[produto.codigo].carrinho += 1; 
 
     } else {
         produto.carrinho = 1;
