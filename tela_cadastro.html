@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="./css/gerais.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+
+</head>
+
+<body class="imagem-bg">
+    
+    <a href="index.html">
+        <img src="./img/icone-home.png" class="icone-home" alt="Home">
+    </a>
+
+    <div class="container">
+
+        <div class="container-top designer">
+            <p>Cadastro</p>
+        </div>
+
+        <div class="container-mid nasalization">
+            <form class="validator">
+                <div class='nomeinput'>
+                    <label>Nome</label>
+                    <input id="inpNomeC" type="text" placeholder="Digite um nome">
+                    <li></li>
+                </div>
+
+                <div class='nomeinput'>
+                    <label>E-mail</label>
+                    <input id="inpEmailC" type="email" placeholder="example@outlook.com">
+                    <li></li>
+                </div>
+
+                <div class='nomeinput'>
+                    <label>Senha</label>
+                    <input id="inpSenhaC" type="password" placeholder="Digite sua senha">
+                    <li></li>
+                </div>
+
+                <div class='nomeinput'>
+                    <label>Confirmar senha</label>
+                    <input id="inpSenha2C" type="password" placeholder="Confirmar senha">
+                    <li></li>
+
+                </div>
+            </form>
+            <div class="nomelink">
+                <p></p>
+                <a href="tela_login.html">Já possui uma conta?</a>
+            </div>
+
+        </div>
+
+        <div class="container-bottom nasalization">
+            <button onclick="cadastrar()">Concluir</button>
+        </div>
+
+    </div>
+
+
+    <script src="./bootstrap-5.0.2/js/bootstrap.min.js"></script>
+    <script src="./js/validacao.js"></script>
+
+</body>
+
+</html>

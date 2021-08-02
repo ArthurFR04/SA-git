@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>teste pag produtos</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/navBars.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
+
+</head>
+
+<body onload="verificar_login_index()">
+    <header>
+        <nav class="nav-cian navbar imp-nav navbar-dark">
+            <div class="pp container-fluid" style="height: 100%;">
+
+                <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>
+                <img class="raposinha" src="./img/logo pequeninha 2.0.png" alt="">
+                <div id="div_login" class="navbar-brand nasalization"> </div>
+            </div>
+        </nav>
+
+        <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C" ;>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="landing_page.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active espaçamento-nav" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link espaçamento-nav" href="#">Canecas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Temas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+                                <li><a class="dropdown-item" href="#">Star Wars</a></li>
+                                <li><a class="dropdown-item" href="#">Marvel</a></li>
+                                <li><a class="dropdown-item" href="#">DC</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-flex">
+                            <a class="nav-link" href="carrinho.html">Carrinho de compras: <span>0</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+
+
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <img src="./img/BG-image.jpg" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="./img/BG-image.jpg" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        class="active" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <img src="./img/BG-image.jpg" class="d-block w-100" alt="...">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        class="active" aria-label="Slide 3"></button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="banner">
+
+    </div>
+    <div class="fotos">
+        <div class="foto-1">
+
+            <div class="caneca-js vigaRegular">
+
+                <img src="./canecajs.jpg" alt="canecajs">
+                <h3>Caneca JavaScript</h3>
+                <h3>R$20,00</h3>
+                <a class='addcarrinho produto1' href="#">Adicionar ao Carrinho</a>
+
+            </div>
+
+        </div>
+
+        <div class="foto-2">
+
+            <div class="caneca-node vigaRegular">
+            <img src="./canecanode.jpg" alt="canecanode">
+                <h3>Caneca Node</h3>
+                <h3>R$30,00</h3>
+                <a class='addcarrinho produto2' href="#">Adicionar ao Carrinho</a>
+        </div>
+
+    </div>
+
+</div>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <footer></footer>
+
+
+    <script src="./js/carrinho.js"></script>
+    <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/conferencia.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+/* Configurações icone de home */
+
+.icone-home {
+    position: sticky;
+    top: 0;
+    height: 70px;
+    width: 70px;
+    margin-top: 1%;
+    margin-left: 1%;
+    z-index: 1;
+}
+
+.imagem-bg {
+    margin: 0;
+    background-image: url(../img/BG-image.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #132839;
+}

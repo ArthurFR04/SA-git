@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Home</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/navBars.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/carrinho.css">
+    
+</head>
+<body onload="verificar_login_carrinho()">
+    <!--As navbars-->
+    <nav class="nav-cian navbar imp-nav navbar-dark">
+        <div class="container-fluid" style="height: 100%;">
+
+            <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>                     <!--Editávell-->
+            <div id="div_login" class="navbar-brand nasalization">  </div>
+
+        </div>
+    </nav>
+
+    <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C";>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing_page.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link espaçamento-nav" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link espaçamento-nav" href="#">Canecas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Temas
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+                        <li><a class="dropdown-item" href="#">Star Wars</a></li>
+                        <li><a class="dropdown-item" href="#">Marvel</a></li>
+                        <li><a class="dropdown-item" href="#">DC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-item d-flex">
+                        <a class="nav-link active" href="#">Carrinho de compras: <span>0</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <div class="container-top vigaRegular">
+
+            <li>Carrinho de compras</li>
+        
+        </div>
+
+        <div class="container-mid">
+
+            <div class="containerProdutos">
+                <h5 class="headerProduto vigaRegular">Produto:</h5>
+                <h5 class="precoProduto vigaRegular">Preço:</h5>
+                <h5 class="quantidadeProduto vigaRegular">Quantidade:</h5>
+                <h5 class="totalProduto vigaRegular">Total:</h5>
+            </div>
+            
+            <div class="containerProdutos">
+
+            </div>
+
+        </div>
+
+        <div class="container-bottom">
+        
+        </div>
+
+    </div>
+    
+    <script src="./js/carrinho.js"></script>
+    <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/conferencia.js"></script>
+</body>
+</html>
