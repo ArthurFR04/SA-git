@@ -5,7 +5,7 @@ let produtos = [                                    // estabeleço os produtos d
         nome: "Caneca JavaScript",
         codigo: "canecajs",                 
         preco: 20,
-        carrinho: 0         // bem interessante essa tag, dá pra ver através do LS se esse obj tá no carrinho se ele estiver com esse valor "1"                           
+        carrinho: 0         // bem interessante essa tag, dá pra ver através do LS quantos desse objeto(produto) estão dentro do carrinho                           
     },
     {
         nome: "Caneca Node JS",
@@ -18,8 +18,8 @@ let produtos = [                                    // estabeleço os produtos d
 for (let i = 0; i < carrinho.length; i++) {
     carrinho[i].addEventListener('click', () => {
         console.log('adicionado ao carrinho, chefe');       // loop com eventListener, pra me informar quando houver um click e acionar minhas funções
-        indexCarrinho(produtos[i]);                         // (além de percorrer meu carrinho pra me ajudar com atualização de index)
-        somaTotalCarrinho(produtos[i]);
+        indexCarrinho(produtos[i]);                         // percorre meu carrinho pra me ajudar com atualização de index
+        somaProdutosCarrinho(produtos[i]);                     // chama a função pra pegar o "preco: " de cada objeto clicado e somar
     })
 };
 
@@ -39,48 +39,49 @@ function indexCarrinho(produto) {                                               
     setItens(produto);
 };
 
+
+function setItens(produto) {                                                 // essa function é super importante, porque ela seta no LS quais produtos estão no carrinho
+    let produtosNoCarrinho = localStorage.getItem('produtosNoCarrinho'); 
+    produtosNoCarrinho = JSON.parse(produtosNoCarrinho);                   // precisamos do json.parse pra mudar tudo pra objeto dentro do js novamente
+    
+    if (produtosNoCarrinho != null) {                           // ou seja, se algo existe dentro dessa variável...
+        
+        if (produtosNoCarrinho[produto.codigo] == undefined) {  // esse if é pra fazer o código voltar pro array de obj "produtos" -- sem ele, dá pau quando clica em um produto diferente
+            produtosNoCarrinho = {                             // volta papai
+                ...produtosNoCarrinho,                         // volta e pega o produto que nós clicamos ANTES e adiciona outro objeto
+                [produto.codigo]: produto                       // ...obrigado... (isso deu uma dor de cabeça insana)
+            }
+        }
+        
+        produtosNoCarrinho[produto.codigo].carrinho += 1;     // finalmente, o primeiro if acontece, se já tem esse produto no carrinho, ele vai fazer "carrinho: 2" (inicialmente era 0, se tá no carrinho fica 1) esse if implementa quantos quiser.
+        
+    } else {                                                // esse bloco é pra primeira vez que clicamos
+        produto.carrinho = 1;                              // ele vai dentro do obj que o produto pertence, muda o "carrinho: 0" pra "carrinho: 1"
+        produtosNoCarrinho = {
+            [produto.codigo]: produto                     // vamos setar o objeto pra mandar pro LS
+        }
+    };
+    
+    localStorage.setItem('produtosNoCarrinho', JSON.stringify(produtosNoCarrinho)); // só que como não dá pra mandar purinho, tem que usar o JSON.stringify
+};
+
+function somaProdutosCarrinho(produto) {
+    let somaProdutosCarrinho = localStorage.getItem('somaProdutosCarrinho');
+    somaProdutosCarrinho = JSON.parse(somaProdutosCarrinho);                // (OPCIONAL) tava dando pau, eu ainda não sei se precisa transformar em número no click TAMBÉM -- vou testar
+    
+    if (somaProdutosCarrinho != null) {                                 // se já houver produtos no carrinho...
+        somaProdutosCarrinho = JSON.parse(somaProdutosCarrinho);        // transforma em numero com json.parse pra poder somar na linha de baixo
+        localStorage.setItem('somaProdutosCarrinho', somaProdutosCarrinho + produto.preco);  // seta o item novo e soma os preços
+    } else {
+        localStorage.setItem('somaProdutosCarrinho', produto.preco);  // se for o primeiro item, vai apenas iniciar a key do LS com o value("PRECO: ") do produto
+    }
+};
+
 function onLoadConferenciaCarrinho() {                                  // meu span não tava puxando do LS os valores, essa function faz isso
     let indexProduto = localStorage.getItem('indexCarrinho');           // dou pull no indexCarrinho pra ver quantos tem -- dessa vez não precisa transformar em numero pq a soma já tá sendo feita na função de cima, então tanto faz
 
     if (indexProduto) {                                                         // se existe qualquer valor nessa variável, é true 
         document.querySelector('.nav-link span').textContent = indexProduto;    // -- aí ele vai lá e seta de novo o textcontent do span
-    }
-};
-
-function setItens(produto) {
-    let itensDentroCarrinho = localStorage.getItem('produtosNoCarrinho');
-    itensDentroCarrinho = JSON.parse(itensDentroCarrinho);
-    
-    if (itensDentroCarrinho != null) {
-
-        if (itensDentroCarrinho[produto.codigo] == undefined) {
-            itensDentroCarrinho = {
-                ...itensDentroCarrinho,
-                [produto.codigo]: produto
-            }
-        }
-        
-        itensDentroCarrinho[produto.codigo].carrinho += 1; 
-
-    } else {
-        produto.carrinho = 1;
-        itensDentroCarrinho = {
-            [produto.codigo]: produto
-        }
-    };
-
-    localStorage.setItem('produtosNoCarrinho', JSON.stringify(itensDentroCarrinho));
-};
-
-function somaTotalCarrinho(produto) {
-    let somaProdutosCarrinho = localStorage.getItem('somaProdutosCarrinho');
-    somaProdutosCarrinho = JSON.parse(somaProdutosCarrinho);
-    
-    if (somaProdutosCarrinho != null) {
-        somaProdutosCarrinho = JSON.parse(somaProdutosCarrinho);
-        localStorage.setItem('somaProdutosCarrinho', somaProdutosCarrinho + produto.preco);
-    } else {
-        localStorage.setItem('somaProdutosCarrinho', produto.preco);
     }
 };
 
