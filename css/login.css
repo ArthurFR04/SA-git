@@ -64,6 +64,11 @@ body {
     font-size: 3vh;
 }
 
+.container-bottom button:hover {
+    background-color: #183442;
+    transition: 0.5s ease;
+}
+
 .container-mid .nomeinput {
     display: flex;
     flex-direction: column;
