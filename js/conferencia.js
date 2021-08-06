@@ -59,11 +59,33 @@ function verificar_login_index() {
 
 function verificar_login_carrinho() { 
 
-    if (dados.status == 0 || dados === null) {  //se o login não foi efetuado redirecionará a pessoa para o login
+    if (dados === null || dados.status == 0) {  //se o login não foi efetuado redirecionará a pessoa para o login
     
-        alert(`Para acessar o carrinho você deve primeiro efetuar o login em sua conta. \n\nVocê será redirecionado para a página de login. `)
-
-        window.location.href="tela_login.html"
+        let timerInterval
+        Swal.fire({
+            icon: 'question',
+            title: 'Oii, quem é você ?',
+            text: 'Antes de a gente ir pro carrinho, precisamos do seu login.',
+            backdrop: `#183442c4`,
+            allowOutsideClick: false,
+            timer: 6000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+            }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                window.location.href="tela_login.html"
+            }
+        })
     }
 
     else {     // se o login for efetuado aparecerá o nome do usuário como um dropdown, com funcionalidades sobre o perfil
