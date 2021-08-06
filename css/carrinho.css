@@ -35,8 +35,7 @@ body{
    
 }
 .container-top h2{
-    
-    color: white;
+ color: white;
 }
 .label-top{
     height: 20%;
@@ -57,7 +56,9 @@ body{
 }
 .container-mid .produto{
     height: 20%;
-    
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+    padding-bottom: 2vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +71,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
-    height: 20%;
+    height: 30%;
     width: 100px;
     border: solid 1px white;
     border-radius: 8px;
@@ -80,8 +81,15 @@ body{
     cursor: pointer;
     font-size: 20px;
 }
+
 @media screen and (max-width:600px){
     .label-top{
         display: none;
     }
+
+
+
+}
+.container-mid img{
+    width: 90px;
 }
