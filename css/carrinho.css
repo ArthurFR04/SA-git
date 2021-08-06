@@ -20,6 +20,11 @@ body{
     height: 100%;
     
 }
+.title{
+    height: 80%;
+    display: flex;
+    align-items: flex-end;
+}
 .container-top{
     height: 20%;
     
@@ -30,13 +35,14 @@ body{
    
 }
 .container-top h2{
-    padding-top: 70px;
-    margin-bottom: 5%;
+    
     color: white;
 }
 .label-top{
+    height: 20%;
     display: flex;
     justify-content: space-between;
+    align-items: flex-end;
     color: white;
     font-weight: bold;
 }
@@ -73,4 +79,9 @@ body{
 .container-mid .qtd-label{
     cursor: pointer;
     font-size: 20px;
+}
+@media screen and (max-width:600px){
+    .label-top{
+        display: none;
+    }
 }
