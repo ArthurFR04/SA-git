@@ -56,14 +56,34 @@ function logar() {
         }
     }
 
-    function redirecionarPage() {
-        window.location.href = "index.html"      //FUNÇÃO REDIRECIONAR PÁGINA
-    }
 
     function loginEfetuado() {
 
-        setInterval(redirecionarPage, 3500)
-        p[1].innerHTML = `Login efetuado!<br>Redirecionado...`         //FUNÇÃO CADASTRO EFETUADO
+        let timerInterval
+        Swal.fire({
+            icon: 'success',
+            title: 'Login efetuado',
+            text: 'Agora você já pode aproveitar o site',
+            backdrop: `#183442c4`,
+            allowOutsideClick: false,
+            timer: 4000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+            }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                window.location.href="index.html"
+            }
+        })
         a[1].innerHTML = '';
 
         for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS VALORES DOS INPUTS

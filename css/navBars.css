@@ -12,6 +12,10 @@
     align-items: center;
 }
 
+.color {
+    color: #183442c4;
+}
+
 .marca {
     display: flex;
     font-size: 65px;

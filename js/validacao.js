@@ -79,14 +79,34 @@ function cadastrar() {
         }
     }
 
-    function redirecionarPage() {
-        window.location.href = "tela_login.html"      //FUNÇÃO REDIRECIONAR PÁGINA
-    }
 
     function cadastroEfetuado() {
 
-        setInterval(redirecionarPage, 3500)
-        p[1].innerHTML = `Cadastro efetuado!<br>Redirecionado...`         //FUNÇÃO CADASTRO EFETUADO
+        let timerInterval
+        Swal.fire({
+            icon: 'success',
+            title: 'Cadastro efetuado',
+            text: 'Agora que você já se cadastrou com a gente, vamos para o login.',
+            backdrop: `#183442c4`,
+            allowOutsideClick: false,
+            timer: 4000,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                const b = Swal.getHtmlContainer().querySelector('b')
+                timerInterval = setInterval(() => {
+                b.textContent = Swal.getTimerLeft()
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+            }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                window.location.href="tela_login.html"
+            }
+        })
         a[1].innerHTML = '';
 
         for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS VALORES DOS INPUTS
