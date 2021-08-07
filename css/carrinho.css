@@ -10,8 +10,9 @@ footer{
 }
 
 .container-1 {
-    display: block;
+    display: flex;
     justify-content: center;
+    align-items: center;
     width: 95%;
     height: 100vh;
     margin: auto;
@@ -34,8 +35,8 @@ footer{
 
 .container-top {
     height: 20%;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
     border-bottom: 2px solid white;
 }
 
@@ -54,9 +55,12 @@ footer{
 .container-mid {
     margin-right: 3%;
     margin-left: 3%;
-    padding-right: 8%;
-    padding-left: 8%;
-    height: 80%;
+   
+    
+}
+.container-mid img {
+    width: 90px;
+    margin-right: 5%;
 }
 
 .container-mid .produto {
@@ -77,6 +81,7 @@ footer{
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    margin-right: 5%;
     height: 30%;
     width: 100px;
     border: solid 1px white;
@@ -89,27 +94,27 @@ footer{
 }
 
 .container-r {
-    position: absolute;
-    width: 20vw;
+    
+    width: 25%;
     height: 70%;
-    left: 70%;
-    top: 49.2vh;
+    
+    
     background-color: #183442e8;
     border-radius: 15px;
 }
 
 .container-r-top {
     height: 11%;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
     border-bottom: 2px solid white;
 }
 
 .container-r-mid {
     height: 45vh;
     border-bottom: 2px solid white;
-    margin-right: 10%;
-    margin-left: 10%;
+    margin-right: 3%;
+    margin-left: 3%;
 }
 
 .container-title {
@@ -172,13 +177,42 @@ footer{
     display: flex;
     justify-content: left;
 }
+@media screen and (max-width:1024px) {
+   
+    .container-1{
+        flex-direction: column;
+    }
+    .container-l{
+        width: 100%;
+    }
+    .container-r{
+        width: 70%;
+        
+    }
+}
 
 @media screen and (max-width:600px) {
     .label-top {
         display: none;
     }
+    .container-1{
+        flex-direction: column;
+    }
+    .container-l{
+        width: 100%;
+    }
+    .container-r{
+        width: 70%;
+    }
 }
-
-.container-mid img {
-    width: 90px;
+@media screen and (max-width:220px){
+    .container-mid .produto{
+        flex-direction: column;
+    }
+    .container-mid img{
+        margin-bottom: 5%;
+    }
+    .container-mid .qtd-produto .quantidade{
+        margin-bottom: 5%;
+    }
 }

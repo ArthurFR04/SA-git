@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Home</title>
+    <link rel="icon" href="./img/logo pequeninha 2.0.png">
+    <title>Carrinho</title>
     <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
 
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/navBars.css">
-   
+
     <link rel="stylesheet" href="./css/carrinho.css">
 
 </head>
+
 <body onload="verificar_login_carrinho()">
     <!--As navbars-->
     <nav class="nav-cian navbar imp-nav navbar-dark">
         <div class="container-fluid" style="height: 100%;">
 
-            <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>                     <!--Editávell-->
-            <div id="div_login" class="navbar-brand nasalization">  </div>
+            <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>
+            <!--Editávell-->
+            <div id="div_login" class="navbar-brand nasalization"> </div>
 
         </div>
     </nav>
 
-    <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C";>
+    <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C" ;>
         <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -42,14 +46,15 @@
                         <a class="nav-link espaçamento-nav" href="#">Canecas</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Temas
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <li><a class="dropdown-item" href="#">Harry Potter</a></li>
-                        <li><a class="dropdown-item" href="#">Star Wars</a></li>
-                        <li><a class="dropdown-item" href="#">Marvel</a></li>
-                        <li><a class="dropdown-item" href="#">DC</a></li>
+                            <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+                            <li><a class="dropdown-item" href="#">Star Wars</a></li>
+                            <li><a class="dropdown-item" href="#">Marvel</a></li>
+                            <li><a class="dropdown-item" href="#">DC</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -61,24 +66,24 @@
             </div>
         </div>
     </nav>
-    
-    
+
+
     <div class="container-1">
         <div class="container-l">
             <div class="container-top vigaRegular">
                 <div class="title">
                     <h2>Meu carrinho</h2>
                 </div>
-              
+
 
                 <div class="label-top">
                     <label>Produtos</label>
                     <label>Quantidade</label>
                     <label>Preço</label>
                 </div>
-            
+
             </div>
-            
+
             <div class="container-mid">
                 <div class="produto">
                     <img src="./img/canecajs.png" alt="">
@@ -89,6 +94,28 @@
                     </div>
                     <label>R$ 29,90</label>
                 </div>
+                <div class="produto">
+                    <img src="./img/canecajs.png" alt="">
+                    <div class="quantidade">
+                        <label class="qtd-label">-</label>
+                        <label>1</label>
+                        <label class="qtd-label">+</label>
+                    </div>
+                    <label>R$ 29,90</label>
+                </div>
+                <div class="produto">
+                    <img src="./img/canecajs.png" alt="">
+                    <div class="quantidade">
+                        <label class="qtd-label">-</label>
+                        <label>1</label>
+                        <label class="qtd-label">+</label>
+                    </div>
+                    <label>R$ 29,90</label>
+                </div>
+
+               
+
+               
             </div>
         </div>
 
@@ -115,11 +142,12 @@
 
             </div>
 
-                <div class="container-r-bottom">
-                    <button id="btn-finalizar-compra">Finalizar compra</button>
-                </div>
 
+            <div class="container-r-bottom">
+                <button id="btn-finalizar-compra">Finalizar compra</button>
             </div>
+
+
 
         </div>
 
@@ -128,4 +156,5 @@
     <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
     <script src="./js/conferencia.js"></script>
 </body>
+
 </html>
