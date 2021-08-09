@@ -12,9 +12,8 @@ footer{
 .container-1 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     width: 95%;
-    height: 100vh;
     margin: auto;
     margin-top: 10px;
     background: #6B8D8D;
@@ -95,8 +94,8 @@ footer{
 
 .container-r {
     
-    width: 25%;
-    height: 70%;
+    width: 20%;
+    height: 50vh;
     
     
     background-color: #183442e8;
@@ -104,14 +103,17 @@ footer{
 }
 
 .container-r-top {
-    height: 11%;
+    height: 10%;
     margin-right: 3%;
     margin-left: 3%;
     border-bottom: 2px solid white;
 }
 
 .container-r-mid {
-    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 58.5%;
     border-bottom: 2px solid white;
     margin-right: 3%;
     margin-left: 3%;
@@ -126,8 +128,16 @@ footer{
 }
 
 .container-r-bottom {
-    margin: 12px;
-    padding: 12px;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.container-r-bottom a{
+    font-size: 13px;
+    color: white;
+    margin-top: 10px;
 }
 
 .detalhes-produto {
@@ -150,11 +160,11 @@ footer{
 
 .detalhes-precototal {
     margin: 5px;
-    padding: 5px;
-    margin-top: 50%;
+    
+   
     color: white;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     font-size: 16px;  
 }
 
@@ -162,36 +172,56 @@ footer{
     color: rgb(31, 230, 31);
 }
 
-.container-r-bottom {
-    margin: 12px;
-    padding: 12px;
-    display: flex;
-    justify-content: center;
-}
+
 
 #btn-finalizar-compra {
-    border-radius: 3px;
+    border-radius: 12px;
+    width: 70%;
+    height: 5vh;
+    border: solid 2px #C4C4C4;
+    background-color: #C4C4C4;
 }
 
 .qtd-produto {
     display: flex;
     justify-content: left;
 }
+.label-span{
+    color: white;
+    margin: 5px;
+}
+.label-r{
+    display: flex;
+    justify-content: space-between;
+}
+.span-r{
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:1750px){
+  
+    
+    .container-r{
+        width: 30%;
+        
+    }
+}
 @media screen and (max-width:1024px) {
    
     .container-1{
         flex-direction: column;
+        align-items: center;
     }
     .container-l{
         width: 100%;
     }
     .container-r{
-        width: 70%;
+        width: 50%;
         
     }
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:700px) {
     .label-top {
         display: none;
     }
