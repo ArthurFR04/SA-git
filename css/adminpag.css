@@ -1,0 +1,187 @@
+body {
+    background-color: #183442;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/BG-image.jpg);
+    margin: 0;
+}
+
+.container-main {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+}
+
+.container-l {
+    width: 20%;
+    background-color: #183442;
+    height: 100vh;
+}
+
+.adicionar, .editar, .remover, .gerenciar {
+    color: white;
+    display: flex;
+    font-size: 20px;
+    display: flex;
+    margin: 10%;
+    padding: 5%;
+    justify-content: initial;
+    cursor: pointer;
+    
+}
+
+.editar, .remover, .gerenciar {
+    opacity: 0.3;
+}
+
+.container-r {
+    opacity: 0.94;
+    width: 65%;
+    display: flex;
+    justify-content: center;
+}   
+
+.container-meio {
+    margin-top: 2vw;
+    background-color: #6B8D8D;
+    width: 35vw;
+    height: 42vw;
+    border-radius: 15px;
+}
+
+.container-top-top {
+    display: flex;
+    justify-content: center;
+}
+
+.container-top {
+    height: 15%;
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border-bottom: solid 2px white;
+}
+
+.container-top label {
+    color: white;
+    font-size: 30px;
+}
+
+.container-mid {
+    height: 75%;
+}
+
+
+.container-bot-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-bottom {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    border-top: solid 2px white;
+    width: 70%;
+}
+
+.container-bottom button {
+    margin: 5%;
+    height: 35px;
+    width: 50%;
+}
+
+.inputs {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 25vw;
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: #6B8D8D;
+        margin: 0;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        height: 10vh;
+    }
+
+   .container-l {
+    width: 100%;
+    background-color: #183442;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin-top: 50%;
+   }
+
+   .adicionar, .editar, .remover, .gerenciar {
+       color: white;
+       display: flex;
+       font-size: 12px;
+       text-align: center;
+   }
+
+   .container-mid {
+    height: 70%;
+}
+
+.container-bottom button {
+    height: 29px;
+    width: 100%;
+}
+
+.container-top {
+    height: 15%;
+}
+
+.container-top-top {
+    padding-top: 8px;
+}
+
+   .container-bottom {
+    height: 15%;
+    display: flex;
+    justify-content: center;
+}
+
+   .container-meio {
+    margin-top: 15px;
+    background-color: #183442;
+    width: 300px;
+    height: 450px;
+   }
+
+   .container-top label{
+       font-size: 17px;
+   }
+
+   .inputs {
+    justify-content: center;
+   }
+
+   .container-bot-bottom {
+        height: 90px;
+   }
+}
+
+@media screen and (max-width:241px) {
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 6vw;
+    }
+}
