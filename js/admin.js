@@ -9,7 +9,7 @@ function cadastroProdutos() {
     let send = true;
 
     clear();
-    clean();
+    
 
     for (let i = 0; i < inputs.length; i++) {
 
@@ -62,16 +62,29 @@ function cadastroProdutos() {
         for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS ERROS DOS INPUTS
             li[i].innerHTML = '';
             inputs[i].style = '';
-
+            
+        
 
         }
-    }
-    function clean() {
+
         for (let i = 0; i < textArea.length; i++) {
             textArea[i].style.border = '';
 
         }
+
     }
+
+    function clean (){
+        for (let i = 0; i < inputs.length; i++) {     //LIMPA OS INPUTS E TEXTAREA DEPOIS DO CADASTRO SER EFETUADO
+            inputs[i].value = '';
+        }
+
+        for (let i=0; i < textArea.length; i++) {
+            textArea[i].value = '';
+        }
+    }
+    
+
 
     let produto = {
         nome: inputs[0].value,
@@ -87,12 +100,15 @@ function cadastroProdutos() {
         produtoCadastro.push(produto)
         localStorage.setItem('Produto', JSON.stringify(produtoCadastro))
 
+        clean()
 
     } else if (produtoCadastro == null) {
 
 
         produtos.push(produto)
         localStorage.setItem('Produto', JSON.stringify(produtos))
-
+       
+        clean()
+       
     }
 };
