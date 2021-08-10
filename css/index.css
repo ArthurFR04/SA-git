@@ -5,30 +5,7 @@ section{
     height: 100%;
 }
 
-header img{
-    
-    position: absolute;
-    justify-content: center;
-}
-.rapo-div{
-    z-index: 2;
-    display: flex;
-    position: absolute;
-    width:100%;
-    justify-content: center;
-    align-items: center;
-    top: 0;
-}
-.raposinha {
-    z-index: 10;
-    margin-top: 25px;
-}
-.container-fluid{
-    z-index: 5;
-}
-.teste{
-    z-index: 1;
-}
+
 
 /*carousel brabo*/
 
