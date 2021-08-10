@@ -96,9 +96,7 @@ function verificar_login_carrinho() {
 
     else {     // se o login for efetuado aparecerá o nome do usuário como um dropdown, com funcionalidades sobre o perfil
         let id = dados.id
-    
-        document.getElementById('div_login').innerHTML=`
-
+        let textin = `
             <div class="btn-group">
                 <button type="button" class="btn-log btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     ${id}
@@ -110,5 +108,7 @@ function verificar_login_carrinho() {
                 </ul>
             </div>
         `
+        document.getElementById('perfilNon').innerHTML = textin
+        document.getElementById('perfilRespon').innerHTML = textin
     }
 }

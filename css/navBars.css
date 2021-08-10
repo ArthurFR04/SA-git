@@ -29,6 +29,28 @@
     font-size: 25px;
 }
 
+/* logo */
+
+.rapo-div{
+    z-index: 2;
+    display: flex;
+    position: absolute;
+    width:100%;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    top: 2vw;
+}
+.raposinha {
+    z-index: 10;
+    margin-top: 25px;
+}
+.container-fluid{
+    z-index: 3;
+}
+.cont-nav{
+    z-index: 5;
+}
 
 
 /*navbar laranja*/
@@ -70,7 +92,7 @@
     .raposinha{
         position: absolute;
         left: 5vw;
-        top: 0vw;
+        top: -4vw;
         width: 68px;
         height: 92px;
     }
