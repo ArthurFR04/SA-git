@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Viga Regular';
+    src: url('../Fonts/Viga-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Nasalization';
+    src: url('../fonts/nasalization-rg.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Designer';
+    src: url('../fonts/DESIGNER.otf') format('truetype');
+}
+
+.designer {
+    font-family: 'Designer';
+}
+
+.nasalization {
+    font-family: 'Nasalization';
+}
+
+.vigaRegular {
+    font-family: 'Viga Regular';
+}

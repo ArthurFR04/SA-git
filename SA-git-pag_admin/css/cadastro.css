@@ -1,0 +1,370 @@
+.icone-home {
+    height: 70px;
+    width: 70px;
+    margin-top: 1%;
+    margin-left: 1%;
+}
+
+.container {
+    display: block;
+    justify-content: center;
+    width: 30vw;
+    height: 45vw;
+    margin: auto;
+    margin-top: 0;
+    background: #166E6F;
+    box-shadow: 0px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.container-top {
+    width: 100%;
+    height: 15%;
+    background: rgba(24, 52, 66, 0.29);
+    border-radius: 30px 30px 0px 0px;
+}
+
+.container-mid {
+    height: 75%;
+}
+
+.container-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+    background: rgba(24, 52, 66, 0.29);
+    border-radius: 0px 0px 30px 30px;
+}
+
+.container-top p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 6vh;
+    /* identical to box height */
+    color: #FFFFFF;
+}
+
+.container-bottom button {
+    display: block;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border: 0;
+    padding: 3px 45px;
+    background-color: #C4C4C4;
+    color: white;
+    font-size: 3vh;
+}
+
+.container-bottom button:hover {
+    background-color: #183442;
+    transition: 0.5s ease;
+}
+
+.container-mid .nomeinput {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+}
+
+.container-mid input {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 3vh;
+    border-radius: 8px;
+    border: 0;
+}
+
+.container-mid form {
+    height: 51vh;
+}
+
+.container-mid label {
+    margin-left: 5%;
+    color: white;
+    margin-top: 3%;
+}
+
+.container-mid .nomelink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+
+.container-mid a {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    cursor: pointer;
+}
+
+.container-mid li {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.container-mid p {
+    font-size: 18px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+::placeholder {
+    opacity: 0.5;
+    font-family: arial;
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+@media screen and (max-width:1800px) {
+    .container {
+        height: 100%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 6vh;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    .container-bottom button {
+        font-size: 3vh;
+    }
+    .container-mid a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .container-bottom button {
+        margin: 10px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container {
+        width: 85%;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 6vh;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    .container-bottom button {
+        font-size: 3vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 10vw;
+    }
+    .container-mid input {
+        height: 4vh;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    .container-mid li {
+        font-size: 10px;
+    }
+    .container-mid p {
+        font-size: 5vw;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+    .container-mid form {
+        height: 45vh;
+    }
+}
+
+@media screen and (max-width:360px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 10vw;
+    }
+    .container-mid input {
+        height: 4vh;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    .container-mid a {
+        font-size: 7vw;
+    }
+}
+
+@media screen and (max-width:240px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 10vw;
+    }
+    .container-mid input {
+        height: 4vh;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+    .container-bottom button {
+        font-size: 10vw;
+        display: flex;
+        width: 90%;
+    }
+    .container-mid li {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (max-width:185px) {
+    .container {
+        width: 85%;
+        height: 80vh;
+        margin-top: 50%;
+        margin-bottom: 5%;
+    }
+    .container-top {
+        height: 10vh;
+    }
+    .container-top p {
+        font-size: 10vw;
+    }
+    .container-mid input {
+        height: 4vh;
+    }
+    .container-mid label {
+        font-size: 8vw;
+    }
+    .container-bottom {
+        height: 13%;
+    }
+}
+
+@media screen and (width:1024px) {
+    .container-bottom button {
+        width: 25vh;
+        border-radius: 18px;
+    }
+    .container-mid input {
+        height: 5vh;
+        border-radius: 20px;
+    }
+    .container-mid label {
+        font-size: 2vh;
+    }
+    .navbar {
+        height: 8vh;
+    }
+     ::placeholder {
+        font-size: 3vh;
+    }
+    .icone-home {
+        width: 150px;
+        height: 150px;
+    }
+    .container {
+        margin-top: 45%;
+    }
+    .container-mid li {
+        font-size: 20px;
+    }
+    .container-mid p {
+        font-size: 4vw;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+}
+
+@media screen and (width:768px) {
+    .container-bottom button {
+        width: 25vh;
+        border-radius: 18px;
+    }
+    .container-mid input {
+        height: 5vh;
+        border-radius: 20px;
+    }
+    .container-mid label {
+        font-size: 2vh;
+    }
+     ::placeholder {
+        font-size: 3vh;
+    }
+    .icone-home {
+        width: 100px;
+        height: 100px;
+    }
+    .container {
+        margin-top: 45%;
+    }
+    .container-mid li {
+        font-size: 14px;
+    }
+    .container-mid p {
+        font-size: 4vw;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+}
+
+@media screen and (width:540px) {
+    .container-mid p {
+        font-size: 3vw;
+    }
+}
