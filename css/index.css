@@ -133,30 +133,6 @@ header img{
     text-align: center;
 }
 
-/* .foto-0 {
-    display: block;
-    justify-content: center;
-    width: 46.8%;
-    height: 25vw;
-    
-    margin-top: 30px;
-    background:white;
-    padding: 0;
-    margin-right: 10px;
-   
-}
-.foto-1 {
-    display: block;
-    justify-content: center;
-    width: 46.8%;
-    height: 25vw;
-  
-    margin-top: 30px;
-    background:white;
-    padding: 0;
-    margin-left: 10px;
-   
-} */
 
 footer{
     /* position: absolute;
@@ -188,9 +164,9 @@ footer{
     .foto-2{
         width: 90%!important;
         height: 45vw;
-        margin-left: 0;
-        
+        margin-left: 0; 
     }
+
     .carousel-indicators{
         margin-bottom: 1%!important;
     }

@@ -37,30 +37,21 @@ function cadastrar() {
     var cadastros2 = JSON.parse(localStorage.getItem('Pessoas'))
     console.log(cadastros2);
 
+
+
     if (cadastros2 !== null) {
         for (let i = 0; i < cadastros2.length; i++) {
 
             if (cadastros2[i].apelido == inputs[0].value) {                                                   // Editável
 
-
-
-
-
                 li[0].innerHTML = 'Esse usuário ja foi cadastrado!'
-
                 inputs[0].style.border = 'red solid 2px'
                 send = false;
             }
 
             if (cadastros2[i].email == inputs[1].value) {                                                     // Editável
 
-
-
-
-
-
                 li[1].innerHTML = 'Esse e-mail ja foi cadastrado!'
-
                 inputs[1].style.border = 'red solid 2px'
                 send = false;
             }
