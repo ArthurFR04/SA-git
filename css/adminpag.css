@@ -27,12 +27,13 @@ body {
 .adicionar, .editar, .remover, .gerenciar {
     color: white;
     display: flex;
-    font-size: 20px;
+    font-size: 22px;
     display: flex;
     margin: 10%;
     padding: 5%;
     justify-content: initial;
     cursor: pointer;
+    line-height: 2vw;
     
 }
 
@@ -106,12 +107,13 @@ body {
     border-radius: 12px;
 }
 
-.container-mid .mid-inputs{
+.container-mid .mid-inputs {
     display: flex;
     flex-direction: column;
     height: 20%;
 }
-.mid-inputs input{
+
+.mid-inputs input {
     margin-right: 5%;
     margin-left: 5%;
     width: 90%;
@@ -123,20 +125,23 @@ body {
     height: 30px;
 }
 
-.mid-inputs label{
+.mid-inputs label {
     margin-left: 5%;
     color: white;
 }
-.mid-file{
+
+.mid-file {
     display: flex;
     flex-direction: column;
     height: 20%;
     color: white;
     margin-left: 5%;
 }
-.mid-file label{
+
+.mid-file label {
     padding-top:10px ;
 }
+
 ::placeholder {
     opacity: 0.5;
     font-family: arial;
@@ -144,7 +149,8 @@ body {
     font-size: 16px;
     padding-left: 5px;
 }
-.mid-inputs textarea{
+
+.mid-inputs textarea {
     margin-right: 5%;
     margin-left: 5%;
     width: 90%;
@@ -155,19 +161,29 @@ body {
     border: 0;
     resize: none;
 }
-.mid-file input{
+
+.mid-file input {
     font-size: 13px;
 }
 
-@media screen and (max-width:1024px){
+
+
+@media screen and (max-width:1024px) {
     .container-top label{
         font-size: 3vw;
     }
+
     .container-bottom button{
         font-size: 1.5vw;
     }
+
+    .adicionar, .editar, .remover, .gerenciar label {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
 }
-@media screen and (max-width:900px){
+
+@media screen and (max-width:900px) {
     .mid-inputs input{
         height: 20px;
     }
@@ -177,6 +193,10 @@ body {
     body {
         background-color: #6B8D8D;
         margin: 0;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        line-height: 3vw;
     }
 
     .container-main {
@@ -235,7 +255,7 @@ body {
     height: 450px;
    }
 
-   .container-top label{
+   .container-top label {
        font-size: 17px;
    }
 
@@ -246,34 +266,95 @@ body {
    .container-bot-bottom {
         height: 90px;
    }
-   .logo img{
+
+   .logo img {
     height: 100%;
     margin-left: 10px;
    }
-   .logo label{
+
+   .logo label {
        display: none;
    }
-   .mid-file input{
+
+   .mid-file input {
     font-size: 10px;
-}
+    }
 }
 
-@media screen and (max-width:241px) {
-    .adicionar, .editar, .remover, .gerenciar {
-        font-size: 6vw;
+@media screen and (max-width:373px) {
+
+    .logo img {
+        margin-left: 5px;
     }
-}
-@media screen and (max-width:373px){
-    .container-bottom button{
+
+    .adicionar, .editar, .remover, .gerenciar {
+        line-height: 4vw;
+    }
+
+    .container-bottom button {
         font-size: 4vw;
     }
-    .container-top label{
+
+    .container-top label {
         font-size: 5vw;
     }
-    ::placeholder{
+
+    ::placeholder {
         font-size: 4vw;
     }
-    .mid-file input{
+
+    .mid-file input {
         font-size: 3vw;
     }
+
+    .mid-file label {
+        font-size: 4vw;
+    }
 }
+
+@media screen and (max-width:280px) {
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 4vw;
+    }
+
+    .mid-file input {
+        font-size: 4vw;
+    }
+
+    .mid-file label {
+        font-size: 4vw;
+    }
+
+    .logo img {
+        margin-left: 5px;
+    }
+
+    footer {
+    margin-top: 5%;
+    padding: 16px;
+    background-color: #6B8D8D;
+    }
+}
+
+@media screen and (max-width:240px) {
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 4vw;
+        line-height: 4vw;
+        padding-right: 1vw;
+    }
+
+    .logo img {
+        margin-left: 5px;
+        height: 50%;
+    }
+
+    .mid-inputs input {
+        height: 15px;
+    }
+
+    .mid-inputs label {
+        font-size: 8vw;
+    }
+    
+}
+
