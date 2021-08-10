@@ -25,7 +25,7 @@ header img{
     margin-top: 25px;
 }
 .container-fluid{
-    z-index: 2;
+    z-index: 3;
 }
 .cont-nav{
     z-index: 5;
