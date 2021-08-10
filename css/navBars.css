@@ -70,6 +70,10 @@
     display: none;
 }
 
+.bi-cart3{
+    margin-bottom: 0.3vw;
+}
+
 @media screen and (max-width:992px) {
     .espaçamento-nav {
         margin-left: 0;

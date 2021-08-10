@@ -13,13 +13,17 @@ let produtos = [
     }
 ]
 
+localStorage.setItem('produtos', JSON.stringify(produtos))
+
+
 for (let i=0; i<produtos.length; i++) {
 
     document.getElementById('fotos-vitrine').innerHTML += `
         <div class="foto-${i}">
             <h2 id="nome-prod${i}"></h2>
             <label id="img-prod${i}"></label>
-            <h3 id="preco_prod${i}"></h3>
+            <h3 id="preco_prod${i}"></h3> 
+            <a href="javascript:add_car(${produtos[i].id});">Adicionar ao carrinho</a>
         </div>
     `
     

@@ -110,13 +110,18 @@ section{
     text-align: center;
 }
 
+.fotos div img{
+    height: 252px;
+    width: 207px;
+}
+
 
 footer{
     /* position: absolute;
     bottom: 0; */
     width: 100%;
     padding: 16px;
-    background-color: #E2781C
+    background-color: #E2781C;
 }
 
 @media screen and (max-width:600px){
