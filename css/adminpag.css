@@ -1,5 +1,5 @@
 body {
-    background-color: #183442;
+    background-color: #132839;
     background-size: 100%;
     background-repeat: no-repeat;
     background-image: url(../img/BG-image.jpg);
@@ -13,6 +13,9 @@ body {
 .logo {
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
 }
 
 .container-l {
@@ -42,24 +45,25 @@ body {
     width: 65%;
     display: flex;
     justify-content: center;
+    align-items: center;
 }   
 
 .container-meio {
     margin-top: 2vw;
     background-color: #6B8D8D;
     width: 35vw;
-    height: 42vw;
+    height: 70vh;
     border-radius: 15px;
 }
 
 .container-top-top {
     display: flex;
     justify-content: center;
+    height: 10%;
 }
 
 .container-top {
-    height: 15%;
-    width: 70%;
+  
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -73,6 +77,9 @@ body {
 
 .container-mid {
     height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -80,10 +87,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 15%;
 }
 
 .container-bottom {
-    height: 15%;
+    
     display: flex;
     justify-content: center;
     border-top: solid 2px white;
@@ -93,14 +101,76 @@ body {
 .container-bottom button {
     margin: 5%;
     height: 35px;
-    width: 50%;
+    width: 70%;
+    border: 0;
+    border-radius: 12px;
 }
 
-.inputs {
+.container-mid .mid-inputs{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    width: 25vw;
+    height: 20%;
+}
+.mid-inputs input{
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 3vh;
+    border-radius: 8px;
+    border: 0;
+    height: 30px;
+}
+
+.mid-inputs label{
+    margin-left: 5%;
+    color: white;
+}
+.mid-file{
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    color: white;
+    margin-left: 5%;
+}
+.mid-file label{
+    padding-top:10px ;
+}
+::placeholder {
+    opacity: 0.5;
+    font-family: arial;
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 5px;
+}
+.mid-inputs textarea{
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 2vh;
+    border-radius: 8px;
+    border: 0;
+    resize: none;
+}
+.mid-file input{
+    font-size: 13px;
+}
+
+@media screen and (max-width:1024px){
+    .container-top label{
+        font-size: 3vw;
+    }
+    .container-bottom button{
+        font-size: 1.5vw;
+    }
+}
+@media screen and (max-width:900px){
+    .mid-inputs input{
+        height: 20px;
+    }
 }
 
 @media screen and (max-width:600px) {
@@ -144,10 +214,8 @@ body {
 .container-bottom button {
     height: 29px;
     width: 100%;
-}
-
-.container-top {
-    height: 15%;
+    font-size: 16px;
+    
 }
 
 .container-top-top {
@@ -178,10 +246,34 @@ body {
    .container-bot-bottom {
         height: 90px;
    }
+   .logo img{
+    height: 100%;
+    margin-left: 10px;
+   }
+   .logo label{
+       display: none;
+   }
+   .mid-file input{
+    font-size: 10px;
+}
 }
 
 @media screen and (max-width:241px) {
     .adicionar, .editar, .remover, .gerenciar {
         font-size: 6vw;
+    }
+}
+@media screen and (max-width:373px){
+    .container-bottom button{
+        font-size: 4vw;
+    }
+    .container-top label{
+        font-size: 5vw;
+    }
+    ::placeholder{
+        font-size: 4vw;
+    }
+    .mid-file input{
+        font-size: 3vw;
     }
 }
