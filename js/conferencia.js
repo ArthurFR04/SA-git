@@ -27,18 +27,21 @@ function verificar_login_index() {
     console.log(dados);
     if ( dados === null || dados.status == 0) {  //se o login não foi efetuado apareceram as opções de cadastro e login
 
-        document.getElementById('div_login').innerHTML=`
+        document.getElementById('perfilNon').innerHTML=`
             <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
 
             <a class="navbar-brand" href="tela_login.html">Login</a>
+        `
+        document.getElementById('perfilRespon').innerHTML=`
+        <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
+
+        <a class="navbar-brand" href="tela_login.html">Login</a>
         `
     }
 
     else {      // se o login for efetuado aparecerá o nome do usuário como um dropdown com funcionalidades sobre o perfil
         let id = dados.id
-    
-        document.getElementById('div_login').innerHTML=`
-
+        let textin = `
             <div class="btn-group">
                 <button type="button" class="btn-log btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     ${id}
@@ -50,6 +53,9 @@ function verificar_login_index() {
                 </ul>
             </div>
         `
+        document.getElementById('perfilNon').innerHTML = textin
+        document.getElementById('perfilRespon').innerHTML = textin
+        
     }
 }
 

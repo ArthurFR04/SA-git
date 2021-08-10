@@ -29,11 +29,7 @@
     font-size: 25px;
 }
 
-.raposinha {
-    /* position: absolute;
-    margin-top: 50px; */
-    z-index: 3;
-}
+
 
 /*navbar laranja*/
 
@@ -48,6 +44,9 @@
     z-index: 2;
 }
 
+#perfilRespon{
+    display: none;
+}
 
 @media screen and (max-width:992px) {
     .espaçamento-nav {
@@ -58,14 +57,39 @@
     }
 }
 @media screen and (max-width:600px) {
-    .marca {
-        font-size: 15vw;
-    }
+    
     header .container-fluid {
         justify-content: center!important;
         flex-direction: column!important;
     }
+    .marca {
+        font-size: 20vw;
+        position: absolute;
+        right: 0;
+    }
+    .raposinha{
+        position: absolute;
+        left: 5vw;
+        top: 0vw;
+        width: 68px;
+        height: 92px;
+    }
+    .div_login{
+        display: none;
+    }
+    .btn-log{
+        font-size: 20px;
+    }
+    #perfilRespon{
+        display: flex;
+    }
+    #perfilRespon button{
+        
+        background-color: #E2781C;
+    }
+   
 }
+
 
 @media screen and (max-width:240px) {
     .navbar-brand {
