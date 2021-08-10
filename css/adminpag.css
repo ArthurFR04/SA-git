@@ -107,11 +107,16 @@ body {
     outline: none;
 }
 
+.container-mid .inputs{
+    height: 80%;
+}
+
 .container-mid .mid-inputs {
     display: flex;
     flex-direction: column;
-    height: 20%;
+    height: 25%;
 }
+
 
 .mid-inputs input {
     margin-right: 5%;
