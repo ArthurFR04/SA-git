@@ -38,13 +38,17 @@ body {
     
 }
 
-.editar, .remover, .gerenciar {
+.adicionar, .editar, .remover, .gerenciar {
     opacity: 0.3;
 }
 
 .adicionar:hover, .editar:hover, .remover:hover, .gerenciar:hover{
     color: white;
     opacity: 0.5;
+}
+
+.active{
+    opacity: 1;
 }
 
 .active:hover{
