@@ -1,4 +1,9 @@
-.container {
+/* body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+} */
+.container-top {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -6,16 +11,22 @@
     align-items: center;
     flex-direction: column;
 }
-
+.container-center{
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    height: 40vw;
+    margin-top: 15%;
+}
 .containerLanding {
+    display: flex;
     justify-content: center;
     position: relative;
-    width: 95%;
-    height: 527px;
-    left: 29px;
-    top: 95%;
-    margin-top: 15%;
-    background: #183442;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #166e6f;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -37,6 +48,34 @@ button {
     background-color: #D4FFFA;
     color: #132839;
 }
+
+.triangulo{
+    /* position: absolute;
+    bottom: -10; */
+    background-color: #E2781C;
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+    width: 100%;
+    height: 200px;
+}
+
+.trapezio{
+    position: absolute;
+    bottom: -1;
+    right: 0;
+    background-color: #166e6f;
+    clip-path: polygon(60% 0, 100% 0, 100% 100%, 0% 100%);
+    width: 70vw;
+    height: 200px;
+}
+.teste{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+}
+
+
 
 @media screen and (max-width:1024px) {
     .container {
