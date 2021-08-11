@@ -26,6 +26,7 @@ function cadastroProdutos() {
         if (textArea[i].value == '') {
 
             textArea[i].style.border = 'red solid 2px'
+            
 
             send = false;
         }

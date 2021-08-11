@@ -37,7 +37,7 @@ body {
     
 }
 
-.editar, .remover, .gerenciar {
+.editar, .adicionar, .remover {
     opacity: 0.3;
 }
 
@@ -55,151 +55,159 @@ body {
     height: 85vh;
     border-radius: 15px;
 }
-
-.container-top-top {
-    display: flex;
-    justify-content: center;
+.container-top-1 {
     height: 10%;
-}
-
-.container-top {
-  
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-    border-bottom: solid 1px white;
-}
-
-.container-top label {
-    color: white;
-    font-size: 30px;
-}
-
-.container-mid {
-    height: 80%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-
-.container-bot-bottom {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 10%;
+    border-bottom: solid 1px white;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
 }
 
-.container-bottom {
-    
+.container-top-1 label {
+    font-size: 30px;
+}
+
+.container-top-2 {
+    height: 25%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    border-top: solid 1px white;
-    width: 70%;
+    border-bottom: solid 1px white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.container-top-2 .top {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
-.container-bottom button {
-    margin: 5%;
-    height: 35px;
-    width: 70%;
+.container-top-2 .top label {
+    font-size: 20px;
+}
+
+.container-top-2 .mid {
+    height: 35%;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.container-top-2 .mid input {
+    width: 100%;
+    border-radius: 12px;
+    border: 0;
+    outline: none;
+    background: rgba(196, 196, 196, 0.67);
+    font-size: 3vh;
+}
+.container-top-2 .bot {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-top-2 .bot button {
     border: 0;
     border-radius: 12px;
-    outline: none;
+    width: 60%;
+    height: 5vh;
+    font-size: 20px;
 }
 
-.container-mid .inputs{
-    height: 80%;
+.container-mid {
+    height: 45%;
+    border-bottom: solid 1px white;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .container-mid .mid-inputs {
     display: flex;
     flex-direction: column;
-    height: 25%;
-}
-
-
-.mid-inputs input {
-    margin-right: 5%;
-    margin-left: 5%;
-    width: 90%;
-    margin-top: 5px;
-    outline: none;
-    font-size: 25px;
-    border-radius: 8px;
-    border: 0;
-    background: rgba(196, 196, 196, 0.67);
+    justify-content: center;
+    height: 45%;
     
 }
 
-.mid-inputs label {
-    margin-left: 5%;
+.container-mid .mid-inputs input {
+    border-radius: 12px;
+    border: 0;
+    outline: none;
+    background: rgba(196, 196, 196, 0.67);
+    font-size: 3vh;
+}
+
+.container-mid .mid-inputs label {
     color: white;
 }
 
-.mid-file {
-    display: flex;
-    flex-direction: column;
+.container-bottom {
     height: 20%;
-    color: white;
-    margin-left: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 }
 
-.mid-file label {
-    padding-top:10px ;
+.container-bottom button {
+    border: 0;
+    border-radius: 12px;
+    width: 60%;
+    height: 5vh;
+    font-size: 20px;
 }
 
 ::placeholder {
-    color: rgba(255, 255, 255, 0.38);
+    
+    text-align: center;
     font-family: arial;
     font-style: italic;
-    font-size: 16px;
-    padding-left: 5px;
+    color: rgba(255, 255, 255, 0.38);
+    font-size: 20px;
 }
 
-.mid-inputs textarea {
-    margin-right: 5%;
-    margin-left: 5%;
-    width: 90%;
-    margin-top: 5px;
-    outline: none;
-    font-size: 2vh;
-    border-radius: 8px;
-    border: 0;
-    resize: none;
-    background: rgba(196, 196, 196, 0.67);
-}
 
-.mid-file input {
-    font-size: 13px;
-}
-.container-mid li {
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 5%;
-    border: 0;
-    padding: 0;
-    text-decoration: none;
-    list-style-type: none;
-    color: red;
-    font-size: 12px;
-    font-family: arial;
-    font-weight: bold;
-}
+
+
 
 
 
 @media screen and (max-width:1024px) {
-    .container-top label{
-        font-size: 3vw;
-    }
-
-    .container-bottom button{
-        font-size: 1.5vw;
-    }
-
+   
     .adicionar, .editar, .remover, .gerenciar label {
         font-size: 2.5vw;
         line-height: 2.5vw;
+    }
+
+    .container-meio {
+        width: 80%;
+    }
+
+    .container-top-1 label {
+        font-size: 3.3vw;
+    }
+
+    .container-top-2 label {
+        font-size: 2vw!important;
+    }
+    .container-top-2 .bot button {
+        font-size: 2vw;
+    }
+
+    .container-bottom button {
+        font-size: 2vw;
+    }
+
+    ::placeholder {
+        font-size: 2vw;
     }
 }
 
@@ -211,6 +219,26 @@ body {
     body {
         background-color: #6B8D8D;
         margin: 0;
+    }
+
+    .container-meio {
+        background-color: #183442;
+        width: 100%;
+    }
+
+    .container-top-1 label {
+        font-size: 4vw;
+    }
+
+    .container-top-2 label {
+        font-size: 3vw!important;
+    }
+    .container-top-2 .bot button {
+        font-size: 3.2vw;
+    }
+
+    .container-bottom button {
+        font-size: 3.5vw;
     }
 
     .adicionar, .editar, .remover, .gerenciar {
@@ -245,42 +273,6 @@ body {
        text-align: center;
    }
 
- 
-
-.container-bottom button {
-    height: 29px;
-    width: 100%;
-    font-size: 16px;
-    
-}
-
-.container-top-top {
-    padding-top: 8px;
-}
-
-   .container-bottom {
-   
-    display: flex;
-    justify-content: center;
-}
-
-   .container-meio {
-    margin-top: 15px;
-    background-color: #183442;
-    width: 300px;
-    height: 600px;
-   }
-
-   .container-top label {
-       font-size: 17px;
-   }
-
-   .inputs {
-    justify-content: center;
-   }
-
-   
-
    .logo img {
     height: 100%;
     margin-left: 10px;
@@ -290,9 +282,11 @@ body {
        display: none;
    }
 
-   .mid-file input {
-    font-size: 10px;
-    }
+   ::placeholder {
+       font-size: 3.3vw;
+   }
+
+   
 }
 
 @media screen and (max-width:373px) {
@@ -305,25 +299,7 @@ body {
         line-height: 4vw;
     }
 
-    .container-bottom button {
-        font-size: 4vw;
-    }
-
-    .container-top label {
-        font-size: 5vw;
-    }
-
-    ::placeholder {
-        font-size: 4vw;
-    }
-
-    .mid-file input {
-        font-size: 3vw;
-    }
-
-    .mid-file label {
-        font-size: 4vw;
-    }
+    
 }
 
 @media screen and (max-width:280px) {
@@ -331,13 +307,17 @@ body {
         font-size: 4vw;
     }
 
-    .mid-file input {
-        font-size: 4vw;
+    .container-top-1 label {
+        font-size: 6vw;
     }
 
-    .mid-file label {
-        font-size: 4vw;
+    .container-top-2 label {
+        font-size: 4vw!important;
     }
+    .container-top-2 .bot button {
+        font-size: 3.7vw;
+    }
+   
 
     .logo img {
         margin-left: 5px;
@@ -347,6 +327,10 @@ body {
     margin-top: 5%;
     padding: 16px;
     background-color: #6B8D8D;
+    }
+
+    ::placeholder {
+        font-size: 4vw;
     }
 }
 
