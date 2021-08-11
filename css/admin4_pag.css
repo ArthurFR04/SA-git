@@ -94,7 +94,7 @@ body {
 .container-top-2 .mid {
     height: 35%;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     width: 100%;
 }
 
@@ -174,10 +174,19 @@ body {
     font-size: 20px;
 }
 
-
-
-
-
+.container-top-2 li {
+    display: flex;
+    justify-content: flex-end;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+    margin-bottom: 0;
+}
 
 
 @media screen and (max-width:1024px) {

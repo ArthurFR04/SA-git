@@ -1,0 +1,82 @@
+let inputs = document.querySelectorAll('input')
+let li = document.querySelectorAll('li')
+var produtoCadastro = JSON.parse(localStorage.getItem('Produto'))
+
+
+
+function localizarProduto() {
+
+    let send = true;
+
+
+    if (inputs[0].value == '') {
+
+        li[0].innerHTML = 'Preencha o campo!'
+        inputs[0].style.border = 'red solid 2px'
+        inputs[1].value = ''
+        inputs[2].value = ''
+        inputs[3].value = ''
+
+        send = false
+    } else {
+        clear()
+    }
+
+
+
+    if (send !== true) {
+        return false;
+    }
+
+
+
+    for (let i = 0; i < produtoCadastro.length; i++) {
+
+        if (produtoCadastro[i].nome == inputs[0].value || produtoCadastro[i].codigo == inputs[0].value) {
+
+            console.log('if');
+            inputs[0].value = ''
+            inputs[1].value = produtoCadastro[i].nome
+            inputs[2].value = produtoCadastro[i].codigo
+            inputs[3].value = produtoCadastro[i].preco
+
+        }
+
+
+    }
+
+
+}
+
+let indice = null
+
+function removerProduto() {
+
+    for (let i = 0; i < produtoCadastro.length; i++) {
+        if (produtoCadastro[i].nome == inputs[1].value && produtoCadastro[i].codigo == inputs[2].value && produtoCadastro[i].preco == inputs[3].value) {
+
+            indice = i;
+            produtoCadastro.splice(indice, 1);
+            localStorage.setItem('Produto', JSON.stringify(produtoCadastro))
+
+            inputs[1].value = ''
+            inputs[2].value = ''
+            inputs[3].value = ''
+        } else {
+            alert('Localize o produto!')
+        }
+
+    }
+}
+
+
+function clear() {
+
+    for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS ERROS DOS INPUTS
+        li[0].innerHTML = '';
+        inputs[0].style = '';
+
+
+
+    }
+}
