@@ -34,11 +34,18 @@ body {
     justify-content: initial;
     cursor: pointer;
     line-height: 2vw;
+    text-decoration: none;
     
 }
 
-.editar, .adicionar, .gerenciar {
+.editar, .adicionar, .remover {
     opacity: 0.3;
+}
+
+.adicionar:hover, .editar:hover, .remover:hover, .gerenciar:hover{
+    color: white;
+    opacity: 0.5;
+   
 }
 
 .container-r {
@@ -133,7 +140,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 32%;
+    height: 45%;
     
 }
 
@@ -187,10 +194,6 @@ body {
     font-weight: bold;
     margin-bottom: 0;
 }
-
-
-
-
 
 
 @media screen and (max-width:1024px) {

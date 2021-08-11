@@ -1,0 +1,63 @@
+
+
+ 
+
+
+
+
+
+.container-top {
+
+    border-bottom: solid 1px white;
+}
+
+.container-bottom {
+    border-top: solid 1px white;
+}
+
+
+
+
+
+.container-mid .inputs{
+    height: 80%;
+}
+
+.container-mid .mid-inputs {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+}
+
+
+.mid-inputs input {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 25px;
+    border-radius: 8px;
+    border: 0;
+    background: rgba(196, 196, 196, 0.67);
+    
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, 0.38);
+}
+
+
+
+.mid-inputs textarea {
+    width: 90%;
+    background: rgba(196, 196, 196, 0.67);
+}
+
+.mid-file input {
+    font-size: 13px;
+}
+
+
+
+
