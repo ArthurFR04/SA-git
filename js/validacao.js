@@ -111,6 +111,7 @@ function cadastrar() {
         apelido: inputs[0].value,                                                                              // Editável
         email: inputs[1].value,                                                                                // Editável
         senha: inputs[3].value,                                                                                // Editável
+        carrinho: [],
     }
 
     if (cadastros2 === null) {  // Adicionando um array com um objeto no localstorage
