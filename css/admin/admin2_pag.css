@@ -1,54 +1,91 @@
-  
+.container-right {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    background-color: rgba(107, 141, 141, 0.925);
+    width: 65vw;
+    height: 85vh;
+    border-radius: 15px;
+}
 
-.meio-l {
+.container-topper {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 100%;
+    margin-top: 3%;
+}
+
+.container-topper label {
+    color: white;
+    font-size: 2vw;
+}
+
+.localizar-produto {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+}
+
+.container-midson {
+    display: flex;
+    height: 80%;
+}
+
+.midson-l-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+
+.midson-l-inputs label {
+    margin-top: 5%;
+}
+
+.localizar-input {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.localizar-input input {
+    border: none;
+    padding: 0;
+}
+
+.localizar-input button {
+    border: none;
+    background: none;
+}
+
+.localizar-input button img {
+    height: 30px;
+    width: 30px;
+}
+
+.midson-l {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 50%;
 }
 
-.container-top {
-
-    border-bottom: solid 2px white;
-}
-
-.container-bottom {
-
-    border-top: solid 2px white;
-}
-
-.container-mid .mid-inputs {
+.midson-r {
     display: flex;
     flex-direction: column;
-    height: 20%;
+    align-items: center;
+    width: 50%;
 }
 
-.mid-inputs input {
-    margin-right: 5%;
-    margin-left: 5%;
-    width: 35%;
-    height: 5vh;
-    margin-top: 5px;
-    outline: none;
-    font-size: 25px;
-    border-radius: 8px;
-    border: 0;
-    
+.container-bottomson {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 10%;
 }
-
-
-
-.mid-file label {
-    padding-top:10px ;
-}
-
-::placeholder {
-    opacity: 0.5;
-}
-
-.mid-inputs textarea {
-    width: 35%;
-    height: 6vh;
-}
-
-.mid-file input {
-    font-size: 11px;
-}
-
