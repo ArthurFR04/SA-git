@@ -87,6 +87,15 @@ footer{
     border-radius: 8px;
 }
 
+.qtd-label {
+    text-decoration: none;
+    color: white;
+}
+
+.qtd-label:hover {
+    color: rgb(212, 212, 212);
+}
+
 .container-mid .qtd-label {
     cursor: pointer;
     font-size: 20px;
