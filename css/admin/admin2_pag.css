@@ -1,11 +1,19 @@
+.active {
+    opacity: 1;
+}
+
+.active :hover {
+    opacity: 1;
+}
+
 .container-right {
     display: flex;
     flex-direction: column;
-    margin-top: 5vw;
+    margin-top: 2vw;
     margin-left: 5vw;
     background-color: rgba(107, 141, 141, 0.925);
     width: 65vw;
-    height: 85vh;
+    height: 92vh;
     border-radius: 15px;
 }
 
@@ -13,8 +21,10 @@
     display: flex;
     justify-content: center;
     height: 10%;
-    width: 100%;
     margin-top: 3%;
+    margin-left: 6%;
+    margin-right: 6%;
+    border-bottom: solid 1px white;
 }
 
 .container-topper label {
@@ -22,7 +32,8 @@
     font-size: 2vw;
 }
 
-.localizar-produto {
+.localizar-produto, .editar-produto {
+    margin-top: 5%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -30,20 +41,151 @@
     font-size: 20px;
 }
 
+.localizar-produto {
+    margin-bottom: 2%;
+}
+
+.editar-produto {
+    margin-bottom: 6.7%;
+}
+
 .container-midson {
     display: flex;
     height: 80%;
 }
 
-.midson-l-inputs {
+.mid-l-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 1%;
 }
 
+.mid-r-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 1%;
+}
 
+.mid-l-inputs label {
+    font-size: 2.1vh;
+}
+
+.mid-r-inputs label {
+    font-size: 2.1vh;
+}
+
+.mid-l-inputs input {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+    background: rgba(196, 196, 196, 0.67);
+}
+
+.mid-r-inputs input {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 100%;
+    margin-top: 5px;
+    height: 30px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+    background: rgba(196, 196, 196, 0.67);
+}
+
+.mid-l-inputs label {
+    margin-top: 1%;
+    margin-left: 5%;
+    color: white;
+}
+
+.mid-r-inputs label {
+    margin-top: 2%;
+    margin-left: 5%;
+    color: white;
+}
+
+.mid-l-inputs textarea {
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-left: 6%;
+    outline: none;
+    font-size: 2vh;
+    border-radius: 8px;
+    border: 0;
+    resize: none;
+    height: 50px;
+    width: 250px;
+    background: rgba(196, 196, 196, 0.67);
+}
+
+.mid-r-inputs textarea {
+    margin-right: 5%;
+    margin-top: 5px;
+    margin-left: 6%;
+    outline: none;
+    font-size: 2vh;
+    border-radius: 8px;
+    border: 0;
+    resize: none;
+    height: 50px;
+    width: 250px;
+    background: rgba(196, 196, 196, 0.67);
+}
+
+.textarea label {
+    font-size: 2vh;
+}
+
+.mid-l-inputs li {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+.mid-r-inputs li {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+::placeholder {
+    font-family: arial;
+    font-style: italic;
+    font-size: 12px;
+    padding-left: 5px;
+}
 
 .midson-l-inputs label {
+    margin-top: 5%;
+}
+
+.midson-r-inputs label {
     margin-top: 5%;
 }
 
@@ -55,8 +197,12 @@
 }
 
 .localizar-input input {
-    border: none;
-    padding: 0;
+    height: 20px;
+    outline: none;
+    font-size: 20px;
+    border-radius: 8px;
+    border: 0;
+    background: rgba(196, 196, 196, 0.67);
 }
 
 .localizar-input button {
@@ -65,15 +211,17 @@
 }
 
 .localizar-input button img {
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
 }
 
 .midson-l {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     width: 50%;
+    margin-left: 5%;
+    border-right: solid 1px white;
 }
 
 .midson-r {
@@ -81,11 +229,61 @@
     flex-direction: column;
     align-items: center;
     width: 50%;
+    margin-right: 5%;
 }
 
 .container-bottomson {
     display: flex;
     justify-content: center;
-    width: 100%;
     height: 10%;
+    margin-top: 1px;
+    margin-left: 6%;
+    margin-right: 6%;
+    border-top: solid 1px white;
+}
+
+.container-bottomson button {
+    margin-top: 10%;
+    height: 35px;
+    width: 100%;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+}
+
+.img-produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-top: 1%;
+}
+
+.imagem-produto {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+    margin-left: 5%;
+    color: white;
+
+}
+
+.img-produto img {
+    height: 60px;
+    width: 60px;
+}
+
+.mid-file input {
+    font-size: 13px;
+}
+
+.mid-file {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 20%;
+    color: white;
+    margin-left: 5%;
+    padding-top: 5%;
 }

@@ -37,7 +37,7 @@
 
             <div class="editar-produtos">
 
-                <a class="editar" href="admin2_pag.html">Editar produtos</a>
+                <a class="editar active" href="admin2_pag.html">Editar produtos</a>
 
             </div>
 
@@ -66,7 +66,7 @@
             <div class="container-midson">
 
                 <div class="midson-l">
-                    
+
                     <div class="localizar-produto">
 
                         <label>Localize o produto</label>
@@ -74,57 +74,86 @@
                     </div>
 
                     <div class="localizar-input">
-                        
+
                         <input type="text">
                         <button type="submit"><img src="./img/search.png" alt="Search" /></button>
-                        
+
                     </div>
 
 
-                    <div class="midson-l-inputs">
+                    <div class="mid-l-inputs">
                         <label>Nome</label>
-                        <input type="text" placeholder="Confirme o produto desejado">
+                        <input type="text" readonly placeholder="Confirme o produto desejado">
                     </div>
 
                     <div class="mid-l-inputs">
                         <label for="">Código</label>
-                        <input type="text" placeholder="Insira o código do produto">
+                        <input type="text" readonly placeholder="Confirme o código do produto">
                         <li></li>
                     </div>
 
                     <div class="mid-l-inputs">
                         <label for="">Preço</label>
-                        <input type="number" placeholder="Insira o preço do produto">
+                        <input type="number" readonly placeholder="Confime o preço do produto">
                         <li></li>
                     </div>
 
                     <div class="mid-l-inputs">
                         <label for="">Descrição do produto</label>
-                        <textarea name="" id=""rows="5"></textarea>
+                        <textarea name="" id="" cols="5" readonly></textarea>
                         <li></li>
                     </div>
-                
-                    <div class="mid-file">
-                        <label for="">Selecione uma imagem</label>
-                        <input type="file" id="foto">
-                        
+
+                    <div class="imagem-produto">
+
+                        <label>Imagem</label>
+
                     </div>
 
+                    <div class="img-produto">
+                        
+                        <img src="./img/canecajs.png" id="" alt="">
+
+                    </div>
 
                 </div>
 
 
                 <div class="midson-r">
-                        <div class="editar-produto">
+                    <div class="editar-produto">
 
-                            <label>Edite o produto</label>
+                        <label>Edite o produto</label>
 
-                        </div>
+                    </div>
 
-                    <div class="midson-r-inputs">
+                    <div class="mid-r-inputs">
                         <label>Nome</label>
-                        <input type="text" placeholder="Insira o nome desejado">
+                        <input type="text" placeholder="Edite o produto desejado">
+                    </div>
 
+                    <div class="mid-r-inputs">
+                        <label for="">Código</label>
+                        <input type="text" placeholder="Edite o código do produto">
+                        <li></li>
+                    </div>
+
+                    <div class="mid-r-inputs">
+                        <label for="">Preço</label>
+                        <input type="number" placeholder="Edite o preço do produto">
+                        <li></li>
+                    </div>
+
+                    <div class="mid-r-inputs">
+                        <label for="">Descrição do produto</label>
+                        <textarea name="" id="" cols="5" ></textarea>
+                        <li></li>
+                    </div>
+
+                    <div class="mid-file">
+                    
+                        <label>Selecione uma imagem</label>
+                        <input type="file" id="foto">
+                        
                     </div>
 
                 </div>
@@ -136,7 +165,7 @@
                 <div class="bottomson-button">
                     <button>Editar produto</button>
                 </div>
-                
+
             </div>
 
         </div>
@@ -145,13 +174,13 @@
 
 
 
-    
 
-<!-- <footer></footer> -->
+
+    <!-- <footer></footer> -->
 
     <script src="./js/admin.js"></script>
     <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
-    
+
 </body>
 
 </html>
