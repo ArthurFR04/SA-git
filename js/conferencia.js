@@ -10,11 +10,12 @@ function sair_login() {
 
     if (sureOut == true) {
    
-        remLogin = {            //remLogin = remover login
-            status: 0,    //uso pra definir se o login foi ou não efetuado 1(sim)  0(não)
-            id: '',       //nome nulo, só receberá o nome do usuário após o login
-        }
-        localStorage.setItem('Login', JSON.stringify(remLogin));
+        localStorage.removeItem('Login')
+        // remLogin = {            //remLogin = remover login
+        //     status: 0,    //uso pra definir se o login foi ou não efetuado 1(sim)  0(não)
+        //     id: '',       //nome nulo, só receberá o nome do usuário após o login
+        // }
+        //localStorage.setItem('Login', JSON.stringify(remLogin));
         window.location.reload()
     }
 }

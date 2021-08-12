@@ -13,7 +13,6 @@ function add_car(id) {
 
     let user_car = pessoas[position].carrinho
 
-
     if (user_car.length < 1) {
 
         let prod_car = {
@@ -29,22 +28,17 @@ function add_car(id) {
 
     let testeDoPapi = 0
 
-    for (let i=0; i<=user_car.length; i++) {
-        
+    for (let i=0; i<user_car.length; i++) {
+
         if (user_car[i].id == id) {
-console.log('oi oi poai');
+
             pessoas[position].carrinho[i].quantidade++
             localStorage.setItem('Pessoas', JSON.stringify(pessoas))
             testeDoPapi = 1
-
-            return false
         }
     }
-    if (testeDoPapi = 0) {
-        console.log(user_car[i].id);
-        console.log(i);
-        console.log(id);
-    console.log('else');
+    
+    if (testeDoPapi == 0) {
 
         let prod_car = {
             id: id,
@@ -57,12 +51,6 @@ console.log('oi oi poai');
         return false
     }
 
-    let prod_car = {
-        id: id,
-        quantidade:1
-    }
-    
-    pessoas[position].carrinho.push()
 }
 
 
