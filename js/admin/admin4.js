@@ -6,7 +6,8 @@ var pessoasCadastro = JSON.parse(localStorage.getItem('Pessoas'))
 
 function localizarPessoas() {
 
-    let send = true;
+    let send = true
+    let send1 =  true
 
 
     if (inputs[0].value == '') {
@@ -21,8 +22,30 @@ function localizarPessoas() {
         clear()
     }
 
+    if (send !== true) {
+        return false;
+    }
 
+    for (let i = 0; i < pessoasCadastro.length; i++) {
 
+        if (pessoasCadastro[i].apelido == inputs[0].value || pessoasCadastro[i].email == inputs[0].value) {
+            
+            send1 = false;
+        } 
+
+        
+    }
+    if (send1 == true) {
+        li[0].innerHTML = 'Esse usuário não existe!'
+        inputs[0].style.border = 'red solid 2px'
+        inputs[1].value = ''
+        inputs[2].value = ''
+        
+        
+
+        send = false;
+    } 
+   
     if (send !== true) {
         return false;
     }
