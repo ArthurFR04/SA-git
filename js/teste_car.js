@@ -32,7 +32,7 @@ function add_car(id) {
     for (let i=0; i<=user_car.length; i++) {
         
         if (user_car[i].id == id) {
-console.log('oi oi poai');
+console.log('oi oi poai via otma cu ');
             pessoas[position].carrinho[i].quantidade++
             localStorage.setItem('Pessoas', JSON.stringify(pessoas))
             testeDoPapi = 1

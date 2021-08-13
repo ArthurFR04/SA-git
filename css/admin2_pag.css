@@ -1,3 +1,52 @@
+body {
+    background-color: #132839;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/BG-image.jpg);
+    margin: 0;
+}
+
+.container-main {
+    display: flex;
+}
+
+.adicionar, .editar, .remover, .gerenciar {
+    color: white;
+    display: flex;
+    font-size: 22px;
+    display: flex;
+    margin: 10%;
+    padding: 5%;
+    justify-content: initial;
+    cursor: pointer;
+    line-height: 2vw;
+    text-decoration: none;
+    
+}
+
+.adicionar, .editar, .remover, .gerenciar {
+    opacity: 0.3;
+}
+
+.adicionar:hover, .editar:hover, .remover:hover, .gerenciar:hover{
+    color: white;
+    opacity: 0.5;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+.container-l {
+    width: 20%;
+    background-color: #183442;
+    height: 100vh;
+}
+
 .active {
     opacity: 1;
 }
@@ -266,7 +315,6 @@
     margin-top: 1%;
     margin-left: 5%;
     color: white;
-
 }
 
 .img-produto img {
@@ -286,4 +334,222 @@
     color: white;
     margin-left: 5%;
     padding-top: 5%;
+}
+
+@media screen and (max-width:933px) {
+    body {
+        background-color: #6B8D8D;
+        margin: 0;
+    }
+    
+    .container-right {
+        height: 100%;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-l {
+        width: 100%;
+        background-color: #183442;
+        height: 10vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 84px;
+        margin-top: 50%;
+    }
+
+    .logo img {
+        height: 89px;
+        padding-left: 5%;
+        padding-right: 10%;
+    }
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        color: white;
+        display: flex;
+        font-size: 12px;
+        text-align: center;
+        line-height: 2vw;
+    }
+
+    .container-right {
+        margin-right: 0;
+        margin-left: 0;
+        margin-top: 8%;
+        background-color: #183442;
+    }
+
+    .editar-produto label {
+        padding-top: 10%;
+    }
+
+    .editar-produto {
+        border-top: solid 1px white;
+        margin-top: 15%;
+    }
+    
+    .container-topper label {
+        font-size: 3.5vw;
+    }
+
+    .container-midson {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .midson-l {
+        border-right: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .midson-r {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 0;
+        margin-bottom: 10%;
+        width: 90%;
+    }
+
+    .localizar-input {
+        margin-bottom: 10%;
+    }
+
+    .mid-l-inputs {
+        padding-top: 5%;
+    }
+
+    .mid-l-inputs input {
+        margin: 0;
+    }
+
+    .mid-l-inputs label {
+        margin: 0;
+    }
+
+    .mid-l-inputs textarea {
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .mid-r-inputs {
+        padding-top: 5%;
+    }
+
+    .mid-r-inputs input {
+        margin: 0;
+    }
+
+    .mid-r-inputs label {
+        margin: 0;
+    }
+
+    .mid-r-inputs textarea {
+        margin-right: 0;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .localizar-input input {
+        height: 20px;
+        width: 50vw;
+        margin-left: 7%;
+    }
+
+    .img-produto {
+        padding-top: 10%;
+        margin-left: 0;
+    }
+
+    .localizar-produto label {
+        font-size: 4vh;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .logo label {
+        font-size: 2vw;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .logo img {
+        padding-left: 10%;
+        height: 75px;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar label {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+
+    .mid-l-inputs textarea {
+        margin-left: 0;
+        margin-right: 0;
+        width: 42vw;
+    }
+
+    .localizar-produto label {
+        font-size: 3vh;
+    }
+
+}
+
+@media screen and (max-width:550px) {
+    .mid-file input {
+        font-size: 1vw;
+    }
+
+    .localizar-produto label {
+        font-size: 3vw;
+    }
+
+    .mid-r-inputs textarea {
+        margin-left: 0;
+        margin-right: 0;
+        width: 42vw;
+    }
+
+    .mid-file label {
+        font-size: 2vh;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        color: white;
+        display: flex;
+        font-size: 1.5vh;
+        text-align: center;
+        line-height: 2.5vw;
+    }
+
+    .localizar-input input {
+        width: 33vw;
+        margin-left: 21%;
+    }
+
+    .mid-file input {
+        font-size: 2.5vw;
+    }
+
+    .container-l {
+        padding-right: 0;
+        line-height: 1.5vh;
+    }
+
 }

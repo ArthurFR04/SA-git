@@ -70,11 +70,11 @@ function verificar_login_carrinho() {
         let timerInterval
         Swal.fire({
             icon: 'question',
-            title: 'Oii, quem é você ?',
+            title: 'Você precisa fazer o login para acessar o carrinho',
             text: 'Antes de a gente ir pro carrinho, precisamos do seu login.',
             backdrop: `#183442c4`,
             allowOutsideClick: false,
-            timer: 6000,
+            timer: 2500,
             timerProgressBar: true,
             didOpen: () => {
                 Swal.showLoading()
