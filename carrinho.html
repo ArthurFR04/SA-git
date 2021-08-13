@@ -16,7 +16,7 @@
 
 </head>
 
-<body onload="verificar_login_carrinho()">
+<body onload="verificar_login_carrinho() , displayzeraPah()" >
     <!--As navbars-->
     <nav class="nav-cian navbar imp-nav navbar-dark">
         <div class="container-fluid" style="height: 100%;">
@@ -92,16 +92,9 @@
 
             </div>
 
-            <div id="pro" class="container-mid">
-                <div class="produto">
-                    <img src="./img/canecajs.png" alt="">
-                    <div class="quantidade">
-                        <a href="javascript:rem_car(${produtos[i].id});" class="qtd-label">-</a>
-                        <label id="quant-carr">-</label>
-                        <a href="javascript:add_car(${produtos[i].id});" class="qtd-label">+</a>
-                    </div>
-                    <label id="preço-carr">--,--</label>
-                </div>
+            <div id="vitrine-carr" class="container-mid">
+
+                
                 <!-- <div class="produto">
                     <img src="./img/canecajs.png" alt="">
                     <div class="quantidade">
@@ -193,7 +186,7 @@
                 <div class="label-span">
                     <div class="label-r">
                         <label class="qtd-produto">Produto(s)</label>
-                        <span id="preco-produto">R$ 29,90</span>
+                        <span id="preco-produto">R$ --,--</span>
                        
                     </div>
 
@@ -212,7 +205,7 @@
 
                 <div class="detalhes-precototal">
                     <label class="preco-total">Total</label>
-                    <span id="span-total">R$ 29,90</span>
+                    <span id="span-total">R$ </span>
                 </div>
 
             </div>
@@ -233,6 +226,8 @@
     <script src="./js/sweetalert2.js"></script>
     <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
     <script src="./js/conferencia.js"></script>
+    <script src="./js/teste_car.js"></script>
+    <script src="./js/carrinho.js"></script>
 </body>
 
 </html>

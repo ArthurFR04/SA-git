@@ -70,15 +70,16 @@ function rem_car(id) {
         if (pessoas[position].carrinho[i].quantidade == 0 || pessoas[position].carrinho[i].quantidade < 1) {
 
             exc_car(id)
+
+            function exc_car(id) {
+            
+                pessoas[position].carrinho.splice(i, 1)
+                localStorage.setItem('Pessoas', JSON.stringify(pessoas))
+            }
         }
     }
 }
 
-function exc_car(id) {
-
-    pessoas[position].carrinho.splice(i, 1)
-    localStorage.setItem('Pessoas', JSON.stringify(pessoas))
-}
 
 
 

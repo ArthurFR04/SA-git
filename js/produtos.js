@@ -9,7 +9,7 @@ let produtos = [
         id: 201,
         nome: 'Caneca Stars Wars',
         preco: '35,00',
-        foto: '<img src="./img/caneca-Marvel.jpg"></img>',
+        foto: '<img src="./img/caneca-Star-Wars.jpg"></img>',
     }
 ]
 

@@ -101,6 +101,12 @@ footer{
     font-size: 20px;
 }
 
+.carrinhoVazio{ /* div adicionada pelo js (carrinho.js)*/
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
+}
+
 .container-r {
     
     width: 20%;
