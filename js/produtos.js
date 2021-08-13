@@ -23,7 +23,7 @@ for (let i=0; i<produtos.length; i++) {
             <h2 id="nome-prod${i}"></h2>
             <label id="img-prod${i}"></label>
             <h3 id="preco_prod${i}"></h3> 
-            <a href="javascript:add_car(${produtos[i].id});">Adicionar ao carrinho</a>
+            <a id="liveToastBtn" href="javascript:add_car(${produtos[i].id}), msg_add();">Adicionar ao carrinho</a>
         </div>
     `
     
