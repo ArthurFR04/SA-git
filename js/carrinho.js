@@ -64,7 +64,7 @@ function displayzeraPah() {
                         <a href="javascript:add_car(${user_car[i].id}); window.location.reload();" class="qtd-label">+</a>
                     </div>
                     <label id="preço-carr">${precoStrin}</label>
-                </div>     
+                </div>
             `
             precoTotal += precoNum
         }

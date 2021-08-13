@@ -11,21 +11,16 @@ function sair_login() {
     if (sureOut == true) {
    
         localStorage.removeItem('Login')
-        // remLogin = {            //remLogin = remover login
-        //     status: 0,    //uso pra definir se o login foi ou não efetuado 1(sim)  0(não)
-        //     id: '',       //nome nulo, só receberá o nome do usuário após o login
-        // }
-        //localStorage.setItem('Login', JSON.stringify(remLogin));
+
         window.location.reload()
     }
 }
 
 
-
 //quando entrar ou atualizar a página index essa função será efetuada
 
 function verificar_login_index() {  
-    console.log(dados);
+
     if ( dados === null || dados.status == 0) {  //se o login não foi efetuado apareceram as opções de cadastro e login
 
         document.getElementById('perfilNon').innerHTML=`
