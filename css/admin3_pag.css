@@ -1,7 +1,46 @@
+body {
+    background-color: #132839;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../img/BG-image.jpg);
+    margin: 0;
+}
+
+.container-main {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 10%;
+}
+
+.container-l {
+    width: 20%;
+    background-color: #183442;
+    height: 100vh;
+}
 
 
 
+.container-r {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
 
+.container-meio {
+    margin-top: 2vw;
+    background-color: rgba(107, 141, 141, 0.925);
+    width: 35vw;
+    height: 85vh;
+    border-radius: 15px;
+}
 .container-top-1 {
     height: 10%;
     display: flex;
@@ -80,7 +119,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 45%;
+    height: 32%;
     
 }
 
@@ -98,18 +137,25 @@
 
 .container-bottom {
     height: 20%;
+    display: flex;
+    justify-content: center;
     align-items: center;
     width: 100%;
 }
 
 .container-bottom button {
+    border: 0;
+    border-radius: 12px;
     width: 60%;
     height: 5vh;
     font-size: 20px;
 }
 
 ::placeholder {
+    
     text-align: center;
+    font-family: arial;
+    font-style: italic;
     color: rgba(255, 255, 255, 0.38);
     font-size: 20px;
 }
@@ -127,6 +173,37 @@
     font-weight: bold;
     margin-bottom: 0;
 }
+
+.adicionar, .editar, .remover, .gerenciar {
+    color: white;
+    display: flex;
+    font-size: 22px;
+    display: flex;
+    margin: 10%;
+    padding: 5%;
+    justify-content: initial;
+    cursor: pointer;
+    line-height: 2vw;
+    text-decoration: none;
+
+}
+
+.adicionar, .editar, .remover, .gerenciar {
+    opacity: 0.3;
+}
+
+.adicionar:hover, .editar:hover, .remover:hover, .gerenciar:hover{
+    color: white;
+    opacity: 0.5;
+}
+.active {
+    opacity: 1;
+}
+.active:hover {
+    opacity: 1;
+}
+
+
 
 
 @media screen and (max-width:1024px) {
@@ -158,6 +235,7 @@
     ::placeholder {
         font-size: 2vw;
     }
+   
 }
 
 @media screen and (max-width:900px) {
@@ -174,7 +252,9 @@
         background-color: #183442;
         width: 100%;
     }
-
+    .container-top-1 {
+        margin-bottom: 5%;
+    }
     .container-top-1 label {
         font-size: 4vw;
     }
@@ -202,6 +282,7 @@
 
     .logo {
         height: 10vh;
+        margin-top: 0;
     }
 
    .container-l {

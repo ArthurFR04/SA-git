@@ -85,6 +85,11 @@ function removerProduto() {
             inputs[1].value = ''
             inputs[2].value = ''
             inputs[3].value = ''
+
+            Swal.fire ({
+                icon: 'success',
+                title: 'Produto Removido!'
+            })
         }
     }
 }

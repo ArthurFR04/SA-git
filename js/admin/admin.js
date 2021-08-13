@@ -101,7 +101,12 @@ function cadastroProdutos() {
         produtoCadastro.push(produto)
         localStorage.setItem('Produto', JSON.stringify(produtoCadastro))
 
+        Swal.fire ({
+            icon: 'success',
+            title: 'Produto Adicionado!'
+        })
         clean()
+       
 
     } else if (produtoCadastro == null) {
 
@@ -109,6 +114,10 @@ function cadastroProdutos() {
         produtos.push(produto)
         localStorage.setItem('Produto', JSON.stringify(produtos))
        
+        Swal.fire ({
+            icon: 'success',
+            title: 'Produto Adicionado!'
+        })
         clean()
        
     }

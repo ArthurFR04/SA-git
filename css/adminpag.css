@@ -2,7 +2,7 @@ body {
     background-color: #132839;
     background-size: 100%;
     background-repeat: no-repeat;
-    background-image: url(../../img/BG-image.jpg);
+    background-image: url(../img/BG-image.jpg);
     margin: 0;
 }
 
@@ -16,7 +16,7 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
-    margin-top: 1vw;
+    margin-top: 10%;
 }
 
 .container-l {
@@ -25,43 +25,12 @@ body {
     height: 100vh;
 }
 
-.adicionar, .editar, .remover, .gerenciar {
-    color: white;
-    display: flex;
-    font-size: 22px;
-    display: flex;
-    margin: 10%;
-    padding: 5%;
-    justify-content: initial;
-    cursor: pointer;
-    line-height: 2vw;
-    text-decoration: none;
-    
-}
-
-.adicionar, .editar, .remover, .gerenciar {
-    opacity: 0.3;
-}
-
-.adicionar:hover, .editar:hover, .remover:hover, .gerenciar:hover{
-    color: white;
-    opacity: 0.5;
-}
-
-.active{
-    opacity: 1;
-}
-
-.active:hover{
-    opacity: 1;
-}
-
 .container-r {
     width: 65%;
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}   
 
 .container-meio {
     margin-top: 2vw;
@@ -82,6 +51,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    border-bottom: solid 1px white;
 }
 
 .container-top label {
@@ -89,13 +59,13 @@ body {
     font-size: 30px;
 }
 
-
 .container-mid {
     height: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 
 .container-bot-bottom {
     display: flex;
@@ -121,11 +91,34 @@ body {
     outline: none;
 }
 
+.container-mid .inputs{
+    height: 80%;
+}
+
+.container-mid .mid-inputs {
+    display: flex;
+    flex-direction: column;
+    height: 25%;
+}
+
+
+.mid-inputs input {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 25px;
+    border-radius: 8px;
+    border: 0;
+    background: rgba(196, 196, 196, 0.67);
+    
+}
+
 .mid-inputs label {
     margin-left: 5%;
     color: white;
 }
-
 
 .mid-file {
     display: flex;
@@ -135,12 +128,12 @@ body {
     margin-left: 5%;
 }
 
-
 .mid-file label {
     padding-top:10px ;
 }
 
 ::placeholder {
+    color: rgba(255, 255, 255, 0.38);
     font-family: arial;
     font-style: italic;
     font-size: 16px;
@@ -150,14 +143,19 @@ body {
 .mid-inputs textarea {
     margin-right: 5%;
     margin-left: 5%;
+    width: 90%;
     margin-top: 5px;
     outline: none;
     font-size: 2vh;
     border-radius: 8px;
     border: 0;
     resize: none;
+    background: rgba(196, 196, 196, 0.67);
 }
 
+.mid-file input {
+    font-size: 13px;
+}
 .container-mid li {
     display: flex;
     justify-content: flex-end;
@@ -171,6 +169,36 @@ body {
     font-family: arial;
     font-weight: bold;
 }
+
+.adicionar, .editar, .remover, .gerenciar {
+    color: white;
+    display: flex;
+    font-size: 22px;
+    display: flex;
+    margin: 10%;
+    padding: 5%;
+    justify-content: initial;
+    cursor: pointer;
+    line-height: 2vw;
+    text-decoration: none;
+
+}
+
+.adicionar, .editar, .remover, .gerenciar {
+    opacity: 0.3;
+}
+
+.adicionar:hover, .editar:hover, .remover:hover, .gerenciar:hover{
+    color: white;
+    opacity: 0.5;
+}
+.active {
+    opacity: 1;
+}
+.active:hover {
+    opacity: 1;
+}
+
 
 
 @media screen and (max-width:1024px) {
@@ -210,6 +238,7 @@ body {
 
     .logo {
         height: 10vh;
+        margin-top: 0;
     }
 
    .container-l {
@@ -232,22 +261,22 @@ body {
 
  
 
-    .container-bottom button {
-        height: 29px;
-        width: 100%;
-        font-size: 16px;
-        
-    }
-
-    .container-top-top {
-        padding-top: 8px;
-    }
-
-    .container-bottom {
+.container-bottom button {
+    height: 29px;
+    width: 100%;
+    font-size: 16px;
     
-        display: flex;
-        justify-content: center;
-    }
+}
+
+.container-top-top {
+    padding-top: 8px;
+}
+
+   .container-bottom {
+   
+    display: flex;
+    justify-content: center;
+}
 
    .container-meio {
     margin-top: 15px;
@@ -255,6 +284,10 @@ body {
     width: 300px;
     height: 600px;
    }
+
+   .container-top-1 {
+    margin-bottom: 5%;
+}
 
    .container-top label {
        font-size: 17px;
@@ -353,3 +386,4 @@ body {
     }
     
 }
+

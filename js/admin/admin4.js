@@ -79,6 +79,11 @@ function removerPessoas() {
             inputs[1].value = ''
             inputs[2].value = ''
 
+            Swal.fire ({
+                icon: 'success',
+                title: 'Conta Removida!'
+            })
+
         }
     }
 }
