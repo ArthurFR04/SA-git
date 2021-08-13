@@ -15,22 +15,16 @@
 </head>
 
 <body onload="verificar_login_index()">
-    
         
-    <header>
-        
-        <nav class="nav-cian navbar imp-nav navbar-dark">
-            <div class="container-fluid" style="height: 100%;">
+    <nav class="nav-cian navbar imp-nav navbar-dark">
+        <div class="container-fluid" style="height: 100%;">
 
-                <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>
-                
-                <div id="perfilNon" class="navbar-brand nasalization div_login"> 
-                    
-                </div>
+            <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>
 
-            </div>
-        </nav>
-    </header>
+            <div id="perfilNon" class="navbar-brand nasalization div_login"> </div>
+
+        </div>
+    </nav>
         
     <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C" ;>
         <div class="container-fluid cont-nav">
@@ -52,7 +46,7 @@
                         <a class="nav-link active espaçamento-nav" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link espaçamento-nav" href="#">Canecas</a>
+                        <a class="nav-link espaçamento-nav" href="produtos.html">Canecas</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink"
@@ -83,7 +77,7 @@
     
     <div class="rapo-div">
         <img class="raposinha" src="./img/logo pequeninha 2.0.png">
-    </div>     
+    </div>
         
 
 
@@ -167,28 +161,45 @@
             </div>
 
         </div>
-</div>
+    </div>
 
-<div class="banner">
-</div>
-    
-<div id="fotos-vitrine" class="fotos">
-    <a href=""></a>
-</div> 
+    <div class="banner">
+    </div>
+        
+    <div id="fotos-vitrine" class="fotos">
 
-<br><br>
+        
 
-<footer>
-   <a style="background-color: #E2781C; border: 0; margin-left: 100%; color: #E2781C;" href="admin_pag.html">   </a>
-</footer>
+    </div> 
 
 
+    <br><br>
 
+    <footer>
+        <a style="background-color: #E2781C; border: 0; margin-left: 100%; color: #E2781C;" href="admin_pag.html">   </a>
+    </footer>
+
+
+
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+        <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+                <img src="./img/logo pequeninha 2.0.png" style="height: 9%; width: 9%;" class="rounded me-2" alt="...">
+                <strong class="me-auto">Volpex</strong>
+                <small>Agora mesmo</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body">
+                Produto adicionado ao carrinho.
+            </div>
+        </div>
+    </div>
 
     <script src="./js/conferencia.js"></script>
     <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
     <script src="./js/produtos.js"></script>
     <script src="./js/teste_car.js"></script>
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

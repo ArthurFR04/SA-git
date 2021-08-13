@@ -87,9 +87,24 @@ footer{
     border-radius: 8px;
 }
 
+.qtd-label {
+    text-decoration: none;
+    color: white;
+}
+
+.qtd-label:hover {
+    color: rgb(212, 212, 212);
+}
+
 .container-mid .qtd-label {
     cursor: pointer;
     font-size: 20px;
+}
+
+.carrinhoVazio{ /* div adicionada pelo js (carrinho.js)*/
+    display: flex; 
+    justify-content: center; 
+    width: 100%;
 }
 
 .container-r {

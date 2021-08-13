@@ -47,6 +47,11 @@ button {
     cursor: pointer;
     background-color: #D4FFFA;
     color: #132839;
+    opacity: 0.8;
+}
+
+button:hover {
+    opacity: 1;
 }
 
 .triangulo{
