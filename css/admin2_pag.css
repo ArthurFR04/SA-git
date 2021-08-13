@@ -69,8 +69,8 @@ body {
 .container-topper {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 10%;
-    margin-top: 3%;
     margin-left: 6%;
     margin-right: 6%;
     border-bottom: solid 1px white;
@@ -82,7 +82,6 @@ body {
 }
 
 .localizar-produto, .editar-produto {
-    margin-top: 5%;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -95,7 +94,14 @@ body {
 }
 
 .editar-produto {
-    margin-bottom: 6.7%;
+   height: 15%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.editar-produto label {
+    margin-bottom: 7%;
 }
 
 .container-midson {
@@ -107,14 +113,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1%;
+    height: 25%;
+}
+
+.mid-left-bot {
+    height: 25%;
+    width: 100%;
 }
 
 .mid-r-inputs {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 1%;
+    height: 25%;
 }
 
 .mid-l-inputs label {
@@ -128,11 +139,11 @@ body {
 .mid-l-inputs input {
     margin-right: 5%;
     margin-left: 5%;
-    width: 100%;
+    
     margin-top: 5px;
-    height: 30px;
+    
     outline: none;
-    font-size: 20px;
+    font-size: 3vh;
     border-radius: 8px;
     border: 0;
     background: rgba(196, 196, 196, 0.67);
@@ -141,11 +152,9 @@ body {
 .mid-r-inputs input {
     margin-right: 5%;
     margin-left: 5%;
-    width: 100%;
     margin-top: 5px;
-    height: 30px;
     outline: none;
-    font-size: 20px;
+    font-size: 3vh;
     border-radius: 8px;
     border: 0;
     background: rgba(196, 196, 196, 0.67);
@@ -172,8 +181,6 @@ body {
     border-radius: 8px;
     border: 0;
     resize: none;
-    height: 50px;
-    width: 250px;
     background: rgba(196, 196, 196, 0.67);
 }
 
@@ -186,13 +193,20 @@ body {
     border-radius: 8px;
     border: 0;
     resize: none;
-    height: 50px;
-    width: 250px;
     background: rgba(196, 196, 196, 0.67);
 }
 
 .textarea label {
     font-size: 2vh;
+}
+.mid-left-input {
+    height: 60%;
+    width: 100%;
+}
+
+.mid-right-input {
+    height: 60%;
+    width: 100%;
 }
 
 .mid-l-inputs li {
@@ -237,6 +251,14 @@ body {
 .midson-r-inputs label {
     margin-top: 5%;
 }
+.localizar-itens {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .localizar-input {
     width: 100%;
@@ -246,9 +268,9 @@ body {
 }
 
 .localizar-input input {
-    height: 20px;
+    width: 75%;
     outline: none;
-    font-size: 20px;
+    font-size: 2vh;
     border-radius: 8px;
     border: 0;
     background: rgba(196, 196, 196, 0.67);
@@ -284,17 +306,17 @@ body {
 .container-bottomson {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 10%;
-    margin-top: 1px;
     margin-left: 6%;
     margin-right: 6%;
     border-top: solid 1px white;
 }
 
 .container-bottomson button {
-    margin-top: 10%;
+   
     height: 35px;
-    width: 100%;
+    width: 200px;
     border: 0;
     border-radius: 12px;
     outline: none;
@@ -306,12 +328,13 @@ body {
     align-items: center;
     justify-content: center;
     width: 100%;
+    height: 80%;
     padding-top: 1%;
 }
 
 .imagem-produto {
     display: flex;
-    justify-content: center;
+    height: 15%;
     margin-top: 1%;
     margin-left: 5%;
     color: white;
@@ -330,13 +353,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 20%;
+    justify-content: center;
+    height: 25%;
+    width: 100%;
     color: white;
-    margin-left: 5%;
-    padding-top: 5%;
+   
 }
 
-@media screen and (max-width:933px) {
+@media screen and (max-width:1000px) {
     body {
         background-color: #6B8D8D;
         margin: 0;
@@ -344,6 +368,7 @@ body {
     
     .container-right {
         height: 100%;
+        width: 80%;
     }
 
     .container-main {
@@ -388,6 +413,7 @@ body {
         margin-right: 0;
         margin-left: 0;
         margin-top: 8%;
+        margin-bottom: 5%;
         background-color: #183442;
     }
 
@@ -397,7 +423,7 @@ body {
 
     .editar-produto {
         border-top: solid 1px white;
-        margin-top: 15%;
+      
     }
     
     .container-topper label {
@@ -409,44 +435,33 @@ body {
         flex-direction: column;
         align-items: center;
     }
-
     .midson-l {
-        border-right: none;
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin-right: 0;
+        margin-left: 0;
+        border-right: 0;
+        width: 90%;
+        margin-top: 5%;
     }
+    
 
     .midson-r {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin-right: 0;
-        margin-bottom: 10%;
-        width: 90%;
-    }
-
-    .localizar-input {
-        margin-bottom: 10%;
-    }
-
-    .mid-l-inputs {
-        padding-top: 5%;
-    }
-
-    .mid-l-inputs input {
-        margin: 0;
-    }
-
-    .mid-l-inputs label {
-        margin: 0;
-    }
-
-    .mid-l-inputs textarea {
-        margin-right: 0;
-        margin-top: 0;
         margin-left: 0;
+        width: 90%;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
+
+    .container-bottomson button {
+        margin: 10px;
+    }
+   
 
     .mid-r-inputs {
         padding-top: 5%;
@@ -499,57 +514,19 @@ body {
         line-height: 2.5vw;
     }
 
-    .mid-l-inputs textarea {
-        margin-left: 0;
-        margin-right: 0;
-        width: 42vw;
-    }
-
-    .localizar-produto label {
-        font-size: 3vh;
-    }
-
-}
-
-@media screen and (max-width:550px) {
-    .mid-file input {
-        font-size: 1vw;
-    }
-
-    .localizar-produto label {
-        font-size: 3vw;
-    }
-
-    .mid-r-inputs textarea {
-        margin-left: 0;
-        margin-right: 0;
-        width: 42vw;
-    }
-
-    .mid-file label {
-        font-size: 2vh;
-    }
-
-    .adicionar, .editar, .remover, .gerenciar {
-        color: white;
-        display: flex;
-        font-size: 1.5vh;
-        text-align: center;
-        line-height: 2.5vw;
-    }
-
-    .localizar-input input {
-        width: 33vw;
-        margin-left: 21%;
-    }
-
     .mid-file input {
         font-size: 2.5vw;
     }
 
-    .container-l {
-        padding-right: 0;
-        line-height: 1.5vh;
+    .container-topper label {
+        font-size: 5vw;
+    }
+
+    .localizar-produto label {
+        font-size: 4vw;
     }
 
 }
+
+
+    
