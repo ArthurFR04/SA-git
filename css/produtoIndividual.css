@@ -1,0 +1,164 @@
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #6B8D8D;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+footer{
+    
+    padding: 16px;
+    background-color: #E2781C
+}
+.conteudo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.navnavpapi {
+    height: auto!important;
+}
+
+.container-principal {
+    display: flex;
+    height: 90vh;
+    width: 90%;
+    margin: 20px;
+}
+
+.container-l {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.container-l .top {
+    height: 70%;
+}
+
+.container-l .top img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-l .bot {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-l .bot .bot-container {
+    width: 30%;
+    height: 80%;
+    margin: 3%;
+    border: solid 2px #333;
+    border-radius:4px;
+    cursor: pointer;
+    
+
+}
+
+.container-l .bot .bot-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.container-r {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.container-rr {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+.container-rr .top-r {
+    height:20% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-rr .top-r label {
+    color: black;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.container-rr .mid-r {
+    height: 60%;
+    height: 60%;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container-rr .mid-r .preco {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.mid-r .label-strong {
+    font-size: 3vh;
+}
+.quantidade {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-right: 5%;
+    height: 12%;
+    width: 100px;
+    border: solid 1px black;
+    border-radius: 8px;
+}
+
+.quantidade label {
+    cursor: pointer;
+}
+.container-rr .mid-r .descricao {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+.descricao h3 {
+    text-align: center;
+}
+
+.container-rr .bot-r {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bot-r button {
+    border-radius: 12px;
+    width: 70%;
+    height: 5vh;
+    border: solid 2px #C4C4C4;
+    background-color: #C4C4C4;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+

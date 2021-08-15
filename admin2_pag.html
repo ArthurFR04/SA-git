@@ -73,9 +73,15 @@
                         </div>
 
                         <div class="localizar-input">
+                            <div class="input-btn">
+                                <input type="text">
+                                <button onclick="localizarProdutos()" type="submit"><img src="./img/search.png"  alt="Search" /></button>
 
-                            <input type="text">
-                            <button type="submit"><img src="./img/search.png" alt="Search" /></button>
+                            </div>
+                           
+                                <li></li>
+                         
+                          
 
                         </div>
                     </div>
@@ -88,19 +94,19 @@
                         <div class="mid-l-inputs">
                             <label for="">Código</label>
                             <input type="text" readonly placeholder="Confirme o código do produto">
-                            <li></li>
+
                         </div>
 
                         <div class="mid-l-inputs">
                             <label for="">Preço</label>
                             <input type="number" readonly placeholder="Confime o preço do produto">
-                            <li></li>
+
                         </div>
 
                         <div class="mid-l-inputs">
                             <label for="">Descrição do produto</label>
                             <textarea name="" id="" cols="5" readonly></textarea>
-                            <li></li>
+
                         </div>
                     </div>
                     <div class="mid-left-bot">
@@ -131,6 +137,7 @@
                         <div class="mid-r-inputs">
                             <label>Nome</label>
                             <input type="text" placeholder="Edite o produto desejado">
+                            <li></li>
                         </div>
 
                         <div class="mid-r-inputs">
@@ -148,7 +155,7 @@
                         <div class="mid-r-inputs">
                             <label for="">Descrição do produto</label>
                             <textarea name="" id="" cols="5"></textarea>
-                            <li></li>
+
                         </div>
                     </div>
                     <div class="mid-file">
@@ -164,9 +171,9 @@
 
             <div class="container-bottomson">
 
-               
-                    <button>Editar produto</button>
-                
+
+                <button onclick="editarProdutos()">Editar produto</button>
+
 
             </div>
 
@@ -180,7 +187,7 @@
 
     <!-- <footer></footer> -->
 
-    <script src="./js/admin.js"></script>
+    <script src="./js/admin/admin2.js"></script>
     <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
 
 </body>
