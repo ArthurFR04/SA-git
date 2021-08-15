@@ -19,13 +19,15 @@ body {
     margin-top: 10%;
 }
 
+.logo img {
+    cursor: pointer;
+}
+
 .container-l {
     width: 20%;
     background-color: #183442;
     height: 100vh;
 }
-
-
 
 .container-r {
     width: 65%;
@@ -92,6 +94,7 @@ body {
     background: rgba(196, 196, 196, 0.67);
     font-size: 3vh;
 }
+
 .container-top-2 .bot {
     height: 30%;
     display: flex;
@@ -196,15 +199,14 @@ body {
     color: white;
     opacity: 0.5;
 }
+
 .active {
     opacity: 1;
 }
+
 .active:hover {
     opacity: 1;
 }
-
-
-
 
 @media screen and (max-width:1024px) {
    
@@ -238,10 +240,6 @@ body {
    
 }
 
-@media screen and (max-width:900px) {
-    
-}
-
 @media screen and (max-width:600px) {
     body {
         background-color: #6B8D8D;
@@ -252,9 +250,11 @@ body {
         background-color: #183442;
         width: 100%;
     }
+
     .container-top-1 {
         margin-bottom: 5%;
     }
+
     .container-top-1 label {
         font-size: 4vw;
     }
@@ -262,6 +262,7 @@ body {
     .container-top-2 label {
         font-size: 3vw!important;
     }
+
     .container-top-2 .bot button {
         font-size: 3.2vw;
     }
@@ -294,29 +295,27 @@ body {
     align-items: center;
     padding-right: 20px;
     margin-top: 50%;
-   }
+    }
 
    .adicionar, .editar, .remover, .gerenciar {
        color: white;
        display: flex;
        font-size: 12px;
        text-align: center;
-   }
+    }
 
    .logo img {
     height: 100%;
     margin-left: 10px;
-   }
+    }
 
    .logo label {
        display: none;
-   }
+    }
 
    ::placeholder {
        font-size: 3.3vw;
-   }
-
-   
+    }
 }
 
 @media screen and (max-width:373px) {
@@ -328,8 +327,6 @@ body {
     .adicionar, .editar, .remover, .gerenciar {
         line-height: 4vw;
     }
-
-    
 }
 
 @media screen and (max-width:280px) {
@@ -344,10 +341,10 @@ body {
     .container-top-2 label {
         font-size: 4vw!important;
     }
+
     .container-top-2 .bot button {
         font-size: 3.7vw;
     }
-   
 
     .logo img {
         margin-left: 5px;
@@ -376,10 +373,7 @@ body {
         height: 50%;
     }
 
-
     .mid-inputs label {
         font-size: 8vw;
     }
-    
 }
-

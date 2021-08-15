@@ -39,6 +39,11 @@ body {
     flex-direction: column;
     align-items: center;
     color: white;
+    margin-top: 10%;
+}
+
+.logo img {
+    cursor: pointer;
 }
 
 .container-l {
@@ -356,7 +361,8 @@ body {
     justify-content: center;
     width: 100%;
     height: 80%;
-    
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .imagem-produto {
@@ -393,6 +399,15 @@ body {
         margin: 0;
     }
     
+    .logo label {
+        display: none;
+    }
+
+    .logo {
+        margin-top: 0;
+        padding-left: 2%;
+    }
+
     .container-right {
         height: 100%;
         width: 80%;
@@ -415,6 +430,11 @@ body {
         margin-top: 50%;
     }
 
+    .img-produto {
+        margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
     .logo img {
         height: 89px;
         padding-left: 5%;
@@ -431,9 +451,9 @@ body {
     .adicionar, .editar, .remover, .gerenciar {
         color: white;
         display: flex;
-        font-size: 12px;
+        font-size: 2.5vw;
+        line-height: 2.5vw;
         text-align: center;
-        line-height: 2vw;
     }
 
     .container-right {
@@ -518,9 +538,10 @@ body {
         height: 75px;
     }
 
-    .adicionar, .editar, .remover, .gerenciar label {
-        font-size: 2.5vw;
-        line-height: 2.5vw;
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 3.5vw;
+        line-height: 3.5vw;
+        margin: 10px;
     }
 
     .mid-file input {
@@ -545,7 +566,43 @@ body {
     .midson-r li {
         font-size: 3vw;
     }
+
+    .logo img {
+        padding-left: 5%;
+        height: 60px;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 4vw;
+        line-height: 4vw;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
 }
 
+@media screen and (max-width:304px) {
+    .localizar-input li {
+        font-size: 3vw;
+    }
 
-    
+    .midson-r li {
+        font-size: 3vw;
+    }
+
+    .logo img {
+        padding-left: 2%;
+        height: 50px;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 4vw;
+        line-height: 4vw;
+        margin-left: 1vw;
+        margin-right: 1vw;
+    }
+
+    .img-produto {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}

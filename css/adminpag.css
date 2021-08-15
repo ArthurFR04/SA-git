@@ -19,6 +19,10 @@ body {
     margin-top: 10%;
 }
 
+.logo img {
+    cursor: pointer;
+}
+
 .container-l {
     width: 20%;
     background-color: #183442;
