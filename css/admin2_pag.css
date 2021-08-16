@@ -371,15 +371,19 @@ body {
     margin-top: 1%;
     margin-left: 5%;
     color: white;
+    
 }
 
 .img-produto img {
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
+    display: none;
+  
 }
 
 .mid-file input {
     font-size: 13px;
+    
 }
 
 .mid-file {
@@ -393,7 +397,7 @@ body {
    
 }
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1024px) {
     body {
         background-color: #6B8D8D;
         margin: 0;

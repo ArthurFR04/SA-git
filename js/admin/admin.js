@@ -1,15 +1,31 @@
 
+let input = document.querySelector('.inputs')
+let inputs = input.querySelectorAll('input');
+let img = document.querySelector('.mid-file');
+let foto = img.querySelectorAll('input');
+let textArea = document.querySelectorAll('textarea');
+let li = document.querySelectorAll('li');
+let send = true;
+let photo = null
+
+foto[0].addEventListener('change', function () {
+    const reader = new FileReader();
+
+    reader.addEventListener('load', () => {
+
+        photo = reader.result
+
+
+    })
+
+    reader.readAsDataURL(this.files[0]);
+})
+
 function cadastroProdutos() {
-    let input = document.querySelector('.inputs')
-    let inputs = input.querySelectorAll('input');
-    let img = document.querySelector('.mid-file');
-    let foto = img.querySelectorAll('input'); 
-    let textArea = document.querySelectorAll('textarea');
-    let li = document.querySelectorAll('li');
-    let send = true;
+
 
     clear();
-    
+
 
     for (let i = 0; i < inputs.length; i++) {
 
@@ -26,7 +42,7 @@ function cadastroProdutos() {
         if (textArea[i].value == '') {
 
             textArea[i].style.border = 'red solid 2px'
-            
+
 
             send = false;
         }
@@ -63,8 +79,8 @@ function cadastroProdutos() {
         for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS ERROS DOS INPUTS
             li[i].innerHTML = '';
             inputs[i].style = '';
-            
-        
+
+
 
         }
 
@@ -75,16 +91,18 @@ function cadastroProdutos() {
 
     }
 
-    function clean (){
+    function clean() {
         for (let i = 0; i < inputs.length; i++) {     //LIMPA OS INPUTS E TEXTAREA DEPOIS DO CADASTRO SER EFETUADO
             inputs[i].value = '';
         }
 
-        for (let i=0; i < textArea.length; i++) {
+        for (let i = 0; i < textArea.length; i++) {
             textArea[i].value = '';
         }
+
+        foto[0].value = '';
     }
-    
+
 
 
     let produto = {
@@ -92,33 +110,36 @@ function cadastroProdutos() {
         codigo: inputs[1].value,
         preco: inputs[2].value,
         descricao: textArea[0].value,
-        foto: foto[0].value
+        foto: photo
     }
+
+
     let produtos = []
 
     if (produtoCadastro != null) {
 
+
         produtoCadastro.push(produto)
         localStorage.setItem('Produto', JSON.stringify(produtoCadastro))
 
-        Swal.fire ({
+        Swal.fire({
             icon: 'success',
             title: 'Produto Adicionado!'
         })
         clean()
-       
+
 
     } else if (produtoCadastro == null) {
 
 
         produtos.push(produto)
         localStorage.setItem('Produto', JSON.stringify(produtos))
-       
-        Swal.fire ({
+
+        Swal.fire({
             icon: 'success',
             title: 'Produto Adicionado!'
         })
         clean()
-       
+
     }
 };
