@@ -6,16 +6,27 @@ let dados = JSON.parse(localStorage.getItem('Login'));
 //quando o usuário desejar fazer logout essa função será acionada
 
 function sair_login() { 
-    let sureOut = confirm('tem certeza ?') // essa variável muda conforme a vontade do usuário (true ou false)   //edit
+    Swal.fire({
+        title: 'Você realmente deseja sair?',
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: 'green',
+        cancelButtonColor: 'red',
+        confirmButtonText: 'Sair!'
+      }).then((result) => {
+        if (result.isConfirmed) {
+            localStorage.removeItem('Login');
 
-    if (sureOut == true) {
-   
-        localStorage.removeItem('Login')
-
-        window.location.reload()
-    }
+            window.location.reload();
+        }
+    })
 }
+//     if (sureOut == true) {
+    
+//     localStorage.removeItem('Login');
 
+//     window.location.reload();
+// }
 
 //quando entrar ou atualizar a página index essa função será efetuada
 
@@ -61,6 +72,8 @@ function verificar_login_index() {
 
 function verificar_login_carrinho() { 
 
+    console.log('cheguei pae');
+
     if (dados === null || dados.status == 0) {  //se o login não foi efetuado redirecionará a pessoa para o login
     
         let timerInterval
@@ -70,7 +83,7 @@ function verificar_login_carrinho() {
             text: 'Antes de a gente ir pro carrinho, precisamos do seu login.',
             backdrop: `#183442c4`,
             allowOutsideClick: false,
-            timer: 2500,
+            timer: 3000,
             timerProgressBar: true,
             didOpen: () => {
                 Swal.showLoading()

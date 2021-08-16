@@ -80,7 +80,7 @@ function cadastrar() {
             text: 'Agora que você já se cadastrou com a gente, vamos para o login.',
             backdrop: `#183442c4`,
             allowOutsideClick: false,
-            timer: 4000,
+            timer: 2500,
             timerProgressBar: true,
             didOpen: () => {
                 Swal.showLoading()

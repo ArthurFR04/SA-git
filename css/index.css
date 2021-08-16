@@ -116,12 +116,57 @@ section{
 }
 
 
-footer{
-    /* position: absolute;
-    bottom: 0; */
+/* footer{
+    position: absolute;
+    bottom: 0;
     width: 100%;
     padding: 16px;
     background-color: #E2781C;
+} */
+
+.imgs-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 16px;
+    width: 100%;
+    background-color: #E2781C
+}
+
+footer #senai {
+    height: 15px;
+    width: 97px;
+    margin-right: 5%;
+}
+
+footer #avanti {
+    height: 14px;
+    width: 75px;
+    margin-left: 5%;
+}
+
+#senai, #avanti {
+    cursor: pointer;
+}
+
+.iconeAdmin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconeAdmin i {
+    color: white;
+}
+
+.redesSociais i {
+    color: white;
 }
 
 @media screen and (max-width:600px){

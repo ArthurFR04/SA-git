@@ -378,7 +378,7 @@ body {
     height: 80px;
     width: 80px;
     display: none;
-  
+    margin-bottom: 15%;
 }
 
 .mid-file input {

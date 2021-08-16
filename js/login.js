@@ -63,16 +63,14 @@ function logar() {
         Swal.fire({
             icon: 'success',
             title: 'Login efetuado',
-            text: 'Agora você já pode aproveitar o site',
+            text: 'Agora você já pode aproveitar o site!',
             backdrop: `#183442c4`,
             allowOutsideClick: false,
-            timer: 4000,
+            timer: 2500,
             timerProgressBar: true,
             didOpen: () => {
                 Swal.showLoading()
-                const b = Swal.getHtmlContainer().querySelector('b')
                 timerInterval = setInterval(() => {
-                b.textContent = Swal.getTimerLeft()
                 }, 100)
             },
             willClose: () => {
@@ -147,6 +145,10 @@ function logar() {
 
 
     else if (cadastradas === null) {             // caso não haja nada no localstorage
-        alert('Por favor efetua um cadastro, não foi possivel identificar nenhuma pessoa cadastrada em nosso site.')
+        Swal.fire ({
+            icon: 'error',
+            title: 'Não encontramos nenhum usuário com estas credenciais!',
+            text: 'Por favor, efetue seu cadastro!',
+        })
     }
 }

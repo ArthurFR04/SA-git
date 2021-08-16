@@ -1,4 +1,3 @@
-
 let pessoas = JSON.parse(localStorage.getItem('Pessoas'))
 let Login = JSON.parse(localStorage.getItem('Login'))
 let position = Login.position

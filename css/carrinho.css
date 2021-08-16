@@ -5,15 +5,11 @@ body {
     flex-direction: column;
     height: 100%;
 }
+
 html {
     height: 100%;
 }
 
-footer{
-    margin-top: 5%;
-    padding: 16px;
-    background-color: #E2781C
-}
 .conteudo {
     flex: 1;
 }
@@ -21,6 +17,7 @@ footer{
 .navnavpapi {
     height: auto!important;
 }
+
 .container-1 {
     display: flex;
     justify-content: center;
@@ -66,9 +63,8 @@ footer{
 .container-mid {
     margin-right: 3%;
     margin-left: 3%;
-   
-    
 }
+
 .container-mid img {
     width: 90px;
     margin-right: 5%;
@@ -113,18 +109,16 @@ footer{
     font-size: 20px;
 }
 
-.carrinhoVazio{ /* div adicionada pelo js (carrinho.js)*/
-    display: flex; 
-    justify-content: center; 
+.carrinhoVazio {
+    /* div adicionada pelo js (carrinho.js)*/
+    display: flex;
+    justify-content: center;
     width: 100%;
 }
 
 .container-r {
-    
     width: 20%;
     height: 50vh;
-    
-    
     background-color: #183442e8;
     border-radius: 15px;
 }
@@ -161,7 +155,8 @@ footer{
     align-items: center;
     flex-direction: column;
 }
-.container-r-bottom a{
+
+.container-r-bottom a {
     font-size: 13px;
     color: white;
     margin-top: 10px;
@@ -187,19 +182,15 @@ footer{
 
 .detalhes-precototal {
     margin: 5px;
-    
-   
     color: white;
     display: flex;
     justify-content: space-between;
-    font-size: 16px;  
+    font-size: 16px;
 }
 
 #span-frete {
     color: rgb(31, 230, 31);
 }
-
-
 
 #btn-finalizar-compra {
     border-radius: 12px;
@@ -213,39 +204,84 @@ footer{
     display: flex;
     justify-content: left;
 }
-.label-span{
+
+.label-span {
     color: white;
     margin: 5px;
 }
-.label-r{
+
+.label-r {
     display: flex;
     justify-content: space-between;
 }
-.span-r{
+
+.span-r {
     display: flex;
     justify-content: space-between;
 }
-@media screen and (max-width:1750px){
-  
-    
-    .container-r{
+
+.imgs-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    padding: 16px;
+    background-color: #E2781C
+}
+
+footer #senai {
+    height: 15px;
+    width: 97px;
+    margin-right: 5%;
+}
+
+footer #avanti {
+    height: 14px;
+    width: 75px;
+    margin-left: 5%;
+}
+
+#senai, #avanti {
+    cursor: pointer;
+}
+
+.iconeAdmin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconeAdmin i {
+    color: white;
+}
+
+.redesSociais i {
+    color: white;
+}
+
+@media screen and (max-width:1750px) {
+    .container-r {
         width: 30%;
-        
+        height: 65vh;
     }
 }
 
 @media screen and (max-width:1024px) {
-   
-    .container-1{
+    .container-1 {
         flex-direction: column;
         align-items: center;
     }
-    .container-l{
+    .container-l {
         width: 100%;
     }
-    .container-r{
+    .container-r {
         width: 50%;
-        
+        height: 65vh;
     }
 }
 
@@ -259,33 +295,33 @@ footer{
     .label-top {
         display: none;
     }
-    .container-1{
+    .container-1 {
         flex-direction: column;
     }
-    .container-l{
+    .container-l {
         width: 100%;
     }
-    .container-r{
+    .container-r {
         width: 80%;
         height: 450px;
     }
 }
 
 @media screen and (max-width:280px) {
-    .container-r{
+    .container-r {
         width: 95%;
         height: 450px;
     }
 }
 
-@media screen and (max-width:220px){
-    .container-mid .produto{
+@media screen and (max-width:220px) {
+    .container-mid .produto {
         flex-direction: column;
     }
-    .container-mid img{
+    .container-mid img {
         margin-bottom: 5%;
     }
-    .container-mid .qtd-produto .quantidade{
+    .container-mid .qtd-produto .quantidade {
         margin-bottom: 5%;
     }
 }
