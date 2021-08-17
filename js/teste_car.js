@@ -26,30 +26,6 @@ function add_car(id) {
 
         pessoas[position].carrinho.push(prod_car)
         localStorage.setItem('Pessoas', JSON.stringify(pessoas))
-        
-
-        Swal.fire({
-            icon: 'success',
-            title: 'Login efetuado',
-            text: 'Agora você já pode aproveitar o site!',
-            backdrop: `#183442c4`,
-            allowOutsideClick: false,
-            timer: 2500,
-            timerProgressBar: true,
-            didOpen: () => {
-                Swal.showLoading()
-                timerInterval = setInterval(() => {
-                }, 100)
-            },
-            willClose: () => {
-                clearInterval(timerInterval)
-            }
-            }).then((result) => {
-            /* Read more about handling dismissals below */
-            if (result.dismiss === Swal.DismissReason.timer) {
-                window.location.href="index.html"
-            }
-        })
     }
     
 
@@ -62,31 +38,6 @@ function add_car(id) {
             pessoas[position].carrinho[i].quantidade++
             localStorage.setItem('Pessoas', JSON.stringify(pessoas))
             prodInCar = 1
-
-            
-
-            Swal.fire({
-            icon: 'success',
-            title: 'Login efetuado',
-            text: 'Agora você já pode aproveitar o site!',
-            backdrop: `#183442c4`,
-            allowOutsideClick: false,
-            timer: 2500,
-            timerProgressBar: true,
-            didOpen: () => {
-                Swal.showLoading()
-                timerInterval = setInterval(() => {
-                }, 100)
-            },
-            willClose: () => {
-                clearInterval(timerInterval)
-            }
-            }).then((result) => {
-            /* Read more about handling dismissals below */
-            if (result.dismiss === Swal.DismissReason.timer) {
-                window.location.href="index.html"
-            }
-        })
         }
     }
     
@@ -99,31 +50,6 @@ function add_car(id) {
     
         pessoas[position].carrinho.push(prod_car)
         localStorage.setItem('Pessoas', JSON.stringify(pessoas))
-
-        
-
-        Swal.fire({
-            icon: 'success',
-            title: 'Login efetuado',
-            text: 'Agora você já pode aproveitar o site!',
-            backdrop: `#183442c4`,
-            allowOutsideClick: false,
-            timer: 2500,
-            timerProgressBar: true,
-            didOpen: () => {
-                Swal.showLoading()
-                timerInterval = setInterval(() => {
-                }, 100)
-            },
-            willClose: () => {
-                clearInterval(timerInterval)
-            }
-            }).then((result) => {
-            /* Read more about handling dismissals below */
-            if (result.dismiss === Swal.DismissReason.timer) {
-                window.location.href="index.html"
-            }
-        })
     }
 
 }
