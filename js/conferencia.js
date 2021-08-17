@@ -32,7 +32,7 @@ function sair_login() {
 
 function verificar_login_index() {  
 
-    if ( dados === null || dados.status == 0) {  //se o login não foi efetuado apareceram as opções de cadastro e login
+    if (dados === null) {  //se o login não foi efetuado apareceram as opções de cadastro e login
 
         document.getElementById('perfilNon').innerHTML=`
             <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
@@ -74,7 +74,7 @@ function verificar_login_carrinho() {
 
     console.log('cheguei pae');
 
-    if (dados === null || dados.status == 0) {  //se o login não foi efetuado redirecionará a pessoa para o login
+    if (dados === null) {  //se o login não foi efetuado redirecionará a pessoa para o login
     
         let timerInterval
         Swal.fire({

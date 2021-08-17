@@ -9,6 +9,19 @@ user_car = 'carrinho vazio'
 user_car = pessoas[position].carrinho
 
 
+function ad_car(id) {
+
+    add_car(id)
+    displayzeraPah()
+}
+
+function re_car(id) {
+
+    rem_car(id)
+    displayzeraPah()
+}
+
+
 function displayzeraPah() {
 
     if (user_car === 'carrinho vazio' || user_car < 1) {
@@ -16,12 +29,16 @@ function displayzeraPah() {
         document.getElementById('vitrine-carr').innerHTML += `
             <div class="produto">
                 <div class="carrinhoVazio"> 
-                    O carrinho está vazio
+                    O carrinho está vazio.
                 </div>
             </div>
         `
     }
     else {
+
+        document.getElementById('vitrine-carr').innerHTML = ''
+        document.getElementById('span-total').innerHTML   = ''
+
         let produtos = JSON.parse(localStorage.getItem('produtos'))
 
         for (let j=0; j<user_car.length; j++) {
@@ -59,9 +76,9 @@ function displayzeraPah() {
                 <div class="produto">
                     ${produtos [p] .foto}
                     <div class="quantidade">
-                        <a href="javascript:rem_car(${user_car[i].id}); window.location.reload();" class="qtd-label">-</a>
+                        <a href="javascript:re_car(${user_car[i].id});" class="qtd-label">-</a>
                         <label id="quant-carr">${user_car[i].quantidade}</label>
-                        <a href="javascript:add_car(${user_car[i].id}); window.location.reload();" class="qtd-label">+</a>
+                        <a href="javascript:ad_car(${user_car[i].id});" class="qtd-label">+</a>
                     </div>
                     <label id="preço-carr">${precoStrin}</label>
                 </div>

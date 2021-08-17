@@ -7,9 +7,14 @@ let user_car = pessoas[position].carrinho
 
 function add_car(id) {
     
-    if ( Login === null || Login.status == 0) {
-        alert('para adicionar um produto ao carrinho, você primeiro deve efetuar o login.')
-        return false
+    if ( Login === null) {
+
+        Swal.fire({
+            icon: 'error',
+            title: 'Login não efetuado',
+            text: 'Para adicionar um produto ao carrinho, você primeiro deve efetuar o login.',
+            backdrop: `#183442c4`,
+        })
     }
 
     if (user_car.length < 1) {
@@ -21,7 +26,30 @@ function add_car(id) {
 
         pessoas[position].carrinho.push(prod_car)
         localStorage.setItem('Pessoas', JSON.stringify(pessoas))
-        return false
+        
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Login efetuado',
+            text: 'Agora você já pode aproveitar o site!',
+            backdrop: `#183442c4`,
+            allowOutsideClick: false,
+            timer: 2500,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                timerInterval = setInterval(() => {
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+            }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                window.location.href="index.html"
+            }
+        })
     }
     
 
@@ -35,7 +63,30 @@ function add_car(id) {
             localStorage.setItem('Pessoas', JSON.stringify(pessoas))
             prodInCar = 1
 
-            return false
+            
+
+            Swal.fire({
+            icon: 'success',
+            title: 'Login efetuado',
+            text: 'Agora você já pode aproveitar o site!',
+            backdrop: `#183442c4`,
+            allowOutsideClick: false,
+            timer: 2500,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                timerInterval = setInterval(() => {
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+            }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                window.location.href="index.html"
+            }
+        })
         }
     }
     
@@ -49,7 +100,30 @@ function add_car(id) {
         pessoas[position].carrinho.push(prod_car)
         localStorage.setItem('Pessoas', JSON.stringify(pessoas))
 
-        return false
+        
+
+        Swal.fire({
+            icon: 'success',
+            title: 'Login efetuado',
+            text: 'Agora você já pode aproveitar o site!',
+            backdrop: `#183442c4`,
+            allowOutsideClick: false,
+            timer: 2500,
+            timerProgressBar: true,
+            didOpen: () => {
+                Swal.showLoading()
+                timerInterval = setInterval(() => {
+                }, 100)
+            },
+            willClose: () => {
+                clearInterval(timerInterval)
+            }
+            }).then((result) => {
+            /* Read more about handling dismissals below */
+            if (result.dismiss === Swal.DismissReason.timer) {
+                window.location.href="index.html"
+            }
+        })
     }
 
 }
