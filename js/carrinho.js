@@ -26,6 +26,9 @@ function displayzeraPah() {
 
     if (user_car === 'carrinho vazio' || user_car < 1) {
 
+        document.getElementById('vitrine-carr').innerHTML = ''
+        document.getElementById('span-total').innerHTML   = '00,00'
+
         document.getElementById('vitrine-carr').innerHTML += `
             <div class="produto">
                 <div class="carrinhoVazio"> 
