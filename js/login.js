@@ -25,6 +25,10 @@ function logar() {
 
         for (let i = 0; i < cadastradas.length; i++) {
 
+            if ('admin'== inputs[0].value && '0000'== inputs[1].value) {                 // login do administrador
+            //         apelido                      senha
+                window.location.href = 'admin_pag.html'
+            }
 
             if (cadastradas[i].apelido == inputs[0].value || cadastradas[i].email == inputs[0].value) {
                 if (cadastradas[i].senha !== inputs[1].value) {
