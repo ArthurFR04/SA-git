@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/logo pequeninha 2.0.png">
+    <title>Finalizar Compra</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/navBars.css">
+    <link rel="stylesheet" href="./css/finalizarCompra.css">
+
+</head>
+
+<body onload="verificar_login_index()">
+    <div class="cabeçalho">
+        <!--As navbars-->
+        <nav class="nav-cian navbar imp-nav navbar-dark">
+            <div class="container-fluid" style="height: 100%;">
+
+                <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>
+                <!--Editávell-->
+                <div id="perfilNon" class="navbar-brand nasalization div_login">
+
+                </div>
+
+            </div>
+        </nav>
+
+        <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C" ;>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="perfilRespon">
+
+                </div>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="landing_page.html">Página inicial</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link espaçamento-nav" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link espaçamento-nav" href="produtos.html">Canecas</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Temas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+                                <li><a class="dropdown-item" href="#">Star Wars</a></li>
+                                <li><a class="dropdown-item" href="#">Marvel</a></li>
+                                <li><a class="dropdown-item" href="#">DC</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <a class="nav-link" href="carrinho.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
+                                class="bi bi-cart3" viewBox="0 0 16 16">
+                                <path
+                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+                            </svg>
+                            <label class="cart">Carrinho</label>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="rapo-div">
+            <img class="raposinha" src="./img/logo pequeninha 2.0.png">
+        </div>
+    </div>
+    <div class="conteudo">
+        <div class="container-1 vigaRegular">
+            <div class="container-l">
+                <div class="container-l-top">
+                    <label for="">Dados do titular do cartão</label>
+                </div>
+
+                <div class="container-l-mid">
+                    <div class="top-l">
+                        <div class="input-grande">
+                            <label for="">Número do cartão</label>
+                            <input type="text">
+                        </div>
+                        <div class="inputs-pequeno">
+                            <div class="input-pequeno">
+                                <label for="">Validade</label>
+                                <input  placeholder="MM/AA" type="date">
+                            </div>
+
+                            <div class="input-pequeno input1-pequeno">
+                                <label for="">Cód. Segurança</label>
+                                <input type="number">
+                            </div>
+
+
+                        </div>
+
+                        <div class="input-grande">
+                            <label for="">Nome completo do titular</label>
+                            <input type="text">
+                        </div>
+                        <div class="inputs-pequeno">
+                            <div class="input-pequeno">
+                                <label for="">CPF</label>
+                                <input placeholder="_ _ _._ _ _._ _ _-_ _" type="text">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bot-l">
+                    
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+            <div class="container-r vigaRegular">
+
+                <div class="container-top">
+                    <label>Resumo do Pedido</label>
+                </div>
+
+                <div class="container-mid">
+                    <div class="mid-top">
+                        <div class="mid-top-top">
+                            <label for="">Itens do pedido:</label>
+                            <h4>Caneca Javascript</h4>
+                        </div>
+
+                        <div class="mid-top-bot">
+                            <label for="">Preço:</label>
+                            <label for="">R$ 29,90</label>
+                        </div>
+                    </div>
+
+                    <div class="mid-bot">
+                        <div class="mid-bot-top">
+                            <label for="">Forma de pagamento</label>
+                            <div class="pagamentos">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option value="0">Cartão de Crédito</option>
+                                    <option value="1">Boleto Bancário</option>
+
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="mid-bot-bot">
+                            <label for="">Tempo de processamento</label>
+                            <h4>Até 1 dia útil</h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-bot">
+                    <button>Total a pagar: R$29,90</button>
+                    <a href="">Adicionar mais itens</a>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer>
+
+        <div class="iconeAdmin">
+            <a href="admin_pag.html"><i class="fas fa-user-lock"></i></a>
+        </div>
+
+        <div class="imgs-footer">
+            <img onclick="javascript:window.location.href='https://sc.senai.br/'" src="./img/sesi-senai-branca (1).png"
+                id="senai" alt="">
+            <img onclick="javascript:window.location.href='https://penseavanti.com.br/'" src="./img/logo.png"
+                id="avanti" alt="">
+        </div>
+
+        <div class="redesSociais">
+            <a href="https://www.facebook.com/senaisc"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/SENAISC"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/school/senai-sc/"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.instagram.com/senai.sc/"><i class="fab fa-instagram"></i></a>
+        </div>
+
+    </footer>
+
+
+
+    <script src="./js/sweetalert2.js"></script>
+    <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
+    <script src="./js/teste_car.js"></script>
+    <script src="./js/carrinho.js"></script>
+    <script src="./js/conferencia.js"></script>
+    <script src="https://kit.fontawesome.com/101f22a807.js" crossorigin="anonymous"></script>
+    <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/validacao.js"></script>
+</body>
+
+</html>
