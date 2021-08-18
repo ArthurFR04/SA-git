@@ -10,10 +10,13 @@ function sair_login() {
         title: 'Você realmente deseja sair?',
         icon: 'warning',
         showCancelButton: true,
-        confirmButtonColor: 'green',
-        cancelButtonColor: 'red',
-        confirmButtonText: 'Sair!'
-      }).then((result) => {
+        confirmButtonColor: '#E2781C',
+        cancelButtonColor: '#6B8D8D',
+        confirmButtonText: 'Sair',
+        cancelButtonText: 'Cancelar',
+
+    }).then((result) => {
+
         if (result.isConfirmed) {
             localStorage.removeItem('Login');
 
@@ -21,12 +24,7 @@ function sair_login() {
         }
     })
 }
-//     if (sureOut == true) {
-    
-//     localStorage.removeItem('Login');
 
-//     window.location.reload();
-// }
 
 //quando entrar ou atualizar a página index essa função será efetuada
 
@@ -35,20 +33,23 @@ function verificar_login_index() {
     if (dados === null) {  //se o login não foi efetuado apareceram as opções de cadastro e login
 
         document.getElementById('perfilNon').innerHTML=`
+
             <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
 
             <a class="navbar-brand" href="tela_login.html">Login</a>
         `
         document.getElementById('perfilRespon').innerHTML=`
-        <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
 
-        <a class="navbar-brand" href="tela_login.html">Login</a>
+            <a class="navbar-brand" href="tela_cadastro.html">Cadastro</a>
+
+            <a class="navbar-brand" href="tela_login.html">Login</a>
         `
     }
 
     else {      // se o login for efetuado aparecerá o nome do usuário como um dropdown com funcionalidades sobre o perfil
         let id = dados.id
         let textin = `
+
             <div class="btn-group">
                 <button type="button" class="btn-log btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     ${id}
@@ -62,7 +63,6 @@ function verificar_login_index() {
         `
         document.getElementById('perfilNon').innerHTML = textin
         document.getElementById('perfilRespon').innerHTML = textin
-        
     }
 }
 
@@ -71,8 +71,6 @@ function verificar_login_index() {
 // essa função será executada ao entrar ou atualizar a página de carrinho, com o objetivo de permitir a entrada somente de usuários logados, caso o login ainda não tenha sido feito, o usuário será redirecionado para a página de login
 
 function verificar_login_carrinho() { 
-
-    console.log('cheguei pae');
 
     if (dados === null) {  //se o login não foi efetuado redirecionará a pessoa para o login
     
@@ -106,6 +104,7 @@ function verificar_login_carrinho() {
     else {     // se o login for efetuado aparecerá o nome do usuário como um dropdown, com funcionalidades sobre o perfil
         let id = dados.id
         let textin = `
+        
             <div class="btn-group">
                 <button type="button" class="btn-log btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     ${id}
