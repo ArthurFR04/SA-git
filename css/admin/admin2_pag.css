@@ -1,0 +1,54 @@
+  
+
+.meio-l {
+    width: 50%;
+}
+
+.container-top {
+
+    border-bottom: solid 2px white;
+}
+
+.container-bottom {
+
+    border-top: solid 2px white;
+}
+
+.container-mid .mid-inputs {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+}
+
+.mid-inputs input {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 35%;
+    height: 5vh;
+    margin-top: 5px;
+    outline: none;
+    font-size: 25px;
+    border-radius: 8px;
+    border: 0;
+    
+}
+
+
+
+.mid-file label {
+    padding-top:10px ;
+}
+
+::placeholder {
+    opacity: 0.5;
+}
+
+.mid-inputs textarea {
+    width: 35%;
+    height: 6vh;
+}
+
+.mid-file input {
+    font-size: 11px;
+}
+

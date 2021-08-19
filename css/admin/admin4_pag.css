@@ -1,0 +1,304 @@
+
+
+
+
+.container-top-1 {
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px white;
+    margin-right: 5%;
+    margin-left: 5%;
+    color: white;
+}
+
+.container-top-1 label {
+    font-size: 30px;
+}
+
+.container-top-2 {
+    height: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: solid 1px white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.container-top-2 .top {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.container-top-2 .top label {
+    font-size: 20px;
+}
+
+.container-top-2 .mid {
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.container-top-2 .mid input {
+    width: 100%;
+    border-radius: 12px;
+    border: 0;
+    outline: none;
+    background: rgba(196, 196, 196, 0.67);
+    font-size: 3vh;
+}
+.container-top-2 .bot {
+    height: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-top-2 .bot button {
+    border: 0;
+    border-radius: 12px;
+    width: 60%;
+    height: 5vh;
+    font-size: 20px;
+}
+
+.container-mid {
+    height: 45%;
+    border-bottom: solid 1px white;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.container-mid .mid-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 45%;
+    
+}
+
+.container-mid .mid-inputs input {
+    border-radius: 12px;
+    border: 0;
+    outline: none;
+    background: rgba(196, 196, 196, 0.67);
+    font-size: 3vh;
+}
+
+.container-mid .mid-inputs label {
+    color: white;
+}
+
+.container-bottom {
+    height: 20%;
+    align-items: center;
+    width: 100%;
+}
+
+.container-bottom button {
+    width: 60%;
+    height: 5vh;
+    font-size: 20px;
+}
+
+::placeholder {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.38);
+    font-size: 20px;
+}
+
+.container-top-2 li {
+    display: flex;
+    justify-content: flex-end;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+
+@media screen and (max-width:1024px) {
+   
+    .adicionar, .editar, .remover, .gerenciar label {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+
+    .container-meio {
+        width: 80%;
+    }
+
+    .container-top-1 label {
+        font-size: 3.3vw;
+    }
+
+    .container-top-2 label {
+        font-size: 2vw!important;
+    }
+    .container-top-2 .bot button {
+        font-size: 2vw;
+    }
+
+    .container-bottom button {
+        font-size: 2vw;
+    }
+
+    ::placeholder {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (max-width:900px) {
+    
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: #6B8D8D;
+        margin: 0;
+    }
+
+    .container-meio {
+        background-color: #183442;
+        width: 100%;
+    }
+
+    .container-top-1 label {
+        font-size: 4vw;
+    }
+
+    .container-top-2 label {
+        font-size: 3vw!important;
+    }
+    .container-top-2 .bot button {
+        font-size: 3.2vw;
+    }
+
+    .container-bottom button {
+        font-size: 3.5vw;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        line-height: 3vw;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        height: 10vh;
+    }
+
+   .container-l {
+    width: 100%;
+    background-color: #183442;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin-top: 50%;
+   }
+
+   .adicionar, .editar, .remover, .gerenciar {
+       color: white;
+       display: flex;
+       font-size: 12px;
+       text-align: center;
+   }
+
+   .logo img {
+    height: 100%;
+    margin-left: 10px;
+   }
+
+   .logo label {
+       display: none;
+   }
+
+   ::placeholder {
+       font-size: 3.3vw;
+   }
+
+   
+}
+
+@media screen and (max-width:373px) {
+
+    .logo img {
+        margin-left: 5px;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        line-height: 4vw;
+    }
+
+    
+}
+
+@media screen and (max-width:280px) {
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 4vw;
+    }
+
+    .container-top-1 label {
+        font-size: 6vw;
+    }
+
+    .container-top-2 label {
+        font-size: 4vw!important;
+    }
+    .container-top-2 .bot button {
+        font-size: 3.7vw;
+    }
+   
+
+    .logo img {
+        margin-left: 5px;
+    }
+
+    footer {
+    margin-top: 5%;
+    padding: 16px;
+    background-color: #6B8D8D;
+    }
+
+    ::placeholder {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:240px) {
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 4vw;
+        line-height: 4vw;
+        padding-right: 1vw;
+    }
+
+    .logo img {
+        margin-left: 5px;
+        height: 50%;
+    }
+
+
+    .mid-inputs label {
+        font-size: 8vw;
+    }
+    
+}
+
