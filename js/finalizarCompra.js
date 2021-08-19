@@ -29,7 +29,7 @@ function validaçao() {
 select.addEventListener('change', formaPagamento)
 
 function formaPagamento() {
-
+   
     let opcao = select.value
 
     if (opcao == 1) {
