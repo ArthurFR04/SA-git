@@ -1,0 +1,355 @@
+body {
+    background-color: #132839;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-image: url(../../img/BG-image.jpg);
+    margin: 0;
+}
+
+.container-main {
+    display: flex;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 1vw;
+}
+
+.container-l {
+    width: 20%;
+    background-color: #183442;
+    height: 100vh;
+}
+
+.adicionar, .editar, .remover, .gerenciar {
+    color: white;
+    display: flex;
+    font-size: 22px;
+    display: flex;
+    margin: 10%;
+    padding: 5%;
+    justify-content: initial;
+    cursor: pointer;
+    line-height: 2vw;
+    text-decoration: none;
+    
+}
+
+.adicionar, .editar, .remover, .gerenciar {
+    opacity: 0.3;
+}
+
+.adicionar:hover, .editar:hover, .remover:hover, .gerenciar:hover{
+    color: white;
+    opacity: 0.5;
+}
+
+.active{
+    opacity: 1;
+}
+
+.active:hover{
+    opacity: 1;
+}
+
+.container-r {
+    width: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-meio {
+    margin-top: 2vw;
+    background-color: rgba(107, 141, 141, 0.925);
+    width: 35vw;
+    height: 85vh;
+    border-radius: 15px;
+}
+
+.container-top-top {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
+.container-top {
+  
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container-top label {
+    color: white;
+    font-size: 30px;
+}
+
+
+.container-mid {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container-bot-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.container-bottom {
+    
+    display: flex;
+    justify-content: center;
+    border-top: solid 1px white;
+    width: 70%;
+}
+
+.container-bottom button {
+    margin: 5%;
+    height: 35px;
+    width: 70%;
+    border: 0;
+    border-radius: 12px;
+    outline: none;
+}
+
+.mid-inputs label {
+    margin-left: 5%;
+    color: white;
+}
+
+
+.mid-file {
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    color: white;
+    margin-left: 5%;
+}
+
+
+.mid-file label {
+    padding-top:10px ;
+}
+
+::placeholder {
+    font-family: arial;
+    font-style: italic;
+    font-size: 16px;
+    padding-left: 5px;
+}
+
+.mid-inputs textarea {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 5px;
+    outline: none;
+    font-size: 2vh;
+    border-radius: 8px;
+    border: 0;
+    resize: none;
+}
+
+.container-mid li {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5%;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:1024px) {
+    .container-top label{
+        font-size: 3vw;
+    }
+
+    .container-bottom button{
+        font-size: 1.5vw;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar label {
+        font-size: 2.5vw;
+        line-height: 2.5vw;
+    }
+}
+
+@media screen and (max-width:900px) {
+    
+}
+
+@media screen and (max-width:600px) {
+    body {
+        background-color: #6B8D8D;
+        margin: 0;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        line-height: 3vw;
+    }
+
+    .container-main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo {
+        height: 10vh;
+    }
+
+   .container-l {
+    width: 100%;
+    background-color: #183442;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 20px;
+    margin-top: 50%;
+   }
+
+   .adicionar, .editar, .remover, .gerenciar {
+       color: white;
+       display: flex;
+       font-size: 12px;
+       text-align: center;
+   }
+
+ 
+
+    .container-bottom button {
+        height: 29px;
+        width: 100%;
+        font-size: 16px;
+        
+    }
+
+    .container-top-top {
+        padding-top: 8px;
+    }
+
+    .container-bottom {
+    
+        display: flex;
+        justify-content: center;
+    }
+
+   .container-meio {
+    margin-top: 15px;
+    background-color: #183442;
+    width: 300px;
+    height: 600px;
+   }
+
+   .container-top label {
+       font-size: 17px;
+   }
+
+   .inputs {
+    justify-content: center;
+   }
+
+   
+
+   .logo img {
+    height: 100%;
+    margin-left: 10px;
+   }
+
+   .logo label {
+       display: none;
+   }
+
+   .mid-file input {
+    font-size: 10px;
+    }
+}
+
+@media screen and (max-width:373px) {
+
+    .logo img {
+        margin-left: 5px;
+    }
+
+    .adicionar, .editar, .remover, .gerenciar {
+        line-height: 4vw;
+    }
+
+    .container-bottom button {
+        font-size: 4vw;
+    }
+
+    .container-top label {
+        font-size: 5vw;
+    }
+
+    ::placeholder {
+        font-size: 4vw;
+    }
+
+    .mid-file input {
+        font-size: 3vw;
+    }
+
+    .mid-file label {
+        font-size: 4vw;
+    }
+}
+
+@media screen and (max-width:280px) {
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 4vw;
+    }
+
+    .mid-file input {
+        font-size: 4vw;
+    }
+
+    .mid-file label {
+        font-size: 4vw;
+    }
+
+    .logo img {
+        margin-left: 5px;
+    }
+
+    footer {
+    margin-top: 5%;
+    padding: 16px;
+    background-color: #6B8D8D;
+    }
+}
+
+@media screen and (max-width:240px) {
+    .adicionar, .editar, .remover, .gerenciar {
+        font-size: 4vw;
+        line-height: 4vw;
+        padding-right: 1vw;
+    }
+
+    .logo img {
+        margin-left: 5px;
+        height: 50%;
+    }
+
+
+    .mid-inputs label {
+        font-size: 8vw;
+    }
+    
+}

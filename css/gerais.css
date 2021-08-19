@@ -17,3 +17,21 @@
     background-size: 100%;
     background-color: #132839;
 }
+
+
+/* Comandos da scrollbar */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #617e7e;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #E2781C;
+    height: 5px;
+    border-radius: 5px;
+
+}
