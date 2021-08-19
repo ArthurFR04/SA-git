@@ -295,6 +295,20 @@ footer #avanti {
     opacity: 0.5;
 }
 
+.container-l-mid li {
+    display: flex;
+    justify-content: flex-end;
+    height: 5%;
+    border: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style-type: none;
+    color: red;
+    font-size: 12px;
+    font-family: arial;
+    font-weight: bold;
+}
+
 @media screen and (max-width:1024px) {
     .container-1 {
 
@@ -356,6 +370,6 @@ footer #avanti {
     }
 
     .container-l label {
-        font-size: 4.9vw;
+        font-size: 4vw;
     }
 }
