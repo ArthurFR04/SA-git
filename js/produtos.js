@@ -9,7 +9,7 @@ let produtos = [
         id: 201,
         nome: 'Caneca Stars Wars',
         preco: '35,00',
-        foto: '<img onclick="javascript:window.location.href='+'produtoIndividual.html'+';" src="./img/caneca-Star-Wars.jpg"></img>',
+        foto: '<img src="./img/caneca-Star-Wars.jpg"></img>',
     }
 ]
 
@@ -24,6 +24,8 @@ for (let i=0; i<produtos.length; i++) {
             <label id="img-prod${i}"></label>
             <h3 id="preco_prod${i}"></h3> 
             <a href="javascript:add_car(${produtos[i].id}), msg_add();">Adicionar ao carrinho</a>
+            <a href="produtoIndividual.html">Produto individual</a>
+
         </div>
     `
     
