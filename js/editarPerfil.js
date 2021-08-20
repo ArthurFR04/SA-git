@@ -43,6 +43,22 @@ function editarPerfil(){
             pessoasCadastro[i].email = inputs[1].value
             pessoasCadastro[i].senha = inputs[2].value
             localStorage.setItem('Pessoas', JSON.stringify(pessoasCadastro))
+            limparValue()
+
+            Swal.fire ({
+                icon: 'success',
+                title: 'Perfil Editado!'
+            })
+            
+        }
+        
+    }
+
+    function limparValue() {
+        for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS ERROS DOS INPUTS
+            inputs[i].value = '';
+            inputs[i].style = '';
+            li[i].innerHTML = '';
         }
     }
 
