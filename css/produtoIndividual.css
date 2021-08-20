@@ -10,16 +10,54 @@ body {
     height: 100%;
 }
 
-footer{
-    
+.imgs-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
     padding: 16px;
     background-color: #E2781C
 }
+
+footer #senai {
+    height: 15px;
+    width: 97px;
+    margin-right: 5%;
+}
+
+footer #avanti {
+    height: 14px;
+    width: 75px;
+    margin-left: 5%;
+}
+
+#senai, #avanti {
+    cursor: pointer;
+}
+
+.iconeAdmin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconeAdmin i {
+    color: white;
+}
+
+.redesSociais i {
+    color: white;
+}
+
 .conteudo {
     flex: 1;
     display: flex;
     justify-content: center;
-
 }
 
 .navnavpapi {
@@ -61,10 +99,8 @@ footer{
     height: 80%;
     margin: 3%;
     border: solid 2px #333;
-    border-radius:4px;
+    border-radius: 4px;
     cursor: pointer;
-    
-
 }
 
 .container-l .bot .bot-container img {
@@ -84,8 +120,9 @@ footer{
     flex-direction: column;
     background-color: white;
 }
+
 .container-rr .top-r {
-    height:20% ;
+    height: 20%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -107,33 +144,43 @@ footer{
 }
 
 .container-rr .mid-r .preco {
-    height: 50%;
+    height: 30%;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin-right: 5%;
     margin-left: 5%;
+}
+
+.preco strong {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.descricao label {
+    text-align: justify;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.descricao-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%;
+}
+.descricao-bot {
+    display: flex;
+    height: 80%;
 }
 
 .mid-r .label-strong {
     font-size: 3vh;
 }
-.quantidade {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    margin-right: 5%;
-    height: 12%;
-    width: 100px;
-    border: solid 1px black;
-    border-radius: 8px;
-}
 
-.quantidade label {
-    cursor: pointer;
-}
 .container-rr .mid-r .descricao {
-    height: 50%;
+    height: 70%;
     display: flex;
     flex-direction: column;
     margin-right: 5%;
@@ -155,10 +202,84 @@ footer{
     border-radius: 12px;
     width: 70%;
     height: 5vh;
-    border: solid 2px #C4C4C4;
-    background-color: #C4C4C4;
+    border: solid 2px #E2781C;
+    background-color: #E2781C;
     font-weight: bold;
     font-size: 15px;
+    color: white;
 }
 
+@media screen and (max-width:1190px) {
+    .descricao label {
+        font-size: 1.4vw;
+    }
 
+    .descricao h3 {
+        font-size: 2.3vw;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .container-principal {
+        height: 100%;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        
+    }
+    .container-l {
+        width: 100%;
+        height: 80vh;
+    }
+    .container-r {
+        width: 100%;
+        height: 70vh;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .descricao label {
+        font-size: 2.3vw;
+    }
+
+    .descricao h3 {
+        font-size: 3.2vw;
+    }
+
+
+}
+
+@media screen and (max-width:600px) {
+    .container-principal {
+        margin: 0;
+        width: 95%;
+    }
+
+    .container-l {
+        height: 60vh;
+        margin-top: 20px;
+    }
+
+    .container-r {
+        height: 90vh;
+    }
+
+    .container-rr {
+        width: 100%;
+    }
+
+    .descricao label {
+        font-size: 3.5vw;
+    }
+
+    .descricao h3 {
+        font-size: 6vw;
+    }
+
+}
+
+@media screen and (max-width:415px) {
+    .descricao label {
+        font-size: 4.5vw;
+    }
+}
