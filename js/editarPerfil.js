@@ -3,6 +3,7 @@ let indice = dados.position
 let inputs = document.querySelectorAll('input')
 let li = document.querySelectorAll('li')
 let pessoasCadastro = JSON.parse(localStorage.getItem('Pessoas'))
+let login = JSON.parse(localStorage.getItem('Login'))
 
 
 function editarPerfil(){
@@ -35,13 +36,16 @@ function editarPerfil(){
         return false
     }
 
+    let mudarLogin = null
+
     for (let i = 0; i < pessoasCadastro.length; i++) {
 
         if (indice == i) {
-    
+            
             pessoasCadastro[i].apelido = inputs[0].value
             pessoasCadastro[i].email = inputs[1].value
             pessoasCadastro[i].senha = inputs[2].value
+            mudarLogin = pessoasCadastro[i].apelido
             localStorage.setItem('Pessoas', JSON.stringify(pessoasCadastro))
             limparValue()
 
@@ -53,6 +57,9 @@ function editarPerfil(){
         }
         
     }
+
+    login.id = mudarLogin
+    localStorage.setItem('Login', JSON.stringify(login))
 
     function limparValue() {
         for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS ERROS DOS INPUTS
