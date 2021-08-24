@@ -315,4 +315,18 @@ footer{
         width: 25px;
         height: 25px;
     }
+
+    
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .iconeAdmin {
+        margin-bottom: 5px;
+    }
+
+    footer .imgs-footer {
+        margin-bottom: 5px;
+    }
 }
