@@ -35,7 +35,7 @@ function cadastrar() {
 
     }
     var cadastros2 = JSON.parse(localStorage.getItem('Pessoas'))
-    console.log(cadastros2);
+   
 
 
 
