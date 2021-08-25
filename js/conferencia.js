@@ -110,7 +110,7 @@ function verificar_login_carrinho() {
                     ${id}
                 </button>
                 <ul class="dropdown-menu dropdown-menu-end">
-                    <li><a class="dropdown-item" href="#">Editar perfil</a></li>
+                    <li><a class="dropdown-item" href="editarPerfil.html">Editar perfil</a></li>
                     <li> <hr> </li>
                     <li><a class="dropdown-item" href="javascript:sair_login();">Sair</a></li>
                 </ul>

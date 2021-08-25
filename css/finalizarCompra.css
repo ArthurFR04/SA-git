@@ -44,7 +44,7 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: solid 1px white;
+    /* border-bottom: solid 1px white; */
 }
 
 .container-l-top label {
@@ -61,8 +61,9 @@ html {
 }
 
 .bot-l {
-    height: 40%;
     display: flex;
+    justify-content: center;
+    height: 40%;
     width: 100%;
 }
 
@@ -371,5 +372,22 @@ footer #avanti {
 
     .container-l label {
         font-size: 4vw;
+    }
+}
+
+
+@media screen and (max-width:280px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .iconeAdmin {
+        margin-bottom: 5px;
+    }
+
+    footer .imgs-footer {
+        margin-bottom: 5px;
     }
 }

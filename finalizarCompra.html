@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="./css/navBars.css">
     <link rel="stylesheet" href="./css/finalizarCompra.css">
-
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
 </head>
 
 <body onload="verificar_login_index()">
@@ -98,13 +98,13 @@
                         <div class="inputs-pequeno">
                             <div class="input-pequeno">
                                 <label for="">Validade</label>
-                                <input  placeholder="MM/AA" type="date">
+                                <input placeholder="MM/AA" type="text" id="inputData">
                                 <li></li>
                             </div>
 
                             <div class="input-pequeno input1-pequeno">
                                 <label for="">Cód. Segurança</label>
-                                <input type="number">
+                                <input type="text" maxlength="3">
                                 <li></li>
                             </div>
 
@@ -119,14 +119,14 @@
                         <div class="inputs-pequeno">
                             <div class="input-pequeno">
                                 <label for="">CPF</label>
-                                <input placeholder="_ _ _._ _ _._ _ _-_ _" type="text">
+                                <input placeholder="Insira seu CPF" type="text" id="cpf1">
                                 <li></li>
                             </div>
                         </div>
                     </div>
 
                     <div class="bot-l">
-                    
+                    <img src="./img/cartao.png" alt="" id="img-cartao">
                     </div>
                 </div>
 
@@ -173,7 +173,7 @@
                 </div>
 
                 <div class="container-bot">
-                    <button onclick="validaçao()">Total a pagar: R$29,90</button>
+                    <button onclick="validacao()">Total a pagar: R$29,90</button>
                     <a href="">Adicionar mais itens</a>
                 </div>
 
@@ -207,8 +207,10 @@
     </footer>
 
 
-
+    
     <script src="./js/sweetalert2.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.10/jquery.mask.js"></script>
     <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
     <script src="./js/teste_car.js"></script>
     <script src="./js/finalizarCompra.js"></script>
