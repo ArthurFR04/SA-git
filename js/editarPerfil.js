@@ -60,6 +60,7 @@ function editarPerfil(){
 
     login.id = mudarLogin
     localStorage.setItem('Login', JSON.stringify(login))
+    
 
     function limparValue() {
         for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS ERROS DOS INPUTS
