@@ -83,7 +83,13 @@ function logar() {
             }).then((result) => {
             /* Read more about handling dismissals below */
             if (result.dismiss === Swal.DismissReason.timer) {
-                window.location.href="index.html"
+                // window.history.back()
+                let e = window.history.current
+                let f = window.history[2]
+                console.log(e);
+                console.log(f);
+                history.pushState({page: 1}, 'opa')                                                         //continuar 
+                console.log(window.history.state);
             }
         })
         a[1].innerHTML = '';

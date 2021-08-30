@@ -119,6 +119,10 @@ section{
     width: 207px;
 }
 
+.fotos div a{
+    color: white;
+    background-color: #6B8D8D;
+}
 
 /* footer{
     position: absolute;
