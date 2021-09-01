@@ -5,8 +5,21 @@ let li = document.querySelectorAll('li')
 let pessoasCadastro = JSON.parse(localStorage.getItem('Pessoas'))
 let login = JSON.parse(localStorage.getItem('Login'))
 
+for (let i = 0; i < pessoasCadastro.length; i++) {
 
-function editarPerfil(){
+
+    if (indice == i) {
+
+        inputs[0].value = pessoasCadastro[i].apelido
+        inputs[1].value = pessoasCadastro[i].email
+      
+
+      
+    }
+
+}
+
+function editarPerfil() {
     let send = true
 
     clear()
@@ -41,7 +54,7 @@ function editarPerfil(){
     for (let i = 0; i < pessoasCadastro.length; i++) {
 
         if (indice == i) {
-            
+
             pessoasCadastro[i].apelido = inputs[0].value
             pessoasCadastro[i].email = inputs[1].value
             pessoasCadastro[i].senha = inputs[2].value
@@ -49,18 +62,22 @@ function editarPerfil(){
             localStorage.setItem('Pessoas', JSON.stringify(pessoasCadastro))
             limparValue()
 
-            Swal.fire ({
+            inputs[0].value = pessoasCadastro[i].apelido
+            inputs[1].value = pessoasCadastro[i].email
+            
+
+            Swal.fire({
                 icon: 'success',
                 title: 'Perfil Editado!'
             })
-            
+
         }
-        
+
     }
 
     login.id = mudarLogin
     localStorage.setItem('Login', JSON.stringify(login))
-    
+
 
     function limparValue() {
         for (let i = 0; i < inputs.length; i++) {       //FUNCÃO LIMPAR OS ERROS DOS INPUTS

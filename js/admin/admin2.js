@@ -26,8 +26,6 @@ inputsR[3].addEventListener('change', function () {
     reader.readAsDataURL(this.files[0]);
 })
 
-console.log(photo);
-
 function localizarProdutos() {
     let send = true;
     let send1 = true;

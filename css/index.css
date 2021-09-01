@@ -1,10 +1,28 @@
+
+
 body {
+    margin: 0;
     background-color: #6B8D8D;
-}
-section{
+    display: flex;
+    flex-direction: column;
     height: 100%;
 }
 
+html {
+    height: 100%;
+}
+
+.conteudo {
+    flex: 1;
+}
+
+.navnavpapi {
+    height: auto!important;
+}
+
+section{
+    height: 100%;
+}
 
 .excluir {
     color: #E2781C;
@@ -98,8 +116,8 @@ section{
 }
 
 .fotos div{
-    display: block;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
     width: 46.8%;
     height: 25vw;
     
@@ -110,16 +128,34 @@ section{
 }
 
 .fotos div h2{
+    display: flex;
+    justify-content: center;
+    height: 20%;
     color: brown;
-    text-align: center;
+    
+}
+
+.fotos div h3 {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+}
+
+.fotos div label {
+    display: flex;
+    justify-content: center;
+    height: 60%;
+
 }
 
 .fotos div img{
-    height: 252px;
-    width: 207px;
+  height: 100%;
+  width: 50%;
 }
 
 .fotos div a{
+    display: flex;
+    height: 10%;
     color: white;
     background-color: #6B8D8D;
 }
@@ -182,34 +218,25 @@ footer #avanti {
         width: 100%!important;
     }
     .banner{
-        height: 35vw;
-        width: 90%;
+        height: 200px;
+        width: 95%;
     }
     .fotos{
         flex-direction: column;
         align-items: center;
     }
-    .foto-1{
-        width: 90%!important;
-        height: 45vw;
-        margin-right: 0;
-        
-        
-    }
-    .foto-2{
-        width: 90%!important;
-        height: 45vw;
-        margin-left: 0; 
-    }
-
+    
     .carousel-indicators{
         margin-bottom: 1%!important;
     }
-    /* footer{
-        position: absolute;
-        bottom: 0;
-         
-    } */
+
+    .fotos div {
+        width: 95%;
+        height: 300px;
+        margin-right: 0;
+
+    }
+  
     
 }
 
@@ -219,4 +246,20 @@ footer #avanti {
         height: 100%!important;
     }
 
+}
+
+@media screen and (max-width:280px) {
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer .iconeAdmin {
+        margin-bottom: 5px;
+    }
+
+    footer .imgs-footer {
+        margin-bottom: 5px;
+    }
 }
