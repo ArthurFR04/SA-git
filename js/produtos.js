@@ -32,7 +32,137 @@ let produtos = [
         foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
         foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
         
-    }
+    },
+
+    // excluir 
+
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
+        
+    },
+    
   
 ]
 
