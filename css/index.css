@@ -1,5 +1,3 @@
-
-
 body {
     margin: 0;
     background-color: #6B8D8D;
@@ -20,7 +18,7 @@ html {
     height: auto!important;
 }
 
-section{
+section {
     height: 100%;
 }
 
@@ -37,22 +35,8 @@ section{
 }
 
 .carousel-inner {
-    width: 85%!important;
-    margin-top: 25px!important;
-}
-
-
-
-/*carousel brabo*/
-
-.carousel {
-    display: flex!important;
-    justify-content: center!important;
-}
-
-.carousel-inner {
-    width: 85%!important;
-    margin-top: 25px!important;
+    width: 100%!important;
+    /* margin-top: 25px!important; */
 }
 
 .carousel-item img {
@@ -72,6 +56,7 @@ section{
     height: 12px;
     border-radius: 50%;
 }
+
 .carousel-item img {
     height: 35vw;
 }
@@ -83,7 +68,8 @@ section{
 .carousel-control-prev-icon {
     margin-right: 70%;
 }
-.carousel-indicators{
+
+.carousel-indicators {
     z-index: 0
 }
 
@@ -106,33 +92,31 @@ section{
     height: 25vw;
     margin: auto;
     margin-top: 30px;
-    background:white;
+    background: white;
     padding: 0;
-   
 }
-.fotos{
+
+.fotos {
     display: flex;
     justify-content: center
 }
 
-.fotos div{
+.fotos div {
     display: flex;
     flex-direction: column;
     width: 46.8%;
     height: 25vw;
-    
     margin-top: 30px;
-    background:white;
+    background: white;
     padding: 0;
     margin-right: 10px;
 }
 
-.fotos div h2{
+.fotos div h2 {
     display: flex;
     justify-content: center;
     height: 20%;
     color: brown;
-    
 }
 
 .fotos div h3 {
@@ -145,15 +129,14 @@ section{
     display: flex;
     justify-content: center;
     height: 60%;
-
 }
 
-.fotos div img{
-  height: 100%;
-  width: 50%;
+.fotos div img {
+    height: 100%;
+    width: 50%;
 }
 
-.fotos div a{
+.fotos div a {
     display: flex;
     height: 10%;
     color: white;
@@ -213,52 +196,42 @@ footer #avanti {
     color: white;
 }
 
-@media screen and (max-width:600px){
-    .carousel-inner{
+@media screen and (max-width:600px) {
+    .carousel-inner {
         width: 100%!important;
     }
-    .banner{
+    .banner {
         height: 200px;
         width: 95%;
     }
-    .fotos{
+    .fotos {
         flex-direction: column;
         align-items: center;
     }
-    
-    .carousel-indicators{
+    .carousel-indicators {
         margin-bottom: 1%!important;
     }
-
     .fotos div {
         width: 95%;
         height: 300px;
         margin-right: 0;
-
     }
-  
-    
 }
 
 @media screen and (max-width:1024px) {
-   
-    .carousel-item img{
+    .carousel-item img {
         height: 100%!important;
     }
-
 }
 
 @media screen and (max-width:280px) {
-
     footer {
         flex-direction: column;
         align-items: center;
     }
-
     footer .iconeAdmin {
         margin-bottom: 5px;
     }
-
     footer .imgs-footer {
         margin-bottom: 5px;
     }
