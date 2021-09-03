@@ -1,3 +1,5 @@
+let produto = document.querySelectorAll('.produtos')
+let produts = JSON.parse(localStorage.getItem('produtos'))
 
 let produtos = [
     {
@@ -11,6 +13,24 @@ let produtos = [
         nome: 'Caneca Stars Wars',
         preco: '35,00',
         foto: '<img src="./img/caneca-Star-Wars.jpg"></img>',
+        
+    },
+    {
+        id: 301,
+        nome: 'Caneca Disney Ariel',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/ariel frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/ariel lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/ariel tras.png" alt=""></img>',
+        
+    },
+    {
+        id: 302,
+        nome: 'Caneca Disney Aurora',
+        preco: '35,00',
+        foto_frente: '<img src="./img/canecas-disney/aurora frente.png" alt=""></img>',
+        foto_lateral: '<img src="./img/canecas-disney/aurora lateral.png" alt=""></img>',
+        foto_tras: '<img src="./img/canecas-disney/aurora tras.png" alt=""></img>',
         
     }
   
@@ -39,8 +59,16 @@ for (let i=0; i<produtos.length; i++) {
 
 
 
-function Redirecionar() {
-    window.location.href="produtoIndividual.html"
-
-    
+function caneca_1() {
+        
+     localStorage.setItem('teste', JSON.stringify(produtos[3]))
+     window.location.href="produtoIndividual.html"
+ 
 }
+
+function caneca_2() {
+
+      localStorage.setItem('teste', JSON.stringify(produtos[2]))
+      window.location.href="produtoIndividual.html"
+}
+
