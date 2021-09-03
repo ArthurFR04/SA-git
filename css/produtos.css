@@ -61,6 +61,7 @@ section{
     height: 67%;
     background-color: rgba(255, 255, 255, 0.315);
     border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
 }
 .produtos label{
     height: 40%;

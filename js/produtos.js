@@ -1,5 +1,5 @@
-let produto = document.querySelectorAll('.produtos')
-let produts = JSON.parse(localStorage.getItem('produtos'))
+
+// let produts = JSON.parse(localStorage.getItem('produtos'))
 
 let produtos = [
     {
@@ -39,36 +39,36 @@ let produtos = [
 localStorage.setItem('produtos', JSON.stringify(produtos))
 
 
-for (let i=0; i<produtos.length; i++) {
+// for (let i=0; i<produtos.length; i++) {
 
-    document.getElementById('fotos-vitrine').innerHTML += `
-        <div class="foto-${i}">
-            <h2 id="nome-prod${i}"></h2>
-            <label onclick="Redirecionar()" id="img-prod${i}"></label>
-            <h3 id="preco_prod${i}"></h3> 
-            <a href="javascript:add_car(${produtos[i].id}), msg_add();">Adicionar ao carrinho</a>
+//     document.getElementById('fotos-vitrine').innerHTML += `
+//         <div class="foto-${i}">
+//             <h2 id="nome-prod${i}"></h2>
+//             <label onclick="Redirecionar()" id="img-prod${i}"></label>
+//             <h3 id="preco_prod${i}"></h3> 
+//             <a href="javascript:add_car(${produtos[i].id}), msg_add();">Adicionar ao carrinho</a>
           
 
-        </div>
-    `
+//         </div>
+//     `
     
-    document.getElementById(`nome-prod${i}`).innerHTML = produtos[i].nome
-    document.getElementById(`img-prod${i}`).innerHTML = produtos[i].foto
-    document.getElementById(`preco_prod${i}`).innerHTML = produtos[i].preco
-}
+//     document.getElementById(`nome-prod${i}`).innerHTML = produtos[i].nome
+//     document.getElementById(`img-prod${i}`).innerHTML = produtos[i].foto
+//     document.getElementById(`preco_prod${i}`).innerHTML = produtos[i].preco
+// }
 
 
 
-function caneca_1() {
+// function caneca(id) {
+
+//     for (let i=0 ; i<produtos.length; i++) {
+//         if (id == produtos[i].id) {
+//             localStorage.setItem('canecaIndividual', JSON.stringify(produtos[i]))
+//             window.location.href="produtoIndividual.html"
+//         }
+//     }
         
-     localStorage.setItem('teste', JSON.stringify(produtos[3]))
-     window.location.href="produtoIndividual.html"
  
-}
+// }
 
-function caneca_2() {
-
-      localStorage.setItem('teste', JSON.stringify(produtos[2]))
-      window.location.href="produtoIndividual.html"
-}
 

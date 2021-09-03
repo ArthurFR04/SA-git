@@ -2,7 +2,7 @@ let fotoPequena = document.querySelector('.bot')
 let fotoPequenaIndividual = fotoPequena.querySelectorAll('.bot-container')
 let fotoGrande = document.querySelector('.top')
 let fotoGrandeIndividual = fotoGrande.querySelectorAll('img')
-let produtos = JSON.parse(localStorage.getItem('teste'))
+let produtos = JSON.parse(localStorage.getItem('canecaIndividual'))
 
 fotoGrande.innerHTML = produtos.foto_frente
 fotoPequenaIndividual[0].innerHTML = produtos.foto_frente
