@@ -1,19 +1,47 @@
 
 let input = document.querySelector('.inputs')
 let inputs = input.querySelectorAll('input');
-let img = document.querySelector('.mid-file');
+let img = document.querySelector('.mids-file');
 let foto = img.querySelectorAll('input');
 let textArea = document.querySelectorAll('textarea');
 let li = document.querySelectorAll('li');
 let send = true;
-let photo = null
+let photo_1 = null
+let photo_2 = null
+let photo_3 = null
 
 foto[0].addEventListener('change', function () {
     const reader = new FileReader();
 
     reader.addEventListener('load', () => {
 
-        photo = reader.result
+        photo_1 = reader.result
+
+
+    })
+
+    reader.readAsDataURL(this.files[0]);
+})
+
+foto[1].addEventListener('change', function () {
+    const reader = new FileReader();
+
+    reader.addEventListener('load', () => {
+
+        photo_2 = reader.result
+
+
+    })
+
+    reader.readAsDataURL(this.files[0]);
+})
+
+foto[2].addEventListener('change', function () {
+    const reader = new FileReader();
+
+    reader.addEventListener('load', () => {
+
+        photo_3 = reader.result
 
 
     })
@@ -107,10 +135,13 @@ function cadastroProdutos() {
 
     let produto = {
         nome: inputs[0].value,
-        codigo: inputs[1].value,
+        id: inputs[1].value,
         preco: inputs[2].value,
         descricao: textArea[0].value,
-        foto: photo
+        foto_produto: photo_1,
+        foto_frente: photo_1,
+        foto_lateral: photo_2,
+        foto_tras:photo_3
     }
 
 
