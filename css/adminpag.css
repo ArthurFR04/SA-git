@@ -96,7 +96,7 @@ body {
 }
 
 .container-mid .inputs{
-    height: 80%;
+    height: 60%;
 }
 
 .container-mid .mid-inputs {
@@ -123,11 +123,14 @@ body {
     margin-left: 5%;
     color: white;
 }
-
+.mids-file {
+    display: flex;
+    flex-direction: column;
+    height: 40%;
+}
 .mid-file {
     display: flex;
     flex-direction: column;
-    height: 20%;
     color: white;
     margin-left: 5%;
 }

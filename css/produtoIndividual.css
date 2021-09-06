@@ -87,6 +87,7 @@ footer #avanti {
 
 .container-l .top img {
     width: 60%;
+    height: 100%;
 }
 
 .container-l .bot {
@@ -110,6 +111,7 @@ footer #avanti {
 
 .container-l .bot .bot-container img {
     width: 70%;
+    height: 100%;
 }
 
 .container-r {
@@ -134,7 +136,7 @@ footer #avanti {
 
 .container-rr .top-r label {
     color: black;
-    font-size: 35px;
+    font-size: 29px;
     font-weight: bold;
 }
 
