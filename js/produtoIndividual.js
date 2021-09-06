@@ -1,5 +1,6 @@
 let fotoPequena = document.querySelector('.bot')
 let fotoPequenaIndividual = fotoPequena.querySelectorAll('img')
+let divFotoPequena = fotoPequena.querySelectorAll('.bot-container')
 let fotoGrande = document.querySelector('.top')
 let fotoGrandeIndividual = fotoGrande.querySelectorAll('img')
 let produtos = JSON.parse(localStorage.getItem('canecaIndividual'))
@@ -15,9 +16,9 @@ labels[3].innerHTML = produtos.descricao
 
 
 
-fotoPequenaIndividual[0].addEventListener('click', primeiraImg)
-fotoPequenaIndividual[1].addEventListener('click', segundaImg)
-fotoPequenaIndividual[2].addEventListener('click', terceiraImg)
+divFotoPequena[0].addEventListener('click', primeiraImg)
+divFotoPequena[1].addEventListener('click', segundaImg)
+divFotoPequena[2].addEventListener('click', terceiraImg)
 
 function primeiraImg() {
     // fotoGrande.innerHTML = 

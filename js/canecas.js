@@ -1,10 +1,17 @@
 
+
 produtos = JSON.parse(localStorage.getItem('produtos'))
 
 let papi = 0
-
+let passarPagina = document.querySelector('.passar-pagina')
+let a = passarPagina.querySelectorAll('a')
+a[0].style = 'opacity: 0.6'
 function botbot2() {
     vitrineGo(12)
+   
+    a[0].style = 'opacity: 1'
+    a[1].style = 'opacity: 0.6'
+    a[2].style = 'opacity: 1'
 }
 
 
