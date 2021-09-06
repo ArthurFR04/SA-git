@@ -27,6 +27,7 @@ function displayzeraPah() {
     if (user_car === 'carrinho vazio' || user_car < 1) {
 
         document.getElementById('vitrine-carr').innerHTML = ''
+        document.getElementById('label-r').innerHTML = ''
         document.getElementById('span-total').innerHTML   = '00,00'
 
         document.getElementById('vitrine-carr').innerHTML += `
@@ -36,10 +37,12 @@ function displayzeraPah() {
                 </div>
             </div>
         `
+        user_car = 'carrinho vazio'
     }
     else {
 
         document.getElementById('vitrine-carr').innerHTML = ''
+        document.getElementById('label-r').innerHTML = ''
         document.getElementById('span-total').innerHTML   = ''
 
         let produtos = JSON.parse(localStorage.getItem('produtos'))
@@ -77,7 +80,7 @@ function displayzeraPah() {
 
             document.getElementById('vitrine-carr').innerHTML += `
                 <div class="produto">
-                    ${produtos [p] .foto}
+                    ${produtos [p] .foto_frente}
                     <div class="quantidade">
                         <a href="javascript:re_car(${user_car[i].id});" class="qtd-label">-</a>
                         <label id="quant-carr">${user_car[i].quantidade}</label>
@@ -86,6 +89,17 @@ function displayzeraPah() {
                     <label id="preço-carr">${precoStrin}</label>
                 </div>
             `
+            
+            document.getElementById('label-r').innerHTML += `
+
+                
+                <div class="label-r">
+                    <label class="qtd-produto">${produtos[p].nome}</label>
+                    <span id="preco-produto">R$ ${precoStrin}</span>
+                </div>
+                <br>
+            `
+
             precoTotal += precoNum
         }
 
@@ -94,4 +108,22 @@ function displayzeraPah() {
 
         document.getElementById('span-total').innerHTML += precoTotal
     }
+}
+
+function finalizarCompra() {
+
+    if (user_car === 'carrinho vazio') {
+
+        Swal.fire ({
+            icon: 'error',
+            title: 'O carrinho está vazio',
+            text: 'Não é possível finalizar a compra.',
+            confirmButtonColor: '#6B8D8D',
+        })
+    }
+    else {
+
+        window.location.href = "finalizarCompra.html"
+    }
+
 }

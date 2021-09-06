@@ -171,7 +171,29 @@
 
         <div id="fotos-vitrine" class="fotos">
 
-            <div class="foto-1"></div>
+            <div id="teste123" class="foto-1">
+
+                <div class="produtos">
+                    
+                </div>
+
+            </div>
+            <script>
+                produtos = JSON.parse(localStorage.getItem('produtos'))
+                for (let i = 0; i < 8; i++) {
+
+                    document.getElementById(`teste123`).innerHTML = `
+
+                        <div class="produtos" sty>
+                            <img class="tete1" onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_produto}">
+                            <img class="tete2" onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_hover}">
+                            <label for="">${produtos[i].nome}<br>${produtos[i].preco}</label>
+                            <a href="javascript:add_car(${produtos[i].id});" >Adicionar ao carrinho</a>
+                        </div>     
+                    `
+                   
+                }
+            </script>
 
             <div class="foto-2"></div>
 
