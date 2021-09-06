@@ -131,8 +131,7 @@ footer {
 }
 
 .numero:hover {
-    height: 28px;
-    width: 28px;
+   
     text-decoration: none;
     color: white;
 }
@@ -141,9 +140,7 @@ footer {
     .container1 {
         display: flex;
     }
-    .produtos {
-        width: 100%;
-    }
+   
 }
 
 @media screen and (max-width:1024px) {

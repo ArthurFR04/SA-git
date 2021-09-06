@@ -10,6 +10,7 @@ let liR = inputR.querySelectorAll('li')
 let liL = inputL.querySelectorAll('li')
 let img = inputL.querySelectorAll('img')
 var produtoCadastro = JSON.parse(localStorage.getItem('Produto'))
+var produto = JSON.parse(localStorage.getItem('produtos'))
 
 let photo = null
 
@@ -43,53 +44,95 @@ function localizarProdutos() {
         clean()
     }
 
-    if(send !== true){
+    if (send !== true) {
         return false
     }
 
-    for (let i = 0; i < produtoCadastro.length; i++) {
+    if (produtoCadastro == undefined) {
+        send1 = true
+    } else {
+        for (let i = 0; i < produtoCadastro.length; i++) {
 
-        if (produtoCadastro[i].nome == inputsL[0].value || produtoCadastro[i].codigo == inputsL[0].value) {
-            
-            send1 = false;
-        } 
+            if (produtoCadastro[i].nome == inputsL[0].value || produtoCadastro[i].id == inputsL[0].value) {
 
-        
+                send1 = false;
+            }
+
+
+        }
     }
+
+
+    for (let i = 0; i < produto.length; i++) {
+
+        if (produto[i].nome == inputsL[0].value || produto[i].id == inputsL[0].value) {
+
+            send1 = false;
+        }
+
+
+    }
+
     if (send1 == true) {
         liL[0].innerHTML = 'Esse produto não existe!'
         inputsL[0].style.border = 'red solid 2px'
         limparValores()
         clear()
         img[1].style = 'display: none;'
-        
+
 
         send = false;
     }
-    
-    if(send !== true){
+
+    if (send !== true) {
         return false
     }
 
-    for (let i = 0; i < produtoCadastro.length; i++) {
+    for (let i = 0; i < produto.length; i++) {
 
-        if (produtoCadastro[i].nome == inputsL[0].value || produtoCadastro[i].codigo == inputsL[0].value) {
+        if (produto[i].nome == inputsL[0].value || produto[i].id == inputsL[0].value) {
 
 
             inputsL[0].value = ''
-            inputsL[1].value = produtoCadastro[i].nome
-            inputsL[2].value = produtoCadastro[i].codigo
-            inputsL[3].value = produtoCadastro[i].preco
-            textArea[0].value = produtoCadastro[i].descricao
-            inputsR[1].value = produtoCadastro[i].codigo
+            inputsL[1].value = produto[i].nome
+            inputsL[2].value = produto[i].id
+            inputsL[3].value = parseFloat(produto[i].preco).toFixed(2)
+            textArea[0].value = produto[i].descricao
+            inputsR[1].value = produto[i].id
 
             img[1].style = 'display: flex;'
-            img[1].src = produtoCadastro[i].foto
+            img[1].src = produto[i].foto_frente
 
         }
 
 
     }
+
+    if (produtoCadastro == undefined) {
+        return true
+    } else {
+        for (let i = 0; i < produtoCadastro.length; i++) {
+
+            if (produtoCadastro[i].nome == inputsL[0].value || produtoCadastro[i].id == inputsL[0].value) {
+
+
+                inputsL[0].value = ''
+                inputsL[1].value = produtoCadastro[i].nome
+                inputsL[2].value = produtoCadastro[i].id
+                inputsL[3].value = produtoCadastro[i].preco
+                textArea[0].value = produtoCadastro[i].descricao
+                inputsR[1].value = produtoCadastro[i].id
+
+                img[1].style = 'display: flex;'
+                img[1].src = produtoCadastro[i].foto_frente
+
+            }
+
+
+        }
+    }
+
+
 }
 
 function editarProdutos() {
@@ -122,18 +165,20 @@ function editarProdutos() {
         return false;
     }
 
-    for (let i = 0; i < produtoCadastro.length; i++) {
+    for (let i = 0; i < produto.length; i++) {
 
 
-        if (produtoCadastro[i].nome == inputsL[1].value && produtoCadastro[i].codigo == inputsL[2].value) {
+        if (produto[i].nome == inputsL[1].value && produto[i].id == inputsL[2].value) {
 
 
-            produtoCadastro[i].nome = inputsR[0].value
-            produtoCadastro[i].preco = inputsR[2].value
-            produtoCadastro[i].descricao = textArea[1].value
-            produtoCadastro[i].foto = photo
+            produto[i].nome = inputsR[0].value
+            produto[i].preco = parseFloat(inputsR[2].value).toFixed(2)
+            produto[i].descricao = textArea[1].value
+            produto[i].foto_frente = photo
+            produto[i].foto_produto = photo
 
-            localStorage.setItem('Produto', JSON.stringify(produtoCadastro))
+            localStorage.setItem('produtos', JSON.stringify(produto))
+            localStorage.setItem('Editados', JSON.stringify(produto))
 
             Swal.fire({
                 icon: 'success',
@@ -147,6 +192,39 @@ function editarProdutos() {
         }
 
     }
+    if (produtoCadastro == undefined) {
+        return true
+    } else {
+        for (let i = 0; i < produtoCadastro.length; i++) {
+
+
+            if (produtoCadastro[i].nome == inputsL[1].value && produtoCadastro[i].id == inputsL[2].value) {
+
+
+                produtoCadastro[i].nome = inputsR[0].value
+                produtoCadastro[i].preco = inputsR[2].value
+                produtoCadastro[i].descricao = textArea[1].value
+                produtoCadastro[i].foto_frente = photo
+                produtoCadastro[i].foto_produto = photo
+
+                localStorage.setItem('Produto', JSON.stringify(produtoCadastro))
+
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Produto Editado!'
+                })
+
+                img[1].style = 'display: none;'
+                limparValores()
+
+
+            }
+
+        }
+    }
+
+
+
 
 
 
