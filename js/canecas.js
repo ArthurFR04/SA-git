@@ -2,10 +2,13 @@
 
 produtos = JSON.parse(localStorage.getItem('produtos'))
 
-let papi = 0
+
+let pags = 0
+
 let passarPagina = document.querySelector('.passar-pagina')
 let a = passarPagina.querySelectorAll('a')
 a[0].style = 'opacity: 0.6'
+
 function botbot2() {
     vitrineGo(12)
    
@@ -26,33 +29,33 @@ function vitrineGo(pag) {
 
     for (let i = 1; i <= quantDivs; i++) {
         document.getElementById('vitTotal').innerHTML += `
-        <div id="vitProd${i}" class="container1">  </div>
+            <div id="vitProd${i}" class="container1">  </div>
         `
     }
 
     // adiciona os produtos
 
-    let papi = pag
-    console.log(papi);
+    let pags = pag
 
     let j = 1
 
-    for (let i = papi; i < produtos.length; i++) {
+    for (let i = pags; i < produtos.length; i++) {
 
 
         document.getElementById(`vitProd${j}`).innerHTML += `
 
-            <div class="produtos">
-                <img onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_produto}">
+            <div class="produtos"  style="background-image: url(../img/canecas-disney/ariel tras.png);">             
+                <img class="tete1" onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_produto}">                   
                 <label for="">${produtos[i].nome}<br>${produtos[i].preco}</label>
-                <a href="">Adicionar ao carrinho</a>
+                <a href="javascript:add_car(${produtos[i].id});" >Adicionar ao carrinho</a>
             </div>     
         `
         if (i == 3 || i == 7 || i == 15 || i == 19) {
             j++
         }
         if (i == 11) {
-            j = 10
+            return false
+            // j = 10
         }
     }
 

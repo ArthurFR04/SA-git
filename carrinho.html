@@ -15,153 +15,139 @@
 
 </head>
 
-<body onload="verificar_login_carrinho() , displayzeraPah()">
-    <div class="cabeçalho">
-        <!--As navbars-->
-        <nav class="nav-cian navbar imp-nav navbar-dark">
-            <div class="container-fluid" style="height: 100%;">
+<body onload="verificar_login_carrinho() , displayzeraPah()" >
+  <div class="cabeçalho">  <!--As navbars-->
+    <nav class="nav-cian navbar imp-nav navbar-dark">
+        <div class="container-fluid" style="height: 100%;">
 
-                <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>
-                <!--Editávell-->
-                <div id="perfilNon" class="navbar-brand nasalization div_login">
-
-                </div>
-
+            <a class="navbar-brand designer marca" href="index.html">VOLPEX</a>
+            <!--Editávell-->
+            <div id="perfilNon" class="navbar-brand nasalization div_login"> 
+                   
             </div>
-        </nav>
 
-        <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C" ;>
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div id="perfilRespon">
+        </div>
+    </nav>
 
-                </div>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link" href="landing_page.html">Página inicial</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link espaçamento-nav" aria-current="page" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link espaçamento-nav" href="produtos.html">Canecas</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink"
-                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Temas
-                            </a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <li><a class="dropdown-item" href="#">Harry Potter</a></li>
-                                <li><a class="dropdown-item" href="#">Star Wars</a></li>
-                                <li><a class="dropdown-item" href="#">Marvel</a></li>
-                                <li><a class="dropdown-item" href="#">DC</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav">
-                        <a class="nav-link" href="carrinho.html">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor"
-                                class="bi bi-cart3" viewBox="0 0 16 16">
-                                <path
-                                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
-                            </svg>
-                            <label class="cart">Carrinho</label>
+    <nav class="navnavpapi navbar navbar-expand-lg navbar-dark nasalization" style="background-color: #E2781C" ;>
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="perfilRespon">
+                
+            </div>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="landing_page.html">Página inicial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link espaçamento-nav" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link espaçamento-nav" href="produtos.html">Canecas</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Temas
                         </a>
-                    </ul>
-                </div>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Harry Potter</a></li>
+                            <li><a class="dropdown-item" href="#">Star Wars</a></li>
+                            <li><a class="dropdown-item" href="#">Marvel</a></li>
+                            <li><a class="dropdown-item" href="#">DC</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <a class="nav-link" href="carrinho.html">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart3" viewBox="0 0 16 16">
+                            <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+                        </svg>
+                        <label class="cart" >Carrinho</label> 
+                    </a>
+                </ul>
             </div>
-        </nav>
-
-        <div class="rapo-div">
-            <img class="raposinha" src="./img/logo pequeninha 2.0.png">
         </div>
-    </div>
-    <div class="conteudo">
-        <div class="container-1">
-            <div class="container-l">
-                <div class="container-top vigaRegular">
-                    <div class="title">
-                        <h2>Meu carrinho</h2>
-                    </div>
+    </nav>
 
-
-                    <div class="label-top">
-                        <label>Produtos</label>
-                        <label>Quantidade</label>
-                        <label>Preço</label>
-                    </div>
-
+    <div class="rapo-div">
+        <img class="raposinha" src="./img/logo pequeninha 2.0.png">
+    </div> 
+</div>
+<div class="conteudo">
+    <div class="container-1">
+        <div class="container-l">
+            <div class="container-top vigaRegular">
+                <div class="title">
+                    <h2>Meu carrinho</h2>
                 </div>
 
-                <div id="vitrine-carr" class="container-mid">
-                    <!-- O js coloca os produtos -->
 
-
-
-
+                <div class="label-top">
+                    <label>Produtos</label>
+                    <label>Quantidade</label>
+                    <label>Preço</label>
                 </div>
+
             </div>
 
-            <div class="container-r vigaRegular">
+            <div id="vitrine-carr" class="container-mid">  <!-- O js coloca os produtos -->
 
-                <div class="container-r-top">
-                    <label class="container-title">Resumo do pedido</label>
+                
+                
+ 
+            </div>
+        </div>
 
-                </div>
+        <div class="container-r vigaRegular">
 
-                <div class="container-r-mid">
+            <div class="container-r-top">
+                <label class="container-title">Resumo do pedido</label>
 
-                    <div class="label-span">
-                        <div class="label-r">
-                            <label class="qtd-produto">Produto(s)</label>
-                            <span id="preco-produto">R$ --,--</span>
-                        </div>
+            </div>
 
-                        <br>
+            <div class="container-r-mid">
 
-
-
-                        <br>
-
-                        <div class="span-r">
-                            <label class="preco-frete">Frete </label>
-                            <span id="span-frete">Grátis!</span>
-                        </div>
-
+                <div class="label-span">
+                    <!-- <div class="label-r">
+                        <label class="qtd-produto">Produto(s)</label>
+                        <span id="preco-produto">R$ --,--</span>
+                    </div> -->
+                    
+                    <div id="label-r">
+                        <br><br>
                     </div>
 
-
-
-
-
-
-
-                    <div class="detalhes-precototal">
-                        <label class="preco-total">Total</label>
-                        <span id="span-total">R$ </span> <!-- O js coloca o preço total-->
+                    <div class="span-r">
+                        <label class="preco-frete">Frete </label>
+                        <span id="span-frete">Grátis!</span>
                     </div>
 
                 </div>
 
-
-                <div class="container-r-bottom">
-                    <button onclick="javascript:window.location.href='finalizarCompra.html';" id="btn-finalizar-compra">
-                        Finalizar compra
-                    </button>
-                    <a href="produtos.html">Adicionar mais itens</a>
+                <div class="detalhes-precototal">
+                    <label class="preco-total">Total</label>
+                    <span id="span-total">R$ </span> <!-- O js coloca o preço total-->
                 </div>
 
+            </div>
 
 
+            <div class="container-r-bottom">
+                <button onclick="finalizarCompra()" id="btn-finalizar-compra">
+                    Finalizar compra
+                </button>
+                <a href="produtos.html">Adicionar mais itens</a>
             </div>
 
         </div>
+
     </div>
+</div>
 
 
     <footer>
@@ -171,10 +157,8 @@
         </div>
 
         <div class="imgs-footer">
-            <img onclick="javascript:window.location.href='https://sc.senai.br/'" src="./img/sesi-senai-branca (1).png"
-                id="senai" alt="">
-            <img onclick="javascript:window.location.href='https://penseavanti.com.br/'" src="./img/logo.png"
-                id="avanti" alt="">
+            <img onclick="javascript:window.location.href='https://sc.senai.br/'" src="./img/sesi-senai-branca (1).png" id="senai" alt="">
+            <img onclick="javascript:window.location.href='https://penseavanti.com.br/'" src="./img/logo.png" id="avanti" alt="">
         </div>
 
         <div class="redesSociais">
@@ -187,7 +171,7 @@
     </footer>
 
 
-
+    
     <script src="./js/sweetalert2.js"></script>
     <!-- <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script> -->
     <script src="./js/teste_car.js"></script>

@@ -15,6 +15,7 @@ function add_car(id) {
             text: 'Para adicionar um produto ao carrinho, você primeiro deve efetuar o login.',
             backdrop: `#183442c4`,
         })
+        return false
     }
 
     if (user_car.length < 1) {
@@ -26,6 +27,8 @@ function add_car(id) {
 
         pessoas[position].carrinho.push(prod_car)
         localStorage.setItem('Pessoas', JSON.stringify(pessoas))
+    
+        return false
     }
     
 
@@ -50,6 +53,8 @@ function add_car(id) {
     
         pessoas[position].carrinho.push(prod_car)
         localStorage.setItem('Pessoas', JSON.stringify(pessoas))
+    
+        return false
     }
 
 }
