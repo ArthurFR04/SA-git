@@ -77,12 +77,16 @@
     margin-bottom: 0.3vw;
 }
 
+
 @media screen and (max-width:992px) {
     .espaçamento-nav {
         margin-left: 0;
     }
     .navnavpapi {
         height: 100%;
+    }
+    .navbar-collapse {
+        height: auto!important;
     }
 }
 @media screen and (max-width:600px) {

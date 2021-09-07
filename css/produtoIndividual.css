@@ -75,7 +75,9 @@ footer #avanti {
     width: 60%;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 10px;
+   
 }
 
 .container-l .top {
@@ -83,11 +85,16 @@ footer #avanti {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 2.5%;
+    margin-left: 3%;
+    margin-right: 3%;
+    border-radius: 8px;
+    border: solid 2px #333;
 }
 
 .container-l .top img {
     width: 60%;
-    height: 100%;
+    height: 80%;
 }
 
 .container-l .bot {
@@ -111,20 +118,22 @@ footer #avanti {
 
 .container-l .bot .bot-container img {
     width: 70%;
-    height: 100%;
+    
 }
 
 .container-r {
     width: 40%;
     display: flex;
     justify-content: center;
+    
 }
 
 .container-rr {
     width: 80%;
     display: flex;
     flex-direction: column;
-    background-color: white;
+    background-color: rgb(255, 255, 255, 0.6);
+    border-radius: 10px;
 }
 
 .container-rr .top-r {
@@ -138,6 +147,7 @@ footer #avanti {
     color: black;
     font-size: 29px;
     font-weight: bold;
+    text-align: center;
 }
 
 .container-rr .mid-r {
@@ -275,7 +285,7 @@ footer #avanti {
 
 @media screen and (max-width:415px) {
     .descricao label {
-        font-size: 4.5vw;
+        font-size: 4vw;
     }
 
     .container-l .top img {

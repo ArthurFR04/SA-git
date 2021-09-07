@@ -179,20 +179,20 @@
 
             </div>
             <script>
-                produtos = JSON.parse(localStorage.getItem('produtos'))
-                for (let i = 0; i < 8; i++) {
+                // produtos = JSON.parse(localStorage.getItem('produtos'))
+                // for (let i = 0; i < 8; i++) {
 
-                    document.getElementById(`teste123`).innerHTML = `
+                //     document.getElementById(`teste123`).innerHTML = `
 
-                        <div class="produtos" sty>
-                            <img class="tete1" onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_produto}">
-                            <img class="tete2" onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_hover}">
-                            <label for="">${produtos[i].nome}<br>${produtos[i].preco}</label>
-                            <a href="javascript:add_car(${produtos[i].id});" >Adicionar ao carrinho</a>
-                        </div>     
-                    `
+                //         <div class="produtos" sty>
+                //             <img class="tete1" onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_produto}">
+                //             <img class="tete2" onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_hover}">
+                //             <label for="">${produtos[i].nome}<br>${produtos[i].preco}</label>
+                //             <a href="javascript:add_car(${produtos[i].id});" >Adicionar ao carrinho</a>
+                //         </div>     
+                //     `
                    
-                }
+                // }
             </script>
 
             <div class="foto-2"></div>
@@ -200,15 +200,15 @@
         </div>
 
 
-        <br><br>
+        
     </div>
     <footer>
 
         <!-- pode excluir já, agora podemos entrar pra área de admin através do login -->
 
         <div class="iconeAdmin">
-            <a href="admin_pag.html">
-                <!--<i class="fas fa-user-lock"></i>-->
+            <a href="tela_login.html">
+                <i class="fas fa-user-lock"></i>
             </a>
         </div>
 

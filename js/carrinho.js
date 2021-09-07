@@ -80,7 +80,7 @@ function displayzeraPah() {
 
             document.getElementById('vitrine-carr').innerHTML += `
                 <div class="produto">
-                    ${produtos [p] .foto_frente}
+                    <img src="${produtos[p].foto_frente}" alt=""> 
                     <div class="quantidade">
                         <a href="javascript:re_car(${user_car[i].id});" class="qtd-label">-</a>
                         <label id="quant-carr">${user_car[i].quantidade}</label>

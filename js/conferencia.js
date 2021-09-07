@@ -49,7 +49,7 @@ function verificar_login_index() {
     else {      // se o login for efetuado aparecerá o nome do usuário como um dropdown com funcionalidades sobre o perfil
         let id = dados.id
         let textin = `
-
+            
             <div class="btn-group">
                 <button type="button" class="btn-log btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     ${id}

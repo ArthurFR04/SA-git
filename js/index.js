@@ -23,7 +23,7 @@ function msg_add() {
 
 const disney = () => {
   
-  const arrayDisney = [];
+  const arrayTemas = [];
   var produtos = JSON.parse(localStorage.getItem('produtos'));
   window.location.href="temas_produtos.html";
   
@@ -31,21 +31,38 @@ const disney = () => {
     
     if (produtos[i].id >= 300 && produtos[i].id <= 399) {
       
-      arrayDisney.push(produtos[i]);
-      localStorage.setItem('produtosDisney', JSON.stringify(arrayDisney));
+      arrayTemas.push(produtos[i]);
+      localStorage.setItem('produtosTemas', JSON.stringify(arrayTemas));
       
     }
   }
 };
 
-var produtosDisney = JSON.parse(localStorage.getItem('produtosDisney'));
+const marvel = () => {
+  
+  const arrayTemas = [];
+  var produtos = JSON.parse(localStorage.getItem('produtos'));
+  window.location.href="temas_produtos.html";
+  
+  for (let i = 0; produtos.length; i++) {
+    
+    if (produtos[i].id >= 200 && produtos[i].id <= 299) {
+      
+      arrayTemas.push(produtos[i]);
+      localStorage.setItem('produtosTemas', JSON.stringify(arrayTemas));
+      
+    }
+  }
+};
+
+var produtosTemas = JSON.parse(localStorage.getItem('produtosTemas'));
 
 function caneca(id) {
 
-  for (let i = 0; i < produtosDisney.length; i++) {
-      if (id == produtosDisney[i].id) {
-          localStorage.setItem('produtosDisney', JSON.stringify(produtosDisney[i]));
-          window.location.href = "tema_produtos.html"
+  for (let i = 0; i < produtosTemas.length; i++) {
+      if (id == produtosTemas[i].id) {
+          localStorage.setItem('canecaIndividualTema', JSON.stringify(produtosTemas[i]));
+          window.location.href = "produtoIndividualTema.html"
       }
   }
 };

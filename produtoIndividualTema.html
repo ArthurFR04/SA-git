@@ -6,18 +6,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="./img/logo pequeninha 2.0.png">
-    <title>Produtos</title>
+    <title>Produto</title>
     <link rel="stylesheet" href="./css/gerais.css">
     <link rel="stylesheet" href="./bootstrap-5.0.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/produtoIndividual.css">
     <link rel="stylesheet" href="./css/navBars.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/produtos.css">
 
 </head>
 
-<body onload="verificar_login_index(), vitrineGo(0)">
-    <div class="cabeçalho">
+<body onload="verificar_login_index()">
+    <div class="head">
         <nav class="nav-cian navbar imp-nav navbar-dark">
             <div class="container-fluid" style="height: 100%;">
 
@@ -48,7 +47,7 @@
                             <a class="nav-link espaçamento-nav" aria-current="page" href="index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active espaçamento-nav" href="produtos.html">Canecas</a>
+                            <a class="nav-link espaçamento-nav" href="produtos.html">Canecas</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle espaçamento-nav" href="#" id="navbarDropdownMenuLink"
@@ -57,8 +56,8 @@
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <li><a class="dropdown-item" href="#">Harry Potter</a></li>
-                                <li><a class="dropdown-item" onclick="disney()" href="#">Disney</a></li>
-                                <li><a class="dropdown-item" onclick="marvel()" href="#">Marvel</a></li>
+                                <li><a class="dropdown-item" onclick="disney()" href="temas_produtos.html">Disney</a></li>
+                                <li><a class="dropdown-item" onclick="marvel()" href="temas_produtos.html">Marvel</a></li>
                                 <li><a class="dropdown-item" href="#">Programação</a></li>
                             </ul>
                         </li>
@@ -82,23 +81,68 @@
         <div class="rapo-div">
             <img class="raposinha" src="./img/logo pequeninha 2.0.png">
         </div>
+
     </div>
 
     <div class="conteudo">
-        <header>
-            <p class="p-top">Produtos</p>
-        </header>
+        <div class="container-principal">
+            <div class="container-l">
+                <div class="top">
+                    <img src="" alt="">
+                </div>
 
-        <section id="vitTotal">
-            
-        </section>
+                <div class="bot">
+                    <div class="bot-container">
+                        <img src="" alt="">
+                    </div>
 
-        <div class="passar-pagina">
-            <a href="" class="numero">1</a>
-            <a href="javascript:botbot2();" class="numero">2</a>
-            <a href="" class="numero">3</a>
+                    <div class="bot-container">
+                        <img src="" alt="">
+                    </div>
+
+                    <div class="bot-container">
+                        <img src="" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-r">
+                <div class="container-rr">
+                    <div class="top-r">
+                        <label>Caneca Marvel</label>
+                    </div>
+
+                    <div class="mid-r">
+                        <div class="preco">
+
+                            <strong>Preço</strong>
+                            <div class="label-strong">
+                                <strong>R$</strong>
+                                <label>2900</label>
+                            </div>
+                        </div>
+
+                        <div class="descricao">
+                            <div class="descricao-top">
+                                <h3>Descrição do Produto</h3>
+                            </div>
+                            <div class="descricao-bot">
+                                <label>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore illum, eius
+                                    veniam facilis, aliquam perspiciatis enim illo optio eligendi praesentium quae
+                                    soluta temporibus? Reiciendis maiores porro cum provident illum. Quaerat.
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="bot-r">
+                        <button>Adicionar ao carrinho</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      
     </div>
 
     <footer>
@@ -123,14 +167,16 @@
 
     </footer>
 
-    <script src="https://kit.fontawesome.com/101f22a807.js" crossorigin="anonymous"></script>
+
+
+
     <script src="./js/sweetalert2.js"></script>
     <script src="./js/conferencia.js"></script>
+    <script src="https://kit.fontawesome.com/101f22a807.js" crossorigin="anonymous"></script>
     <script src="./bootstrap-5.0.2/js/bootstrap.bundle.min.js"></script>
-    <script src="./js/index.js"></script>
+    <script src="./js/produtoIndividualTema.js"></script>
     <script src="./js/teste_car.js"></script>
-    <script src="./js/renderizar_canecas_pagTemas.js"></script>
-
+    <script src="./js/index.js"></script>
 </body>
 
 </html>

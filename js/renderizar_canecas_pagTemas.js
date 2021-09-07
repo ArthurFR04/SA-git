@@ -21,7 +21,7 @@ function vitrineGo(pag) {
 
     // cria a quantidade de divs (linhas) necessárias
 
-    let quantDivs = Math.ceil(produtosDisney.length / 4)
+    let quantDivs = Math.ceil(produtosTemas.length / 4)
 
     for (let i = 1; i <= quantDivs; i++) {
         document.getElementById('vitTotal').innerHTML += `
@@ -36,14 +36,14 @@ function vitrineGo(pag) {
 
     let j = 1
 
-    for (let i = papi; i < produtosDisney.length; i++) {
+    for (let i = papi; i < produtosTemas.length; i++) {
 
 
         document.getElementById(`vitProd${j}`).innerHTML += `
 
             <div class="produtos">
-                <img onclick="caneca(${produtosDisney[i].id})" src="${produtosDisney[i].foto_produto}">
-                <label for="">${produtosDisney[i].nome}<br>${produtosDisney[i].preco}</label>
+                <img onclick="caneca(${produtosTemas[i].id})" src="${produtosTemas[i].foto_produto}">
+                <label for="">${produtosTemas[i].nome}<br>${produtosTemas[i].preco}</label>
                 <a href="">Adicionar ao carrinho</a>
             </div>     
         `
