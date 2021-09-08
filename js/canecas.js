@@ -35,7 +35,7 @@ function vitrineGo(pag) {
 
     // adiciona os produtos
 
-    let pags = pag
+    pags = pag
 
     let j = 1
 

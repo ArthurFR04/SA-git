@@ -120,7 +120,7 @@ let produtos = [
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
         foto_produto: './img/canecas-marvel/deadpool frente.png',
         foto_frente: "./img/canecas-marvel/deadpool frente.png",
-        foto_lateral: "",
+        foto_lateral: "./img/canecas-marvel/deadpool tras.png",
         foto_tras: "",
 
     },

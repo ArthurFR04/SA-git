@@ -38,3 +38,8 @@ function terceiraImg() {
    // fotoGrande.innerHTML = produtos.foto_tras
     fotoGrandeIndividual[0].src = produtos.foto_tras
 }
+
+function hist_prod() {
+    let hist = 'produtoIndividual.html'
+    localStorage.setItem('histórico' , JSON.stringify(hist))
+}

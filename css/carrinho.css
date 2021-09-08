@@ -311,6 +311,16 @@ footer #avanti {
         width: 80%;
         
     }
+
+    .container-mid .produto .quantidade  {
+        margin-right: 15px;
+    } 
+
+    .container-mid .produto label {
+        width: 20%;
+    }
+
+   
 }
 
 @media screen and (max-width:280px) {
@@ -331,6 +341,9 @@ footer #avanti {
     footer .imgs-footer {
         margin-bottom: 5px;
     }
+
+    
+
 }
 
 @media screen and (max-width:220px) {
