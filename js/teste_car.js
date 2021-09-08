@@ -1,8 +1,18 @@
+
+function hist_car() {
+    let hist = 'carrinho.html'
+    localStorage.setItem('histórico' , JSON.stringify(hist))
+}
+
 let pessoas = JSON.parse(localStorage.getItem('Pessoas'))
 let Login = JSON.parse(localStorage.getItem('Login'))
-let position = Login.position
-let user_car = pessoas[position].carrinho
+let position
+let user_car
 
+if (Login != null) {
+    position = Login.position
+    user_car = pessoas[position].carrinho
+}
 
 
 function add_car(id) {

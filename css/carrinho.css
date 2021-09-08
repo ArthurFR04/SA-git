@@ -233,7 +233,7 @@ html {
 }
 
 footer {
-    display: flex;
+    display: flex !important;
     justify-content: space-between;
     margin-top: 5%;
     padding: 16px;

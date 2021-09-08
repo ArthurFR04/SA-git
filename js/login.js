@@ -83,13 +83,9 @@ function logar() {
             }).then((result) => {
             /* Read more about handling dismissals below */
             if (result.dismiss === Swal.DismissReason.timer) {
-                // window.history.back()
-                let e = window.history.current
-                let f = window.history[2]
-                console.log(e);
-                console.log(f);
-                history.pushState({page: 1}, 'opa')                                                         //continuar 
-                console.log(window.history.state);
+
+                let hist = JSON.parse(localStorage.getItem('histórico'))
+                window.location.href = hist
             }
         })
         a[1].innerHTML = '';
@@ -137,16 +133,13 @@ function logar() {
 
         if (confirmacao == true) {
 
-
-
-
             dados = {
                 status: 1,    //uso pra definir se o login foi ou não efetuado 1(sim)  0(não)
                 id: login,    //pega o apelido do localstorage para ser usado lá no index
-                position: j
+                position: j,
+                histórico:'',
             }
             localStorage.setItem('Login', JSON.stringify(dados));
-
 
             loginEfetuado()                                            // Editável
         }

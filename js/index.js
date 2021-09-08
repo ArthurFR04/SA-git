@@ -83,3 +83,8 @@ function caneca(id) {
       }
   }
 };
+
+function hist_in() {
+  let hist = 'index.html'
+  localStorage.setItem('histórico' , JSON.stringify(hist))
+}
