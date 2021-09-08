@@ -141,6 +141,7 @@ if (produtoCadastro == undefined) {
             indice = i;
             produto.splice(indice, 1);
             localStorage.setItem('produtos', JSON.stringify(produto))
+            localStorage.setItem('Editados', JSON.stringify(produto))
             
 
             inputs[1].value = ''
