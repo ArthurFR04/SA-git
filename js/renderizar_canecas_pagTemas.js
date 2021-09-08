@@ -44,10 +44,10 @@ function vitrineGo(pag) {
             <div class="produtos">
                 <img onclick="caneca(${produtosTemas[i].id})" src="${produtosTemas[i].foto_produto}">
                 <label for="">${produtosTemas[i].nome}<br>${produtosTemas[i].preco}</label>
-                <a href="">Adicionar ao carrinho</a>
+                <a href="javascript:add_car(${produtos[i].id}) , msg_add();" >Adicionar ao carrinho</a>
             </div>     
         `
-        if (i == 3 || i == 7 || i == 15 || i == 19) {
+        if (i == 3 || i == 7 || i == 15 || i == 19 || i == 27 || i == 31) {
             j++
         }
         if (i == 11) {

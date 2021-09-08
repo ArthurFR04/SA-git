@@ -47,15 +47,14 @@ function vitrineGo(pag) {
             <div class="produtos"  style="background-image: url(../img/canecas-disney/ariel tras.png);">             
                 <img class="tete1" onclick="caneca(${produtos[i].id})" src="${produtos[i].foto_produto}">                   
                 <label for="">${produtos[i].nome}<br>${produtos[i].preco}</label>
-                <a href="javascript:add_car(${produtos[i].id});" >Adicionar ao carrinho</a>
+                <a href="javascript:add_car(${produtos[i].id}) , msg_add();" >Adicionar ao carrinho</a>
             </div>     
         `
-        if (i == 3 || i == 7 || i == 15 || i == 19) {
+        if (i == 3 || i == 7 || i == 15 || i == 19 || i == 27 || i == 31) {
             j++
         }
         if (i == 11) {
             return false
-            // j = 10
         }
     }
 

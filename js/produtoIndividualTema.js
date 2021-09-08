@@ -13,6 +13,9 @@ fotoPequenaIndividual[2].src = produtos.foto_tras
 labels[1].innerHTML = produtos.nome
 labels[2].innerHTML = produtos.preco
 labels[3].innerHTML = produtos.descricao
+document.getElementById('botAddcar').innerHTML = `
+    <button onclick="add_car(${produtos.id}) , msg_add()">Adicionar ao carrinho</button>
+`
 
 
 
