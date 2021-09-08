@@ -75,7 +75,7 @@ let produtos = [
         preco: '40,00',
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
         foto_produto: './img/canecas-harry-potter/harry e hagrid única.png',
-        foto: "./img/canecas-harry-potter/harry e hagrid única.png",
+        foto_frente: "./img/canecas-harry-potter/harry e hagrid única.png",
         foto_lateral: "./img/canecas-harry-potter/harry e hagrid única.png",
         foto_tras: "./img/canecas-harry-potter/harry e hagrid única.png",
 
