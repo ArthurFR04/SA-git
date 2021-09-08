@@ -2,7 +2,15 @@ let containerR = document.querySelector('.container-r');
 let select = containerR.querySelector('select');
 let containerLmid = document.querySelector('.container-l-mid');
 let containerLtop = document.querySelector('.container-l-top');
+let divMidTopBot = document.querySelector('.mid-top-bot')
+let receberValor = divMidTopBot.querySelectorAll('label')
+let quantValor = JSON.parse(localStorage.getItem('finalizarCompra'))
+let pessoasCadastro = JSON.parse(localStorage.getItem('Pessoas'))
+let login = JSON.parse(localStorage.getItem('Login'))
+let indice = login.position
 
+
+receberValor[1].innerHTML = `R$ ${quantValor}`
 
 
 function validacao() {
@@ -31,6 +39,35 @@ function validacao() {
         return false
     }
 
+    pessoasCadastro[indice].carrinho.splice(0, 20)
+    localStorage.setItem('Pessoas', JSON.stringify(pessoasCadastro))
+    
+    
+    Swal.fire({
+        icon: 'success',
+        title: 'Compra Realizada!',
+        backdrop: `#183442c4`,
+        allowOutsideClick: false,
+        timer: 2500,
+        timerProgressBar: true,
+        didOpen: () => {
+            Swal.showLoading()
+            const b = Swal.getHtmlContainer().querySelector('b')
+            timerInterval = setInterval(() => {
+            b.textContent = Swal.getTimerLeft()
+            }, 100)
+        },
+        willClose: () => {
+            clearInterval(timerInterval)
+        }
+        }).then((result) => {
+        /* Read more about handling dismissals below */
+        if (result.dismiss === Swal.DismissReason.timer) {
+            window.location.href="index.html"
+        }
+    })
+   
+    
 };
 
 select.addEventListener('change', formaPagamento);
@@ -177,6 +214,8 @@ clearErrors = (inputs, li) => {                         // function pra limpar o
         }
     }
 };
+
+
 
 
 ///////////////////////////////////// jQuery ∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖∖

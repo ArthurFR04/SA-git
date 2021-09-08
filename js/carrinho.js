@@ -107,13 +107,14 @@ function displayzeraPah() {
         precoTotal = precoTotal.replace('.',',')
 
         document.getElementById('span-total').innerHTML += precoTotal
+        localStorage.setItem('finalizarCompra',JSON.stringify(precoTotal))
     }
 }
 
 function finalizarCompra() {
 
     if (user_car === 'carrinho vazio') {
-
+       
         Swal.fire ({
             icon: 'error',
             title: 'O carrinho está vazio',
