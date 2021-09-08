@@ -3,7 +3,28 @@
 
 
 let produtos = [
+    {
+        id: 101,
+        nome: 'Caneca Harry Potter Dobby',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-harry-potter/dobby frente.png',
+        foto_frente: "./img/canecas-harry-potter/dobby frente.png",
+        foto_lateral: "./img/canecas-harry-potter/dobby frente.png",
+        foto_tras: "./img/canecas-harry-potter/dobby tras.png",
 
+    },
+    {
+        id: 201,
+        nome: 'Caneca Marvel Guerra Civil',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-marvel/rogers tony frente.png',
+        foto_frente: "./img/canecas-marvel/rogers tony frente.png",
+        foto_lateral: "./img/canecas-marvel/rogers tony lateral.png",
+        foto_tras: "./img/canecas-marvel/rogers tony tras.png",
+
+    },
     {
         id: 301,
         nome: 'Caneca Disney Ariel',
@@ -13,6 +34,28 @@ let produtos = [
         foto_frente: "./img/canecas-disney/ariel frente.png",
         foto_lateral: "./img/canecas-disney/ariel lateral.png",
         foto_tras: "./img/canecas-disney/ariel tras.png",
+
+    },
+    {
+        id: 102,
+        nome: 'Caneca Expresso de Hogwarts',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-harry-potter/expresso de hogwarts frente.png',
+        foto_frente: "./img/canecas-harry-potter/expresso de hogwarts frente.png",
+        foto_lateral: "./img/canecas-harry-potter/expresso de hogwarts frente.png",
+        foto_tras: "./img/canecas-harry-potter/expresso de hogwarts tras.png",
+
+    },
+    {
+        id: 202,
+        nome: 'Caneca Marvel Avengers',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-marvel/faixa frente.png',
+        foto_frente: "./img/canecas-marvel/faixa frente.png",
+        foto_lateral: "./img/canecas-marvel/faixa lateral.png",
+        foto_tras: "./img/canecas-marvel/faixa tras.png",
 
     },
     {
@@ -27,6 +70,28 @@ let produtos = [
 
     },
     {
+        id: 103,
+        nome: 'Caneca Harry e Hagrid ',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-harry-potter/harry e hagrid única.png',
+        foto: "./img/canecas-harry-potter/harry e hagrid única.png",
+        foto_lateral: "./img/canecas-harry-potter/harry e hagrid única.png",
+        foto_tras: "./img/canecas-harry-potter/harry e hagrid única.png",
+
+    },
+    {
+        id: 203,
+        nome: 'Caneca Marvel Homem-Aranha',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-marvel/peter_tony_frente.png',
+        foto_frente: "./img/canecas-marvel/peter_tony_frente.png",
+        foto_lateral: "./img/canecas-marvel/peter_tony_lateral.png",
+        foto_tras: "./img/canecas-marvel/peter_tony_tras.png",
+
+    },
+    {
         id: 303,
         nome: 'Caneca Disney Bella',
         preco: '40,00',
@@ -35,6 +100,28 @@ let produtos = [
         foto_frente: "./img/canecas-disney/bella frente.png",
         foto_lateral: "./img/canecas-disney/bella lateral.png",
         foto_tras: "./img/canecas-disney/bella tras.png",
+
+    },
+    {
+        id: 104,
+        nome: 'Caneca Harry Potter',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-harry-potter/harry frente.png',
+        foto_frente: "./img/canecas-harry-potter/harry frente.png",
+        foto_lateral: "./img/canecas-harry-potter/harry frente.png",
+        foto_tras: "./img/canecas-harry-potter/harry tras.png",
+
+    },
+    {
+        id: 204,
+        nome: 'Caneca Marvel Deadpool',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-marvel/deadpool frente.png',
+        foto_frente: "./img/canecas-marvel/deadpool frente.png",
+        foto_lateral: "",
+        foto_tras: "",
 
     },
     {
@@ -49,6 +136,28 @@ let produtos = [
 
     },
     {
+        id: 105,
+        nome: 'Caneca Harry Potter',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-harry-potter/harry roxo frente.png',
+        foto_frente: "./img/canecas-harry-potter/harry roxo frente.png",
+        foto_lateral: "./img/canecas-harry-potter/harry roxo frente.png",
+        foto_tras: "./img/canecas-harry-potter/harry roxo tras.png",
+
+    },
+    {
+        id: 205,
+        nome: 'Caneca Marvel Avengers',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-marvel/minimalista frente.png',
+        foto_frente: "./img/canecas-marvel/minimalista frente.png",
+        foto_lateral: "./img/canecas-marvel/minimalista frente.png",
+        foto_tras: "./img/canecas-marvel/minimalista frente.png",
+
+    },
+    {
         id: 305,
         nome: 'Caneca Disney Cinderela',
         preco: '40,00',
@@ -60,6 +169,28 @@ let produtos = [
 
     },
     {
+        id: 106,
+        nome: 'Caneca Harry Potter Leviosa ',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-harry-potter/leviosa frente.png',
+        foto_frente: "./img/canecas-harry-potter/leviosa frente.png",
+        foto_lateral: "./img/canecas-harry-potter/leviosa frente.png",
+        foto_tras: "./img/canecas-harry-potter/leviosa tras.png",
+
+    },
+    {
+        id: 206,
+        nome: 'Caneca Marvel Venom',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-marvel/venom_frente.png',
+        foto_frente: "./img/canecas-marvel/venom_frente.png",
+        foto_lateral: "./img/canecas-marvel/venom_frente.png",
+        foto_tras: "./img/canecas-marvel/venom_frente.png",
+
+    },
+    {
         id: 306,
         nome: 'Caneca Disney Elsa',
         preco: '40,00',
@@ -68,6 +199,17 @@ let produtos = [
         foto_frente: "./img/canecas-disney/elsa frente.png",
         foto_lateral: "./img/canecas-disney/elsa lateral.png",
         foto_tras: "./img/canecas-disney/elsa tras.png",
+
+    },
+    {
+        id: 107,
+        nome: 'Caneca Hermione',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-harry-potter/hermione frente.png',
+        foto_frente: "./img/canecas-harry-potter/hermione frente.png",
+        foto_lateral: "./img/canecas-harry-potter/hermione frente.png",
+        foto_tras: "./img/canecas-harry-potter/hermione tras.png",
 
     },
     {
@@ -115,40 +257,16 @@ let produtos = [
 
     },
     {
-        id: 201,
-        nome: 'Caneca Marvel Guerra Civil',
+        id: 108,
+        nome: 'Caneca Ron Weasley',
         preco: '40,00',
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
-        foto_produto: './img/canecas-marvel/rogers tony frente.png',
-        foto_frente: "./img/canecas-marvel/rogers tony frente.png",
-        foto_lateral: "./img/canecas-marvel/rogers tony lateral.png",
-        foto_tras: "./img/canecas-marvel/rogers tony tras.png",
+        foto_produto: './img/canecas-harry-potter/ron frente.png',
+        foto_frente: "./img/canecas-harry-potter/ron frente.png",
+        foto_lateral: "./img/canecas-harry-potter/ron frente.png",
+        foto_tras: "./img/canecas-harry-potter/ron tras.png",
 
     },
-    {
-        id: 202,
-        nome: 'Caneca Marvel Avengers',
-        preco: '40,00',
-        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
-        foto_produto: './img/canecas-marvel/faixa frente.png',
-        foto_frente: "./img/canecas-marvel/faixa frente.png",
-        foto_lateral: "./img/canecas-marvel/faixa lateral.png",
-        foto_tras: "./img/canecas-marvel/faixa tras.png",
-
-    },
-    {
-        id: 203,
-        nome: 'Caneca Marvel Homem-Aranha',
-        preco: '40,00',
-        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
-        foto_produto: './img/canecas-marvel/peter_tony_frente.png',
-        foto_frente: "./img/canecas-marvel/peter_tony_frente.png",
-        foto_lateral: "./img/canecas-marvel/peter_tony_lateral.png",
-        foto_tras: "./img/canecas-marvel/peter_tony_tras.png",
-
-    },
-
-
 
 
 
