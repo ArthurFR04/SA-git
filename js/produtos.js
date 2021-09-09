@@ -6,7 +6,7 @@ let produtos = [
     {
         id: 101,
         nome: 'Caneca Harry Potter Dobby',
-        preco: '40,00',
+        preco: '35,00',
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
         foto_produto: './img/canecas-harry-potter/dobby frente.png',
         foto_frente: "./img/canecas-harry-potter/dobby frente.png",
@@ -39,7 +39,7 @@ let produtos = [
     {
         id: 401,
         nome: 'Caneca Coffee HTML Tag',
-        preco: '40,00',
+        preco: '35,00',
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
         foto_produto: './img/canecas-programacao/coffee frente.png',
         foto_frente: "./img/canecas-programacao/coffee frente.png",
@@ -83,7 +83,7 @@ let produtos = [
     {
         id: 402,
         nome: 'Caneca Definição de um Programador',
-        preco: '40,00',
+        preco: '45,00',
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
         foto_produto: './img/canecas-programacao/programador dicionario frente.png',
         foto_frente: "./img/canecas-programacao/programador dicionario frente.png",
@@ -94,7 +94,7 @@ let produtos = [
     {
         id: 103,
         nome: 'Caneca Harry e Hagrid ',
-        preco: '40,00',
+        preco: '45,00',
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
         foto_produto: './img/canecas-harry-potter/harry e hagrid única.png',
         foto_frente: "./img/canecas-harry-potter/harry e hagrid única.png",
@@ -127,7 +127,7 @@ let produtos = [
     {
         id: 403,
         nome: 'Caneca CSS Love',
-        preco: '40,00',
+        preco: '4588q888888888888888888888888822222u9,00',
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
         foto_produto: './img/canecas-programacao/you are the css to my html frente.png',
         foto_frente: "./img/canecas-programacao/you are the css to my html frente.png",
