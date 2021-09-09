@@ -17,6 +17,14 @@ function botbot2() {
     a[2].style = 'opacity: 1'
 }
 
+function botbot3() {
+    vitrineGo(24)
+   
+    a[0].style = 'opacity: 1'
+    a[1].style = 'opacity: 1'
+    a[2].style = 'opacity: 0.6'
+}
+
 
 function vitrineGo(pag) {
     console.log(produtos.length);
@@ -54,6 +62,9 @@ function vitrineGo(pag) {
             j++
         }
         if (i == 11) {
+            return false
+        }
+        if (i == 23) {
             return false
         }
     }

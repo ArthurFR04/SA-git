@@ -285,33 +285,30 @@ if (adicionarProduto == undefined) {
 }
 
 let editados = JSON.parse(localStorage.getItem('Editados'))
-
 if (editados == null) {
     localStorage.setItem('produtos', JSON.stringify(produtos))
 } else {
 
 
-    // for (let i = 0; i < editados.length; i++) {
-    //     if (editados[i].id == produtos[i].id) {
-    //         produtos[i].id = editados[i].id
-    //         produtos[i].nome = editados[i].nome
-    //         produtos[i].preco = editados[i].preco
-    //         produtos[i].descricao = editados[i].descricao
-    //         produtos[i].foto_frente = editados[i].foto_frente
-    //         produtos[i].foto_produto = editados[i].foto_produto
-    //     }
-    // }
+    for (let i = 0; i < editados.length; i++) {
+        if (editados[i].id == produtos[i].id) {
+            produtos[i].id = editados[i].id
+            produtos[i].nome = editados[i].nome
+            produtos[i].preco = editados[i].preco
+            produtos[i].descricao = editados[i].descricao
+            produtos[i].foto_frente = editados[i].foto_frente
+            produtos[i].foto_produto = editados[i].foto_produto
+        }
+    }
 
 
 
 
-    localStorage.setItem('produtos', JSON.stringify(editados))
+    localStorage.setItem('produtos', JSON.stringify(produtos))
 }
 
 
-
-
-// localStorage.setItem('produtos', JSON.stringify(produtos))
+localStorage.setItem('produtos', JSON.stringify(produtos))
 
 
 function caneca(id) {
