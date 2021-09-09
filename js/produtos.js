@@ -37,6 +37,17 @@ let produtos = [
 
     },
     {
+        id: 401,
+        nome: 'Caneca Coffee HTML Tag',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-programacao/coffee frente.png',
+        foto_frente: "./img/canecas-programacao/coffee frente.png",
+        foto_lateral: "./img/canecas-programacao/coffee tras.png",
+        foto_tras: "./img/canecas-programacao/coffee fre.png",
+
+    },
+    {
         id: 102,
         nome: 'Caneca Expresso de Hogwarts',
         preco: '40,00',
@@ -70,6 +81,17 @@ let produtos = [
 
     },
     {
+        id: 402,
+        nome: 'Caneca Definição de um Programador',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-programacao/programador dicionario frente.png',
+        foto_frente: "./img/canecas-programacao/programador dicionario frente.png",
+        foto_lateral: "./img/canecas-programacao/programador dicionario tras.png",
+        foto_tras: "./img/canecas-programacao/programador dicionario frente.png",
+
+    },
+    {
         id: 103,
         nome: 'Caneca Harry e Hagrid ',
         preco: '40,00',
@@ -100,6 +122,17 @@ let produtos = [
         foto_frente: "./img/canecas-disney/bella frente.png",
         foto_lateral: "./img/canecas-disney/bella lateral.png",
         foto_tras: "./img/canecas-disney/bella tras.png",
+
+    },
+    {
+        id: 403,
+        nome: 'Caneca CSS Love',
+        preco: '40,00',
+        descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
+        foto_produto: './img/canecas-programacao/you are the css to my html frente.png',
+        foto_frente: "./img/canecas-programacao/you are the css to my html frente.png",
+        foto_lateral: "./img/canecas-programacao/you are the css to my html tras.png",
+        foto_tras: "./img/canecas-programacao/you are the css to my html frente.png",
 
     },
     {
