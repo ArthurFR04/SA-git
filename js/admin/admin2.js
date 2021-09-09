@@ -178,7 +178,7 @@ function editarProdutos() {
             produto[i].foto_produto = photo
 
             localStorage.setItem('produtos', JSON.stringify(produto))
-            localStorage.setItem('Editados', JSON.stringify(produto))
+            // localStorage.setItem('Editados', JSON.stringify(produto))
 
             Swal.fire({
                 icon: 'success',

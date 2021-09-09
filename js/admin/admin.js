@@ -77,7 +77,7 @@ function cadastroProdutos() {
     }
 
 
-    var produtoCadastro = JSON.parse(localStorage.getItem('Produto'))
+    var produtoCadastro = JSON.parse(localStorage.getItem('produtos'))
 
     if (produtoCadastro !== null) {
 
@@ -151,7 +151,7 @@ function cadastroProdutos() {
 
 
         produtoCadastro.push(produto)
-        localStorage.setItem('Produto', JSON.stringify(produtoCadastro))
+        localStorage.setItem('produtos', JSON.stringify(produtoCadastro))
 
         Swal.fire({
             icon: 'success',
@@ -164,7 +164,7 @@ function cadastroProdutos() {
 
 
         produtos.push(produto)
-        localStorage.setItem('Produto', JSON.stringify(produtos))
+        localStorage.setItem('produtos', JSON.stringify(produtos))
 
         Swal.fire({
             icon: 'success',
