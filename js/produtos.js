@@ -154,7 +154,7 @@ let produtos = [
         foto_produto: './img/canecas-marvel/deadpool frente.png',
         foto_frente: "./img/canecas-marvel/deadpool frente.png",
         foto_lateral: "./img/canecas-marvel/deadpool tras.png",
-        foto_tras: "",
+        foto_tras: "./img/canecas-marvel/deadpool frente.png",
 
     },
     {

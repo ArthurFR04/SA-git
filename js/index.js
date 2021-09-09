@@ -72,6 +72,23 @@ const harryPotter = () => {
   }
 };
 
+const programacao = () => {
+  
+  const arrayTemas = [];
+  var produtos = JSON.parse(localStorage.getItem('produtos'));
+  window.location.href="temas_produtos.html";
+  
+  for (let i = 0; produtos.length; i++) {
+    
+    if (produtos[i].id >= 400 && produtos[i].id <= 499) {
+      
+      arrayTemas.push(produtos[i]);
+      localStorage.setItem('produtosTemas', JSON.stringify(arrayTemas));
+      
+    }
+  }
+};
+
 var produtosTemas = JSON.parse(localStorage.getItem('produtosTemas'));
 
 function caneca(id) {

@@ -19,6 +19,7 @@
 .containerLanding {
     display: flex;
     justify-content: center;
+    align-items: center;
     bottom: 0;
     right: 0;
     width: 50%;
@@ -84,19 +85,48 @@ button:hover {
     height: 200px;
 }
 
+.containerLanding label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 80%;
+    line-height: 80px;
+}
 
+@media screen and (max-width:1535px) {
+    .containerLanding label {
+        line-height: 4vw;
+        font-size: 2.4vw;
+    }
+}
+
+/* @media screen and (max-width:1247px) {
+    .containerLanding label {
+        line-height: 80px;
+    }
+} */
 
 @media screen and (max-width:1024px) {
     .container {
         justify-content: flex-start;
     }
+
+    .container-top {
+        width: 100%;
+        height: 50vh;
+        display: flex;
+        justify-content: initial;
+        align-items: center;
+        flex-direction: column;
+    }
     button {
         margin-top: 10px;
     }
-    .containerLanding {
+    /* .containerLanding {
         top: 40%;
         margin-top: 0;
-    }
+    } */
 }
 
 @media screen and (max-width:600px) {
@@ -133,6 +163,11 @@ button:hover {
         box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
         color: white;
         font-size: 10px;
+    }
+
+    .containerLanding label {
+        line-height: 5.6vw;
+        font-size: 2.5vw;
     }
     .logo {
         display: flex;
@@ -179,5 +214,12 @@ button:hover {
         width: 200px;
         height: 70px;
         font-size: 3vh;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .containerLanding label {
+        line-height: 5.6vw;
+        font-size: 3vw;
     }
 }
