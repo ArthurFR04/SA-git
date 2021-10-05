@@ -39,10 +39,6 @@ section {
     /* margin-top: 25px!important; */
 }
 
-.carousel-item img {
-    height: 35vw;
-}
-
 .carousel-control-next-icon {
     margin-left: 70%;
 }
@@ -58,7 +54,7 @@ section {
 }
 
 .carousel-item img {
-    height: 35vw;
+    height: 45vw;
 }
 
 .carousel-control-next-icon {
@@ -230,12 +226,6 @@ footer #avanti {
         height: 200px;
         margin-right: 0;
         margin-left: 0;
-    }
-}
-
-@media screen and (max-width:1024px) {
-    .carousel-item img {
-        height: 100%!important;
     }
 }
 
