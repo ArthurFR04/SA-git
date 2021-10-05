@@ -127,7 +127,7 @@ let produtos = [
     {
         id: 403,
         nome: 'Caneca CSS Love',
-        preco: '4588q888888888888888888888888822222u9,00',
+        preco: '45,00',
         descricao: 'A caneca personalizada de porcelana pode ir ao microondas e à lavadora de louças, já a caneca plástica não indicamos, devido ao material não apropriado para esse locais. As canecas são um presente super útil para as mamães, papais, avós, tios, padrinhos, professores, etc.',
         foto_produto: './img/canecas-programacao/you are the css to my html frente.png',
         foto_frente: "./img/canecas-programacao/you are the css to my html frente.png",
